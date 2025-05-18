@@ -152,22 +152,25 @@
 		
 		 }
 
-
    Click on Start session.
 
    If the show message session does not start or the device is not connected, then go to the terminal and “adb devices” run the command to check if the device is connected or not.
 
    If the device does not connect, then go to device “developer options” and turn on Enable OEM unlock, USB debugging. And Use USB connection for “MIDI device”.
 
-5. Some Application & Dependency should be downloaded to the Testing Device.
-  	Appium Settings
-  	APK info -> Trello:
+4. Some Application & Dependency should be downloaded to the Testing Device.
+
+   	Appium Settings
+
+   	APK info -> Trello:
   		Com.trello
   		Activities -> com.trello.home.HomeActivity (Select an Activity)
-  	Apps Backup
-  	Trello: Testing app
 
-6. Project run from terminal command “robot --include tags test_suites”, “robot test_suites”.
+   	Apps Backup
+
+   	Trello: Testing app
+
+5. Project run from terminal command “robot --include tags test_suites”, “robot test_suites”.
 
 
 
