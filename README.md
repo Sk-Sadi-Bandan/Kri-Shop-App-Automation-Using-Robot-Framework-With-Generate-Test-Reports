@@ -16,7 +16,7 @@
 
    https://nodejs.org/en/download
 
-7. JDK21 Install & Setup Environment Variable (System Variable): DONE
+6. JDK21 Install & Setup Environment Variable (System Variable): DONE
 
    JAVA_HOME	:   C:\Program Files\Java\jdk-21
 
@@ -26,57 +26,79 @@
 
    Open CMD	:   Java –version || for version check
 
-8. Android Studio: DONE
-	
- https://developer.android.com/studio
+7. Android Studio: DONE
+
+   https://developer.android.com/studio
 
 8. Node Js for Windows (msi file): DONE
 
    https://nodejs.org/en/download
 
-10. Node Js Install & Setup Environment Variable (System Variable): DONE
+9. Node Js Install & Setup Environment Variable (System Variable): DONE
 
     NODE_HOME	:   C:\Program Files\nodejs
 
     Edit PATH	:   C:\Program Files\nodejs
 
-12. Android Studio: DONE
+10. Android Studio: DONE
+
     https://developer.android.com/studio
 
-13. Android Studio Install & Setup Environment Variable (System Variable): DONE
+11. Android Studio Install & Setup Environment Variable (System Variable): DONE
+
     ANDROID_HOME	:   C:\Users\DCL\AppData\Local\Android\Sdk
+
     Edit PATH	:   C:\Users\User\AppData\Local\Android\Sdk\platform-tools
+
     Edit PATH	:   %ANDROID_HOME%\build-tools
+
     Edit PATH	:   %ANDROID_HOME%\platforms
 
-14. Download & Install APPIUM Server: DONE
+13. Download & Install APPIUM Server: DONE
+
     Must be windows
+
     Node Js (node -v)
+
     Npm Version ()
+
     Install APPIUM
+
     npm install -g appium
+
     appium -v
+
     appium (Start Appium)
+
     ctrl+shift+C (Stop Appium)
+
     appium driver install uiautomator2 (for Appium UI)
 
 15. Download & Install APPIUM Server GUI: DONE
+
     https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4
+
     Open Appium -> Start Server
 
-16. Download & Install Appium Inspector: DONE
+17. Download & Install Appium Inspector: DONE
+
     https://github.com/appium/appium-inspector/releases
 
-17. Download a GitHub’s Project: DONE 
+19. Download a GitHub’s Project: DONE 
+
     https://github.com/Sk-Sadi-Bandan/APP-Automation-Using-Robot-Framework-For-Calculator-Application-With-Generate-Test-Reports
 
-18. Install Robot Framework: DONE
+21. Install Robot Framework: DONE
+
     pip install robotframework
+
     robot --version
+
     pip install robotframework-appiumlibrary
+
     If it fails due to Python 3.13 incompatibility, then Python 3.13 should be downloaded & Reinstall Robot Framework and AppiumLibrary.
 
-======================================================================================================================================
+=================================================================================================
 
 1. Open the Appium project in VS code & run “pip install -r requirements.txt” for install python dependency.
 
