@@ -78,7 +78,7 @@
 
     https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4
 
-    Open Appium -> Start Server
+    	Open Appium -> Start Server
 
 13. Download & Install Appium Inspector: DONE
 
