@@ -108,55 +108,58 @@
 
 	Select a Save Capability Sets (Example):
 		
-	 {
-	 	 
-	   "platformName": "Android",
-	   
-	   "appium:automationName": "uiautomator2",
-	   
-	   "appium:deviceName": "LG",
-	 	
-	   "appium:platformVersion": "12",
-	   
-	   "appium:autoGrantPermissions": true,
-	   
-	   "appium:appPackage": "com.trello",
+		 {
+		 	 
+		   "platformName": "Android",
+		   
+		   "appium:automationName": "uiautomator2",
+		   
+		   "appium:deviceName": "LG",
+		 	
+		   "appium:platformVersion": "12",
+		   
+		   "appium:autoGrantPermissions": true,
+		   
+		   "appium:appPackage": "com.trello",
+			
+		   "appium:appActivity": "com.trello.home.HomeActivity",
+		   
+		   "appium:noReset": false,
+		 	
+		   "appium:fullReset": false
+			
+		 }
+	
+	or
+	
+		 {
+		 
+		   "platformName": "Android",
+		 
+		   "appium:automationName": "uiautomator2",
+		 
+		   "appium:deviceName": "LG",
+		 
+		   "appium:platformVersion": "12",
+		 
+		   "appium:autoGrantPermissions": true,
+		 
+		   "appium:noReset": false,
+		 
+		   "appium:fullReset": false,
+		 
+		   "appium:app": "F:\\APPIUM\\Calculator App Automation Using Robot Framework\\base.apk"
 		
-	   "appium:appActivity": "com.trello.home.HomeActivity",
-	   
-	   "appium:noReset": false,
-	 	
-	   "appium:fullReset": false
-		
-	 }
-	
-	   or
-	
-	 {
-	 
-	   "platformName": "Android",
-	 
-	   "appium:automationName": "uiautomator2",
-	 
-	   "appium:deviceName": "LG",
-	 
-	   "appium:platformVersion": "12",
-	 
-	   "appium:autoGrantPermissions": true,
-	 
-	   "appium:noReset": false,
-	 
-	   "appium:fullReset": false,
-	 
-	   "appium:app": "F:\\APPIUM\\Calculator App Automation Using Robot Framework\\base.apk"
-	
-	 }
+		 }
 
-  Click on Start session.
-  If the show message session does not start or the device is not connected, then go to the terminal and “adb devices” run the command to check if the device is connected or not.
-  If the device does not connect, then go to device “developer options” and turn on Enable OEM unlock, USB debugging. And Use USB connection for “MIDI device”.
 
-4. Some Application & Dependency should be downloaded to the Testing Device.
+   Click on Start session.
+
+   If the show message session does not start or the device is not connected, then go to the terminal and “adb devices” run the command to check if the device is connected or not.
+
+   If the device does not connect, then go to device “developer options” and turn on Enable OEM unlock, USB debugging. And Use USB connection for “MIDI device”.
+
+5. Some Application & Dependency should be downloaded to the Testing Device.
   	Appium Settings
   	APK info -> Trello:
   		Com.trello
@@ -164,7 +167,7 @@
   	Apps Backup
   	Trello: Testing app
 
-5. Project run from terminal command “robot --include tags test_suites”, “robot test_suites”.
+6. Project run from terminal command “robot --include tags test_suites”, “robot test_suites”.
 
 
 
