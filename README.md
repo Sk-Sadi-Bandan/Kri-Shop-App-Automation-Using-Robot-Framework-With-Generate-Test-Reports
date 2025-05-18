@@ -15,7 +15,6 @@
 6. JDK21 Install & Setup Environment Variable (System Variable): DONE
 
    JAVA_HOME	:   C:\Program Files\Java\jdk-21
-
    Edit PATH	:   %JAVA_HOME%\bin
    Edit PATH	:   %JAVA_HOME%\lib
    Open CMD	:   Java –version || for version check
