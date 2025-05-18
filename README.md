@@ -163,7 +163,8 @@
 	   	Appium Settings
 	
 	   	APK info -> Trello:
-	  		Com.trello
+
+   			Com.trello
 
    			Activities -> com.trello.home.HomeActivity (Select an Activity)
 	
