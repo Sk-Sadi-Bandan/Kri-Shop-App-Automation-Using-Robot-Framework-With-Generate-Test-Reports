@@ -9,31 +9,34 @@
    pip --version
 
 4. Download JDK21 for Windows (msi file): DONE
-    https://www.oracle.com/java/technologies/downloads/#jdk21-windows
 
-5. JDK21 Install & Setup Environment Variable (System Variable): DONE
-    JAVA_HOME	:   C:\Program Files\Java\jdk-21
-    Edit PATH	:   %JAVA_HOME%\bin
-    Edit PATH	:   %JAVA_HOME%\lib
-    Open CMD	:   Java –version || for version check
+   https://www.oracle.com/java/technologies/downloads/#jdk21-windows
 
-6. Node Js for Windows (msi file): DONE
+6. JDK21 Install & Setup Environment Variable (System Variable): DONE
+
+   JAVA_HOME	:   C:\Program Files\Java\jdk-21
+
+   Edit PATH	:   %JAVA_HOME%\bin
+   Edit PATH	:   %JAVA_HOME%\lib
+   Open CMD	:   Java –version || for version check
+
+8. Node Js for Windows (msi file): DONE
     https://nodejs.org/en/download
 
-7. Node Js Install & Setup Environment Variable (System Variable): DONE
+9. Node Js Install & Setup Environment Variable (System Variable): DONE
     NODE_HOME	:   C:\Program Files\nodejs
     Edit PATH	:   C:\Program Files\nodejs
 
-8. Android Studio: DONE
+10. Android Studio: DONE
     https://developer.android.com/studio
 
-9. Android Studio Install & Setup Environment Variable (System Variable): DONE
+11. Android Studio Install & Setup Environment Variable (System Variable): DONE
     ANDROID_HOME	:   C:\Users\DCL\AppData\Local\Android\Sdk
     Edit PATH	:   C:\Users\User\AppData\Local\Android\Sdk\platform-tools
     Edit PATH	:   %ANDROID_HOME%\build-tools
     Edit PATH	:   %ANDROID_HOME%\platforms
 
-10. Download & Install APPIUM Server: DONE
+12. Download & Install APPIUM Server: DONE
     Must be windows
     Node Js (node -v)
     Npm Version ()
@@ -44,17 +47,17 @@
     ctrl+shift+C (Stop Appium)
     appium driver install uiautomator2 (for Appium UI)
 
-11. Download & Install APPIUM Server GUI: DONE
+13. Download & Install APPIUM Server GUI: DONE
     https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4
     Open Appium -> Start Server
 
-12. Download & Install Appium Inspector: DONE
+14. Download & Install Appium Inspector: DONE
     https://github.com/appium/appium-inspector/releases
 
-13. Download a GitHub’s Project: DONE 
+15. Download a GitHub’s Project: DONE 
     https://github.com/Sk-Sadi-Bandan/APP-Automation-Using-Robot-Framework-For-Calculator-Application-With-Generate-Test-Reports
 
-14. Install Robot Framework: DONE
+16. Install Robot Framework: DONE
     pip install robotframework
     robot --version
     pip install robotframework-appiumlibrary
