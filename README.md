@@ -8,15 +8,15 @@
 
    pip --version
 
-4. Download JDK21 for Windows (msi file): DONE
+3. Download JDK21 for Windows (msi file): DONE
 
    https://www.oracle.com/java/technologies/downloads/#jdk21-windows
 
-5. Node Js for Windows (msi file): DONE
+4. Node Js for Windows (msi file): DONE
 
    https://nodejs.org/en/download
 
-6. JDK21 Install & Setup Environment Variable (System Variable): DONE
+5. JDK21 Install & Setup Environment Variable (System Variable): DONE
 
    JAVA_HOME	:   C:\Program Files\Java\jdk-21
 
@@ -26,25 +26,25 @@
 
    Open CMD	:   Java –version || for version check
 
-7. Android Studio: DONE
+6. Android Studio: DONE
 
    https://developer.android.com/studio
 
-8. Node Js for Windows (msi file): DONE
+7. Node Js for Windows (msi file): DONE
 
    https://nodejs.org/en/download
 
-9. Node Js Install & Setup Environment Variable (System Variable): DONE
+8. Node Js Install & Setup Environment Variable (System Variable): DONE
 
     NODE_HOME	:   C:\Program Files\nodejs
 
     Edit PATH	:   C:\Program Files\nodejs
 
-10. Android Studio: DONE
+9. Android Studio: DONE
 
     https://developer.android.com/studio
 
-11. Android Studio Install & Setup Environment Variable (System Variable): DONE
+10. Android Studio Install & Setup Environment Variable (System Variable): DONE
 
     ANDROID_HOME	:   C:\Users\DCL\AppData\Local\Android\Sdk
 
@@ -54,7 +54,7 @@
 
     Edit PATH	:   %ANDROID_HOME%\platforms
 
-13. Download & Install APPIUM Server: DONE
+11. Download & Install APPIUM Server: DONE
 
     Must be windows
 
@@ -74,21 +74,21 @@
 
     appium driver install uiautomator2 (for Appium UI)
 
-15. Download & Install APPIUM Server GUI: DONE
+12. Download & Install APPIUM Server GUI: DONE
 
     https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4
 
     Open Appium -> Start Server
 
-17. Download & Install Appium Inspector: DONE
+13. Download & Install Appium Inspector: DONE
 
     https://github.com/appium/appium-inspector/releases
 
-19. Download a GitHub’s Project: DONE 
+14. Download a GitHub’s Project: DONE 
 
     https://github.com/Sk-Sadi-Bandan/APP-Automation-Using-Robot-Framework-For-Calculator-Application-With-Generate-Test-Reports
 
-21. Install Robot Framework: DONE
+15. Install Robot Framework: DONE
 
     pip install robotframework
 
@@ -107,28 +107,50 @@
 3. Open Appium Inspector:
 
 Select a Save Capability Sets (Example):
-	{
- 	 "platformName": "Android",
+	
+ {
+ 	 
+   "platformName": "Android",
+   
    "appium:automationName": "uiautomator2",
+   
    "appium:deviceName": "LG",
- 	 "appium:platformVersion": "12",
+ 	
+   "appium:platformVersion": "12",
+   
    "appium:autoGrantPermissions": true,
+   
    "appium:appPackage": "com.trello",
-	 "appium:appActivity": "com.trello.home.HomeActivity",
+	
+  "appium:appActivity": "com.trello.home.HomeActivity",
+   
    "appium:noReset": false,
- 	 "appium:fullReset": false
-	}
+ 	
+   "appium:fullReset": false
+	
+ }
+
 or
-	{
- 	 "platformName": "Android",
- 	 "appium:automationName": "uiautomator2",
- 	 "appium:deviceName": "LG",
- 	 "appium:platformVersion": "12",
- 	 "appium:autoGrantPermissions": true,
- 	 "appium:noReset": false,
- 	 "appium:fullReset": false,
- 	 "appium:app": "F:\\APPIUM\\Calculator App Automation Using Robot Framework\\base.apk"
-	}
+
+ {
+ 
+   "platformName": "Android",
+ 
+   "appium:automationName": "uiautomator2",
+ 
+   "appium:deviceName": "LG",
+ 
+   "appium:platformVersion": "12",
+ 
+   "appium:autoGrantPermissions": true,
+ 
+   "appium:noReset": false,
+ 
+   "appium:fullReset": false,
+ 
+   "appium:app": "F:\\APPIUM\\Calculator App Automation Using Robot Framework\\base.apk"
+
+ }
 
   Click on Start session.
   If the show message session does not start or the device is not connected, then go to the terminal and “adb devices” run the command to check if the device is connected or not.
