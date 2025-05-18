@@ -164,9 +164,9 @@
 	
 	   	APK info -> Trello:
 
-   			Com.trello
-
-   			Activities -> com.trello.home.HomeActivity (Select an Activity)
+	   			Com.trello
+	
+	   			Activities -> com.trello.home.HomeActivity (Select an Activity)
 	
 	   	Apps Backup
 	
