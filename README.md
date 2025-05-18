@@ -12,7 +12,11 @@
 
    https://www.oracle.com/java/technologies/downloads/#jdk21-windows
 
-6. JDK21 Install & Setup Environment Variable (System Variable): DONE
+5. Node Js for Windows (msi file): DONE
+
+   https://nodejs.org/en/download
+
+7. JDK21 Install & Setup Environment Variable (System Variable): DONE
 
    JAVA_HOME	:   C:\Program Files\Java\jdk-21
 
@@ -22,7 +26,7 @@
 
    Open CMD	:   Java –version || for version check
 
-7. Android Studio: DONE
+8. Android Studio: DONE
 	
  https://developer.android.com/studio
 
