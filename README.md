@@ -160,17 +160,18 @@
 
 4. Some Application & Dependency should be downloaded to the Testing Device.
 
-   	Appium Settings
+	   	Appium Settings
+	
+	   	APK info -> Trello:
+	  		Com.trello
 
-   	APK info -> Trello:
-  		Com.trello
-  		Activities -> com.trello.home.HomeActivity (Select an Activity)
+   			Activities -> com.trello.home.HomeActivity (Select an Activity)
+	
+	   	Apps Backup
+	
+	   	Trello: Testing app
 
-   	Apps Backup
-
-   	Trello: Testing app
-
-5. Project run from terminal command “robot --include tags test_suites”, “robot test_suites”.
+6. Project run from terminal command “robot --include tags test_suites”, “robot test_suites”.
 
 
 
