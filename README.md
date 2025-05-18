@@ -22,6 +22,10 @@
 
    Open CMD	:   Java –version || for version check
 
+7. Android Studio: DONE
+	
+ https://developer.android.com/studio
+
 8. Node Js for Windows (msi file): DONE
 
    https://nodejs.org/en/download
