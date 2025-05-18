@@ -1,4 +1,4 @@
-# Tallykhta_Android_App_Automation
+# Kri Shop Android App Automation
 
 1. Open VS code 
 2. Open Terminal
