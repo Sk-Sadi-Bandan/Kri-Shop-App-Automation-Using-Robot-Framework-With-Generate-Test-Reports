@@ -18,16 +18,13 @@ ${REMOTE_URL}                    http://127.0.0.1:4723/wd/hub
 ${PLATFORM_NAME}                 Android
 ${PLATFORM_VERSION}              12
 ${DEVICE_NAME}                   vivo Y21
-# ${APP_PACKAGE}                   asia.ifarmer.retailer.dev
-# ${APP_ACTIVITY}                  asia.ifarmer.retailer.views.activities.MainActivity
+${APP_PACKAGE}                   asia.ifarmer.retailer.dev
+${APP_ACTIVITY}                  asia.ifarmer.retailer.views.activities.SplashActivity
 
 *** Keywords ***
 Open app
     [Arguments]
-    Open Application    ${REMOTE_URL}    platformName=${PLATFORM_NAME}    platformVersion=${PLATFORM_VERSION}    deviceName=${DEVICE_NAME}    app=${APP}    newCommandTimeout=${NEW_COMMAND_TIMEOUT}    uiautomator2ServerLaunchTimeout=${SERVER_LAUNCH_TIMEOUT}    uiautomator2ServerInstallTimeout=${SERVER_INSTALL_TIMEOUT}    
-
-    # appPackage=${APP_PACKAGE}    
-    # appActivity=${APP_ACTIVITY}
+    Open Application    ${REMOTE_URL}    platformName=${PLATFORM_NAME}    platformVersion=${PLATFORM_VERSION}    deviceName=${DEVICE_NAME}    app=${APP}    newCommandTimeout=${NEW_COMMAND_TIMEOUT}    uiautomator2ServerLaunchTimeout=${SERVER_LAUNCH_TIMEOUT}    uiautomator2ServerInstallTimeout=${SERVER_INSTALL_TIMEOUT}    appPackage=${APP_PACKAGE}    appActivity=${APP_ACTIVITY}
 
 Close app
     Close Application
