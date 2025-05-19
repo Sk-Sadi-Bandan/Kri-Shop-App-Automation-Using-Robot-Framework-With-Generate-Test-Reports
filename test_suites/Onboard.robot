@@ -27,7 +27,18 @@ Scenario: Verify that Krishop Registration is Successfully
     Click on Proceed
     Click on six digits Pin input section
     Click on retype six digits Pin input section
-    # Click on Proceed
+    Click on PIN Set Done
+    Click on Input Name
+    Click on Male Gender
+    Click on Next
+    Click on Image Input Box
+    Click on Galary Section
+    Click on a specific Image
+    CLick on Image Crop
+    # Click on Next
+    # Click on a Specific Area
+    # Click on Confirm
+    # Click on Menu button
     Close app
 
 
@@ -62,6 +73,6 @@ Scenario: Verify that Forget Password is Successfully
     Click on Proceed
     Click on six digits Pin input section
     Click on retype six digits Pin input section
-    # Click on Proceed
+    Click on PIN Set Done
     Close app
 

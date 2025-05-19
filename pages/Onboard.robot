@@ -21,6 +21,14 @@ ${OTP3}                                            xpath=//android.widget.EditTe
 ${OTP4}                                            xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer.dev:id/otp4"]
 ${PIN}                                             xpath=//android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]
 ${Retype_PIN}                                      xpath=//android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]
+${PIN_Set_Done}                                    xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btDone"]
+${Your_Name}                                       xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer.dev:id/etName"]
+${Male_Gender}                                     xpath=//android.widget.RadioButton[@resource-id="asia.ifarmer.retailer.dev:id/male"]
+${Next}                                            xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvNext"]
+${Image_Input_Box}                                 xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/ivFarmer"]
+${Galary_Section}                                  xpath=//android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer.dev:id/lytGalleryPick"]
+${Specific_Image}                                  xpath=(//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[21]
+${Image_Crop}                                      xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/crop_image_menu_crop"]
 
 ${Krishop_Login}                                   xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]
 ${Password}                                        xpath=//android.widget.EditText[@text="পিন"]
@@ -37,6 +45,7 @@ ${Input_OTP3}                                    3
 ${Input_OTP4}                                    4
 ${Input_PIN}                                     123456
 ${Input_Retype_PIN}                              123456
+${Input_Name}                                    Krisop Automation
 
 ${Input_Mobile_Number_Login}                     01567839601
 ${Input_Password}                                123456
@@ -82,6 +91,35 @@ Click on six digits Pin input section
 Click on retype six digits Pin input section
     Wait Until Element Is visible               ${Retype_PIN}
     Input Text              ${Retype_PIN}       ${Input_Retype_PIN}
+Click on PIN Set Done
+    Wait Until Element Is visible               ${PIN_Set_Done}
+    Click Element                               ${PIN_Set_Done}
+Click on Input Name
+    Wait Until Element Is visible               ${Your_Name}
+    Input Text              ${Your_Name}        ${Input_Name}
+Click on Male Gender
+    Wait Until Element Is visible               ${Male_Gender}
+    Click Element                               ${Male_Gender}
+Click on Next
+    Wait Until Element Is visible               ${Next}
+    Click Element                               ${Next}
+Click on Image Input Box
+    Wait Until Element Is visible               ${Image_Input_Box}
+    Click Element                               ${Image_Input_Box}
+Click on Galary Section
+    Wait Until Element Is visible               ${Galary_Section}
+    Click Element                               ${Galary_Section}
+Click on a specific Image
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Specific_Image}
+        Exit For Loop If    ${is_visible}
+        Swipe    500    1500    500    500
+        Sleep    2s
+    END
+    Click Element                               ${Specific_Image}
+Click on Image Crop
+    Wait Until Element Is visible               ${Image_Crop}
+    Click Element                               ${Image_Crop}
 
 
 ##################### Test Case 2 #####################
