@@ -108,49 +108,30 @@
 
 	Select a Save Capability Sets (Example):
 		
-		 {
-		 	 
-		   "platformName": "Android",
-		   
-		   "appium:automationName": "uiautomator2",
-		   
-		   "appium:deviceName": "LG",
-		 	
-		   "appium:platformVersion": "12",
-		   
-		   "appium:autoGrantPermissions": true,
-		   
-		   "appium:appPackage": "com.trello",
-			
-		   "appium:appActivity": "com.trello.home.HomeActivity",
-		   
-		   "appium:noReset": false,
-		 	
-		   "appium:fullReset": false
-			
-		 }
+		{
+		  "platformName": "Android",
+		  "appium:automationName": "uiautomator2",
+		  "appium:deviceName": "vivo Y21",
+		  "appium:platformVersion": "12",
+		  "appium:autoGrantPermissions": true,
+		  "appium:noReset": false,
+		  "appium:fullReset": false,
+		  "appium:appPackage": "asia.ifarmer.retailer.dev",
+		  "appium:appActivity": "asia.ifarmer.retailer.views.activities.SplashActivity"
+		}
 	
 	or
 	
-		 {
-		 
-		   "platformName": "Android",
-		 
-		   "appium:automationName": "uiautomator2",
-		 
-		   "appium:deviceName": "LG",
-		 
-		   "appium:platformVersion": "12",
-		 
-		   "appium:autoGrantPermissions": true,
-		 
-		   "appium:noReset": false,
-		 
-		   "appium:fullReset": false,
-		 
-		   "appium:app": "F:\\APPIUM\\Calculator App Automation Using Robot Framework\\base.apk"
-		
-		 }
+		{
+		  "platformName": "Android",
+		  "appium:automationName": "uiautomator2",
+		  "appium:deviceName": "vivo Y21",
+		  "appium:platformVersion": "12",
+		  "appium:autoGrantPermissions": true,
+		  "appium:noReset": false,
+		  "appium:fullReset": false,
+		  "appium:app": "E:\\KriShop\\KriShop.apk"
+		}
 
    Click on Start session.
 
@@ -162,17 +143,17 @@
 
 	   	Appium Settings
 	
-	   	APK info -> Trello:
+	   	APK info -> Kri-Shop:
 
-	   			Com.trello
+	   			Packages -> asia.ifarmer.retailer.dev
 	
-	   			Activities -> com.trello.home.HomeActivity (Select an Activity)
+	   			Activities -> asia.ifarmer.retailer.views.activities.SplashActivity
 	
 	   	Apps Backup
 	
-	   	Trello: Testing app
+	   	Kri-Shop: Testing app
 
-6. Project run from terminal command “robot --include tags test_suites”, “robot test_suites”.
+5. Project run from terminal command “robot --include tags test_suites”, “robot test_suites”.
 
 
 
