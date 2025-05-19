@@ -5,7 +5,7 @@ Resource  ../Environment/AppSetup.robot
 
 *** Variables ***
 
-#*** Real Device ***#
+################################# Real Device #################################
 ${SCREEN_WIDTH}                  1080
 ${SCREEN_HEIGHT}                 1920
 ${SWIPE_INTERVAL}                2  # seconds

@@ -3,8 +3,7 @@ Documentation     Onbording Module Test Case for Kri-Shop App
 Library           AppiumLibrary
 Library           BuiltIn
 Resource           ../Environment/AppSetup.robot
-Resource           ../pages/Onboard.robot
-
+Resource           ../StepDefinations/Onboard_StepDefinations.robot
 
 
 
