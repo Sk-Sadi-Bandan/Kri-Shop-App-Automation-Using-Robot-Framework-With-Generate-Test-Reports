@@ -21,7 +21,7 @@ Scenario: Verify that Krishop Registration is Successfully
     Click on Menu button
     Click on Login
     Click on Krishop Registration
-    Click on Mobile Number input section
+    Click on Mobile Number input section Registration
     Click on Proceed
     Click on Input otp1 otp2 otp3 otp4
     Click on Proceed
@@ -40,7 +40,7 @@ Scenario: Verify that Krishop Login is Successfully
     Click on Menu button
     Click on Login
     Click on Krishop Login
-    Click on Mobile Number input section
+    Click on Mobile Number input section Login
     Click on Password input section
     Click on Proceed
     Close app
@@ -55,7 +55,7 @@ Scenario: Verify that Forget Password is Successfully
     Click on Menu button
     Click on Login
     Click on Krishop Login
-    Click on Mobile Number input section
+    Click on Mobile Number input section Login
     Click on Password input section Wrong Password
     Click on Proceed
     Click on Input otp1 otp2 otp3 otp4

@@ -63,7 +63,7 @@ Click on Login
 Click on Krishop Registration
     Wait Until Element Is visible               ${Registration}
     Click Element                               ${Registration}
-Click on Mobile Number input section
+Click on Mobile Number input section Registration
     Wait Until Element Is visible               ${Mobile_Number}
     Input Text         ${Mobile_Number}         ${Input_Mobile_Number_Reg}
 Click on Proceed
@@ -88,6 +88,9 @@ Click on retype six digits Pin input section
 Click on Krishop Login
     Wait Until Element Is visible               ${Krishop_Login}
     Click Element                               ${Krishop_Login}
+Click on Mobile Number input section Login
+    Wait Until Element Is visible               ${Mobile_Number}
+    Input Text         ${Mobile_Number}         ${Input_Mobile_Number_Login}
 Click on Password input section
     Wait Until Element Is visible               ${Password}
     Input Text           ${Password}            ${Input_Password}
