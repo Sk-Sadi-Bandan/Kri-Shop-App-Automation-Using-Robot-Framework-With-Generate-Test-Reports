@@ -1,0 +1,100 @@
+*** Settings ***
+Documentation     Onbording Module Test Case for Kri-Shop App
+Library           AppiumLibrary
+Library           BuiltIn
+Resource           ../Environment/AppSetup.robot
+Resource           ../StepDefinations/Cart_StepDefinations.robot
+
+
+
+***Keywords***
+
+***Test Cases*** 
+
+#Test Case 1
+Scenario: Verify that Product Add to Cart By Cash is Successfully
+    [Tags]    productaddcash
+    Open app
+    Click on a Specific Area
+    Click on Confirm
+    Click on Menu button
+    Click on Login
+    Click on Krishop Login
+    Click on Mobile Number input section Login
+    Click on Password input section
+    Click on Proceed
+
+    Click on Buy First Product
+    Click on Cash
+    Click on Add too Cart
+    Click on Proceed
+    Click on Market
+    Click on Buy Second Product
+    Click on Cash
+    Click on Add too Cart
+    Click on Proceed
+    Close app
+
+
+#Test Case 2
+Scenario: Verify that Product Add to Cart By Credit is Successfully
+    [Tags]    productaddcredit
+    Open app
+    Click on a Specific Area
+    Click on Confirm
+    Click on Menu button
+    Click on Login
+    Click on Krishop Login
+    Click on Mobile Number input section Login
+    Click on Password input section
+    Click on Proceed
+
+    Click on Buy First Product
+    Click on Credit
+    Click on Add too Cart
+    Click on Proceed
+    Click on Market
+    Click on Buy Second Product
+    Click on Credit
+    Click on Add too Cart
+    Click on Proceed
+    Close app
+
+
+#Test Case 3
+Scenario: Verify that Remove Product in Cart is Successfully
+    [Tags]    removeproduct
+    Open app
+    Click on a Specific Area
+    Click on Confirm
+    Click on Menu button
+    Click on Login
+    Click on Krishop Login
+    Click on Mobile Number input section Login
+    Click on Password input section
+    Click on Proceed
+
+    Click on Cart
+    Click on Remove Product
+    Close app
+
+
+#Test Case 4
+Scenario: Verify that Product Checkout is Successfully
+    [Tags]    productcheckout
+    Open app
+    Click on a Specific Area
+    Click on Confirm
+    Click on Menu button
+    Click on Login
+    Click on Krishop Login
+    Click on Mobile Number input section Login
+    Click on Password input section
+    Click on Proceed
+
+    Click on Cart
+    Click on Proceed
+    Click on Proceed
+    Click on Order Confirm
+    Close app
+
