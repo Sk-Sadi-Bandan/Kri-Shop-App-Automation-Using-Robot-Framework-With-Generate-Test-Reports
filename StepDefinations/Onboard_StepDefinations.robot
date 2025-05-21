@@ -20,6 +20,8 @@ ${Input_Name}                                    Krisop Automation
 ${Input_Mobile_Number_Login}                     01567839601
 ${Input_Password}                                123456
 
+${Input_Unreg_Mobile_Number_Login}               01567839606
+
 ${Input_Wrong_Password}                          123457
 
 
@@ -104,12 +106,16 @@ Click on Password input section
 
 
 ################################# Test Case 3 #################################
+Click on Unregistered Mobile Number input section Login
+    Wait Until Element Is visible               ${Mobile_Number}
+    Input Text                                  ${Mobile_Number}            ${Input_Unreg_Mobile_Number_Login}
+
+
+################################# Test Case 4 #################################
 Click on Password input section Wrong Password
     Wait Until Element Is visible               ${Password}
     Input Text                                  ${Password}                 ${Input_Wrong_Password}
-Click on Forget Password
-    Wait Until Element Is visible               ${Forget_Password}
-    Click Element                               ${Forget_Password}
-    Sleep                                       5s
-
+Click on Forget Pin
+    Wait Until Element Is visible               ${Forget_Pin}
+    Click Element                               ${Forget_Pin}
 

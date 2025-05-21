@@ -57,6 +57,21 @@ Scenario: Verify that Krishop Login is Successfully
 
 
 #Test Case 3
+Scenario: Verify that Krishop doesn't Login with Unregistered Number
+    [Tags]    unreglogin
+    Open app
+    Click on a Specific Area
+    Click on Confirm
+    Click on Menu button
+    Click on Login
+    Click on Krishop Login
+    Click on Unregistered Mobile Number input section Login
+    Click on Password input section
+    Click on Proceed
+    Close app
+
+
+#Test Case 4
 Scenario: Verify that Forget Password is Successfully
     [Tags]    forget
     Open app
@@ -68,10 +83,15 @@ Scenario: Verify that Forget Password is Successfully
     Click on Mobile Number input section Login
     Click on Password input section Wrong Password
     Click on Proceed
+    Click on Forget Pin
     Click on Input otp1 otp2 otp3 otp4
     Click on Proceed
     Click on six digits Pin input section
     Click on retype six digits Pin input section
     Click on PIN Set Done
+    Click on Krishop Login
+    Click on Mobile Number input section Login
+    Click on Password input section
+    Click on Proceed
     Close app
 

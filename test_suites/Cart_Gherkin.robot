@@ -26,12 +26,11 @@ Scenario: Verify that Product Add to Cart By Cash is Successfully
 
     Click on Buy First Product
     Click on Cash
-    Click on Add too Cart
-    Click on Proceed
+    Click on Add to Cart
     Click on Market
     Click on Buy Second Product
     Click on Cash
-    Click on Add too Cart
+    Click on Add to Cart
     Click on Proceed
     Close app
 
@@ -51,12 +50,11 @@ Scenario: Verify that Product Add to Cart By Credit is Successfully
 
     Click on Buy First Product
     Click on Credit
-    Click on Add too Cart
-    Click on Proceed
+    Click on Add to Cart
     Click on Market
     Click on Buy Second Product
     Click on Credit
-    Click on Add too Cart
+    Click on Add to Cart
     Click on Proceed
     Close app
 
@@ -74,7 +72,13 @@ Scenario: Verify that Remove Product in Cart is Successfully
     Click on Password input section
     Click on Proceed
 
-    Click on Cart
+    Click on Buy First Product
+    Click on Cash
+    Click on Add
+    Click on Add
+    Click on Add to Cart
+    Click on Subtract
+    Click on Subtract
     Click on Remove Product
     Close app
 
@@ -92,7 +96,9 @@ Scenario: Verify that Product Checkout is Successfully
     Click on Password input section
     Click on Proceed
 
-    Click on Cart
+    Click on Buy First Product
+    Click on Cash
+    Click on Add to Cart
     Click on Proceed
     Click on Proceed
     Click on Order Confirm
