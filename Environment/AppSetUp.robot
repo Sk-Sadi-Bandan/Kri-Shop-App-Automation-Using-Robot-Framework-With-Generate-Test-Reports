@@ -9,7 +9,7 @@ Resource  ../Environment/AppSetup.robot
 ${SCREEN_WIDTH}                  1080
 ${SCREEN_HEIGHT}                 1920
 ${SWIPE_INTERVAL}                2  # seconds
-${APP}                           E:\\KriShop\\KriShop.apk
+${APP}                           E:\\KriShop\\KriShop Production.apk
 ${NEW_COMMAND_TIMEOUT}           300000    # 5 minutes (in milliseconds)
 ${SERVER_LAUNCH_TIMEOUT}         60000    # 60 seconds (in milliseconds)
 ${SERVER_INSTALL_TIMEOUT}        60000   # 60 seconds (in milliseconds)
@@ -18,7 +18,7 @@ ${REMOTE_URL}                    http://127.0.0.1:4723/wd/hub
 ${PLATFORM_NAME}                 Android
 ${PLATFORM_VERSION}              12
 ${DEVICE_NAME}                   vivo Y21
-${APP_PACKAGE}                   asia.ifarmer.retailer.dev
+${APP_PACKAGE}                   asia.ifarmer.retailer
 ${APP_ACTIVITY}                  asia.ifarmer.retailer.views.activities.SplashActivity
 
 *** Keywords ***
