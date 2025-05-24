@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-22T13:00:28.903556" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-22T13:39:14.524054" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Suites" source="E:\KriShop\test_suites">
 <suite id="s1-s1" name="Onboard Gherkin" source="E:\KriShop\test_suites\Onboard_Gherkin.robot">
-<test id="s1-s1-t1" name="Scenario: Verify that Krishop Registration is Successfully" line="15">
+<test id="s1-s1-t1" name="Scenario: Verify that Forget Password is Successfully" line="75">
 <kw name="Open app" owner="AppSetup">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
@@ -22,191 +22,388 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-05-22T13:00:29.082155" elapsed="8.007890"/>
+<status status="PASS" start="2025-05-22T13:39:14.704594" elapsed="13.461060"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:00:29.081744" elapsed="8.008455"/>
+<status status="PASS" start="2025-05-22T13:39:14.704172" elapsed="13.461814"/>
 </kw>
 <kw name="Click on a Specific Area" owner="Onboard_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<kw name="Capture Page Screenshot" owner="AppiumLibrary">
-<msg time="2025-05-22T13:00:38.867297" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at runMicrotasks (&lt;anonymous&gt;)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.commands.getScreenshot (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:14:10)</msg>
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="FAIL" start="2025-05-22T13:00:38.854298" elapsed="0.081430">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at runMicrotasks (&lt;anonymous&gt;)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.commands.getScreenshot (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:14:10)</status>
-</kw>
-<msg time="2025-05-22T13:00:38.937569" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at runMicrotasks (&lt;anonymous&gt;)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.commands.getScreenshot (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:14:10)</msg>
-<msg time="2025-05-22T13:00:38.939125" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+<msg time="2025-05-22T13:39:32.452097" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]</msg>
-<msg time="2025-05-22T13:00:38.940118" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at runMicrotasks (&lt;anonymous&gt;)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
-    at doFind (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
-    at wrappedCondFn (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
-    at spin (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
-    at waitForCondition (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
-    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
-    at AndroidUiautomator2Driver.findElOrEls (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
-    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
-    at AndroidUiautomator2Driver.findElements (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</msg>
 <arg>${Specific_Area}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="FAIL" start="2025-05-22T13:00:37.091193" elapsed="1.852643">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at runMicrotasks (&lt;anonymous&gt;)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
-    at doFind (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
-    at wrappedCondFn (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
-    at spin (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
-    at waitForCondition (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
-    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
-    at AndroidUiautomator2Driver.findElOrEls (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
-    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
-    at AndroidUiautomator2Driver.findElements (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</status>
+<status status="PASS" start="2025-05-22T13:39:28.167118" elapsed="4.285260"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:32.456220" level="INFO">Clicking element 'xpath=//androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]'.</msg>
+<msg time="2025-05-22T13:39:32.841825" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]</msg>
 <arg>${Specific_Area}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2025-05-22T13:00:38.946114" elapsed="0.000085"/>
+<status status="PASS" start="2025-05-22T13:39:32.452704" elapsed="0.389288"/>
 </kw>
-<status status="FAIL" start="2025-05-22T13:00:37.090891" elapsed="1.855568">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at runMicrotasks (&lt;anonymous&gt;)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
-    at doFind (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
-    at wrappedCondFn (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
-    at spin (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
-    at waitForCondition (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
-    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
-    at AndroidUiautomator2Driver.findElOrEls (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
-    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
-    at AndroidUiautomator2Driver.findElements (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</status>
+<status status="PASS" start="2025-05-22T13:39:28.166822" elapsed="4.675346"/>
 </kw>
 <kw name="Click on Confirm" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.947164" elapsed="0.000066"/>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:33.507058" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
+<arg>${Confirm}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:39:32.843942" elapsed="0.663214"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:33.509614" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]'.</msg>
+<msg time="2025-05-22T13:39:33.842553" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
+<arg>${Confirm}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:33.507345" elapsed="0.335396"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:39:32.843253" elapsed="0.999673"/>
 </kw>
 <kw name="Click on Menu button" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.948048" elapsed="0.000075"/>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:39.366364" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
+xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
+xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
+xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
+xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
+xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
+xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
+xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]</msg>
+<arg>${Menu}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:39:33.844600" elapsed="5.521930"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:39.370002" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]'.</msg>
+<msg time="2025-05-22T13:39:40.057115" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]</msg>
+<arg>${Menu}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:39.366816" elapsed="0.690391"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:39:33.843798" elapsed="6.213527"/>
 </kw>
 <kw name="Click on Login" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.948747" elapsed="0.000051"/>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:41.531427" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]
+xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]</msg>
+<arg>${Login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:39:40.058397" elapsed="1.473299"/>
 </kw>
-<kw name="Click on Krishop Registration" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.949307" elapsed="0.000053"/>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:41.535256" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]'.</msg>
+<msg time="2025-05-22T13:39:41.898782" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]</msg>
+<arg>${Login}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:41.532026" elapsed="0.366875"/>
 </kw>
-<kw name="Click on Mobile Number input section Registration" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.949929" elapsed="0.000039"/>
+<status status="PASS" start="2025-05-22T13:39:40.057996" elapsed="1.841018"/>
+</kw>
+<kw name="Click on Krishop Login" owner="Onboard_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:42.749935" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]
+xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]</msg>
+<arg>${Krishop_Login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:39:41.900405" elapsed="0.849646"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:42.753020" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]'.</msg>
+<msg time="2025-05-22T13:39:43.110661" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]</msg>
+<arg>${Krishop_Login}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:42.750259" elapsed="0.360718"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:39:41.899885" elapsed="1.211210"/>
+</kw>
+<kw name="Click on Mobile Number input section Login" owner="Onboard_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:43.824510" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
+<arg>${Mobile_Number}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:39:43.111815" elapsed="0.712769"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:43.826085" level="INFO">Typing text '01749653931' into text field 'xpath=//android.widget.EditText[@text="মোবাইল নাম্বার"]'</msg>
+<msg time="2025-05-22T13:39:45.107788" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
+<arg>${Mobile_Number}</arg>
+<arg>${Input_Mobile_Number_Login}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:43.824731" elapsed="1.283217"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:39:43.111600" elapsed="1.996511"/>
+</kw>
+<kw name="Click on Password input section Wrong Password" owner="Onboard_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:45.874597" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
+<arg>${Password}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:39:45.109335" elapsed="0.765397"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:45.877744" level="INFO">Typing text '123457' into text field 'xpath=//android.widget.EditText[@text="পিন"]'</msg>
+<msg time="2025-05-22T13:39:46.147965" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
+<arg>${Password}</arg>
+<arg>${Input_Wrong_Password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:45.874963" elapsed="0.273109"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:39:45.108830" elapsed="1.039350"/>
 </kw>
 <kw name="Click on Proceed" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.950367" elapsed="0.000034"/>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:46.868829" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:39:46.149249" elapsed="0.719719"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:46.872407" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
+<msg time="2025-05-22T13:39:47.623168" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:46.869239" elapsed="0.754068"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-22T13:39:52.624826" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-22T13:39:47.623572" elapsed="5.001480"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:39:46.148813" elapsed="6.476428"/>
+</kw>
+<kw name="Click on Forget Pin" owner="Onboard_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:52.976173" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvForgotPin"]</msg>
+<arg>${Forget_Pin}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:39:52.627833" elapsed="0.348441"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:52.978823" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvForgotPin"]'.</msg>
+<msg time="2025-05-22T13:39:54.194878" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvForgotPin"]</msg>
+<arg>${Forget_Pin}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:52.976471" elapsed="1.218768"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:39:52.627315" elapsed="1.568066"/>
 </kw>
 <kw name="Click on Input otp1 otp2 otp3 otp4" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.950856" elapsed="0.000043"/>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:55.411014" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]
+xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]</msg>
+<arg>${OTP1}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:39:54.196868" elapsed="1.214254"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:55.413940" level="INFO">Typing text '1' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]'</msg>
+<msg time="2025-05-22T13:39:55.717789" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]</msg>
+<arg>${OTP1}</arg>
+<arg>${Input_OTP1}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:55.411316" elapsed="0.306590"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:55.720739" level="INFO">Typing text '2' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp2"]'</msg>
+<msg time="2025-05-22T13:39:57.436305" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp2"]</msg>
+<arg>${OTP2}</arg>
+<arg>${Input_OTP2}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:55.718129" elapsed="1.718333"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:57.439742" level="INFO">Typing text '3' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp3"]'</msg>
+<msg time="2025-05-22T13:39:58.647236" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp3"]</msg>
+<arg>${OTP3}</arg>
+<arg>${Input_OTP3}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:57.436755" elapsed="1.210620"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:39:58.650562" level="INFO">Typing text '4' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp4"]'</msg>
+<msg time="2025-05-22T13:40:00.407509" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp4"]</msg>
+<arg>${OTP4}</arg>
+<arg>${Input_OTP4}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:39:58.647618" elapsed="1.760017"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:39:54.196376" elapsed="6.211390"/>
 </kw>
 <kw name="Click on Proceed" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.951342" elapsed="0.000023"/>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:02.733489" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:40:00.408759" elapsed="2.324868"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:02.737328" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
+<msg time="2025-05-22T13:40:03.400897" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:40:02.734100" elapsed="0.666899"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-22T13:40:08.401756" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-22T13:40:03.401187" elapsed="5.000777"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:40:00.408310" elapsed="7.993822"/>
 </kw>
 <kw name="Click on six digits Pin input section" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.952004" elapsed="0.000020"/>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:09.060630" level="INFO">xpath criteria: //android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]</msg>
+<arg>${PIN}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:40:08.403742" elapsed="0.657018"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:09.063997" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]'</msg>
+<msg time="2025-05-22T13:40:09.857475" level="INFO">xpath criteria: //android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]</msg>
+<arg>${PIN}</arg>
+<arg>${Input_PIN}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:40:09.060998" elapsed="0.796591"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:40:08.403165" elapsed="1.454542"/>
 </kw>
 <kw name="Click on retype six digits Pin input section" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.952152" elapsed="0.000016"/>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:10.617419" level="INFO">xpath criteria: //android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]</msg>
+<arg>${Retype_PIN}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:40:09.858933" elapsed="0.758623"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:10.620863" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]'</msg>
+<msg time="2025-05-22T13:40:11.811509" level="INFO">xpath criteria: //android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]</msg>
+<arg>${Retype_PIN}</arg>
+<arg>${Input_Retype_PIN}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:40:10.617809" elapsed="1.193828"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:40:09.858534" elapsed="1.953226"/>
 </kw>
 <kw name="Click on PIN Set Done" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.952555" elapsed="0.000026"/>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:12.556461" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btDone"]</msg>
+<arg>${PIN_Set_Done}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:40:11.812902" elapsed="0.743715"/>
 </kw>
-<kw name="Click on Input Name" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.952999" elapsed="0.000066"/>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:12.560362" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btDone"]'.</msg>
+<msg time="2025-05-22T13:40:13.205401" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btDone"]</msg>
+<arg>${PIN_Set_Done}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:40:12.556900" elapsed="0.648639"/>
 </kw>
-<kw name="Click on Male Gender" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.953400" elapsed="0.000027"/>
+<status status="PASS" start="2025-05-22T13:40:11.812504" elapsed="1.393170"/>
 </kw>
-<kw name="Click on Next" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.953748" elapsed="0.000036"/>
+<kw name="Click on Krishop Login" owner="Onboard_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:14.329262" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]</msg>
+<arg>${Krishop_Login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:40:13.207198" elapsed="1.122224"/>
 </kw>
-<kw name="Click on Image Input Box" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.954207" elapsed="0.000037"/>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:14.333081" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]'.</msg>
+<msg time="2025-05-22T13:40:15.111070" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]</msg>
+<arg>${Krishop_Login}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:40:14.329715" elapsed="0.781510"/>
 </kw>
-<kw name="Click on Galary Section" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.954622" elapsed="0.000037"/>
+<status status="PASS" start="2025-05-22T13:40:13.206650" elapsed="1.904734"/>
 </kw>
-<kw name="Click on a specific Image" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.955720" elapsed="0.000043"/>
+<kw name="Click on Mobile Number input section Login" owner="Onboard_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:16.288810" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
+<arg>${Mobile_Number}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:40:15.113048" elapsed="1.175881"/>
 </kw>
-<kw name="Click on Image Crop" owner="Onboard_StepDefinations">
-<status status="NOT RUN" start="2025-05-22T13:00:38.956341" elapsed="0.000042"/>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:16.291789" level="INFO">Typing text '01749653931' into text field 'xpath=//android.widget.EditText[@text="মোবাইল নাম্বার"]'</msg>
+<msg time="2025-05-22T13:40:16.559754" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
+<arg>${Mobile_Number}</arg>
+<arg>${Input_Mobile_Number_Login}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:40:16.289142" elapsed="0.270710"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:40:15.112452" elapsed="1.447497"/>
+</kw>
+<kw name="Click on Password input section" owner="Onboard_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:17.869109" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
+<arg>${Password}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:40:16.561536" elapsed="1.307752"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:17.872809" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="পিন"]'</msg>
+<msg time="2025-05-22T13:40:18.717893" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
+<arg>${Password}</arg>
+<arg>${Input_Password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:40:17.869600" elapsed="0.848422"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:40:16.561219" elapsed="2.156936"/>
+</kw>
+<kw name="Click on Proceed" owner="Onboard_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:19.432075" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-22T13:40:18.719440" elapsed="0.712810"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-22T13:40:19.436588" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
+<msg time="2025-05-22T13:40:19.688879" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-22T13:40:19.432721" elapsed="0.256260"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-22T13:40:24.690229" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-22T13:40:19.689177" elapsed="5.001284"/>
+</kw>
+<status status="PASS" start="2025-05-22T13:40:18.718957" elapsed="5.971674"/>
 </kw>
 <kw name="Close app" owner="AppSetup">
-<status status="NOT RUN" start="2025-05-22T13:00:38.956833" elapsed="0.000022"/>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-05-22T13:40:24.692091" elapsed="0.508132"/>
 </kw>
-<tag>reg</tag>
-<status status="FAIL" start="2025-05-22T13:00:29.081138" elapsed="9.876299">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at runMicrotasks (&lt;anonymous&gt;)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
-    at doFind (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
-    at wrappedCondFn (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
-    at spin (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
-    at waitForCondition (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
-    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
-    at AndroidUiautomator2Driver.findElOrEls (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
-    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
-    at AndroidUiautomator2Driver.findElements (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</status>
+<status status="PASS" start="2025-05-22T13:40:24.691604" elapsed="0.508725"/>
+</kw>
+<tag>forget</tag>
+<status status="PASS" start="2025-05-22T13:39:14.703466" elapsed="70.497379"/>
 </test>
 <doc>Onbording Module Test Case for Kri-Shop App</doc>
-<status status="FAIL" start="2025-05-22T13:00:28.925531" elapsed="10.034139"/>
+<status status="PASS" start="2025-05-22T13:39:14.545495" elapsed="70.656735"/>
 </suite>
-<status status="FAIL" start="2025-05-22T13:00:28.904583" elapsed="10.056354"/>
+<status status="PASS" start="2025-05-22T13:39:14.525140" elapsed="70.678991"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">reg</stat>
+<stat pass="1" fail="0" skip="0">forget</stat>
 </tag>
 <suite>
-<stat name="Test Suites" id="s1" pass="0" fail="1" skip="0">Test Suites</stat>
-<stat name="Onboard Gherkin" id="s1-s1" pass="0" fail="1" skip="0">Test Suites.Onboard Gherkin</stat>
+<stat name="Test Suites" id="s1" pass="1" fail="0" skip="0">Test Suites</stat>
+<stat name="Onboard Gherkin" id="s1-s1" pass="1" fail="0" skip="0">Test Suites.Onboard Gherkin</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-05-22T13:00:38.937569" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at runMicrotasks (&lt;anonymous&gt;)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.commands.getScreenshot (C:\Users\ssban\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:14:10)</msg>
 </errors>
 </robot>
