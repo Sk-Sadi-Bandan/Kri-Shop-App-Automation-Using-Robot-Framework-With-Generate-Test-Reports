@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Onbording Module Test Case for Kri-Shop App
+Documentation     Cart Module Test Case for Kri-Shop App
 Library           AppiumLibrary
 Library           BuiltIn
 Resource           ../Environment/AppSetup.robot

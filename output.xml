@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-22T13:39:14.524054" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-25T14:34:07.971118" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Suites" source="E:\KriShop\test_suites">
-<suite id="s1-s1" name="Onboard Gherkin" source="E:\KriShop\test_suites\Onboard_Gherkin.robot">
-<test id="s1-s1-t1" name="Scenario: Verify that Forget Password is Successfully" line="75">
+<suite id="s1-s1" name="Full Cycle Gherkin" source="E:\KriShop\test_suites\Full_Cycle_Gherkin.robot">
+<test id="s1-s1-t1" name="Scenario: Verify that Full Cycle of Product Buy in Krishop is Successfully" line="15">
 <kw name="Open app" owner="AppSetup">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
@@ -22,51 +22,49 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-05-22T13:39:14.704594" elapsed="13.461060"/>
+<status status="PASS" start="2025-05-25T14:34:08.175869" elapsed="14.885206"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:39:14.704172" elapsed="13.461814"/>
+<status status="PASS" start="2025-05-25T14:34:08.175014" elapsed="14.886201"/>
 </kw>
-<kw name="Click on a Specific Area" owner="Onboard_StepDefinations">
+<kw name="Click on a Specific Area" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:32.452097" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+<msg time="2025-05-25T14:34:27.638436" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]</msg>
 <arg>${Specific_Area}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:28.167118" elapsed="4.285260"/>
+<status status="PASS" start="2025-05-25T14:34:23.061912" elapsed="4.576647"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:32.456220" level="INFO">Clicking element 'xpath=//androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]'.</msg>
-<msg time="2025-05-22T13:39:32.841825" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]</msg>
+<msg time="2025-05-25T14:34:27.641981" level="INFO">Clicking element 'xpath=//androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]'.</msg>
+<msg time="2025-05-25T14:34:28.136464" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]</msg>
 <arg>${Specific_Area}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:32.452704" elapsed="0.389288"/>
+<status status="PASS" start="2025-05-25T14:34:27.638754" elapsed="0.497837"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:39:28.166822" elapsed="4.675346"/>
+<status status="PASS" start="2025-05-25T14:34:23.061640" elapsed="5.075088"/>
 </kw>
-<kw name="Click on Confirm" owner="Onboard_StepDefinations">
+<kw name="Click on Confirm" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:33.507058" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
+<msg time="2025-05-25T14:34:29.382449" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
 <arg>${Confirm}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:32.843942" elapsed="0.663214"/>
+<status status="PASS" start="2025-05-25T14:34:28.137701" elapsed="1.244845"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:33.509614" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]'.</msg>
-<msg time="2025-05-22T13:39:33.842553" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
+<msg time="2025-05-25T14:34:29.385410" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]'.</msg>
+<msg time="2025-05-25T14:34:30.033225" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
 <arg>${Confirm}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:33.507345" elapsed="0.335396"/>
+<status status="PASS" start="2025-05-25T14:34:29.382721" elapsed="0.650638"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:39:32.843253" elapsed="0.999673"/>
+<status status="PASS" start="2025-05-25T14:34:28.137260" elapsed="1.896232"/>
 </kw>
-<kw name="Click on Menu button" owner="Onboard_StepDefinations">
+<kw name="Click on Menu button" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:39.366364" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
-xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
-xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
+<msg time="2025-05-25T14:34:35.426227" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
 xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
 xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
 xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
@@ -74,334 +72,1668 @@ xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:i
 xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]</msg>
 <arg>${Menu}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:33.844600" elapsed="5.521930"/>
+<status status="PASS" start="2025-05-25T14:34:30.034966" elapsed="5.391423"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:39.370002" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]'.</msg>
-<msg time="2025-05-22T13:39:40.057115" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]</msg>
+<msg time="2025-05-25T14:34:35.430590" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]'.</msg>
+<msg time="2025-05-25T14:34:36.273723" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]</msg>
 <arg>${Menu}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:39.366816" elapsed="0.690391"/>
+<status status="PASS" start="2025-05-25T14:34:35.426673" elapsed="0.847196"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:39:33.843798" elapsed="6.213527"/>
+<status status="PASS" start="2025-05-25T14:34:30.034404" elapsed="6.239643"/>
 </kw>
-<kw name="Click on Login" owner="Onboard_StepDefinations">
+<kw name="Click on Login" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:41.531427" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]
+<msg time="2025-05-25T14:34:37.479637" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]
 xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]</msg>
 <arg>${Login}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:40.058397" elapsed="1.473299"/>
+<status status="PASS" start="2025-05-25T14:34:36.275668" elapsed="1.204119"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:41.535256" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]'.</msg>
-<msg time="2025-05-22T13:39:41.898782" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]</msg>
+<msg time="2025-05-25T14:34:37.483647" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]'.</msg>
+<msg time="2025-05-25T14:34:37.824706" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]</msg>
 <arg>${Login}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:41.532026" elapsed="0.366875"/>
+<status status="PASS" start="2025-05-25T14:34:37.480019" elapsed="0.344841"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:39:40.057996" elapsed="1.841018"/>
+<status status="PASS" start="2025-05-25T14:34:36.275101" elapsed="1.549880"/>
 </kw>
-<kw name="Click on Krishop Login" owner="Onboard_StepDefinations">
+<kw name="Click on Krishop Registration" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:42.749935" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]
-xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]</msg>
-<arg>${Krishop_Login}</arg>
+<msg time="2025-05-25T14:34:38.683331" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btRegister"]
+xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btRegister"]</msg>
+<arg>${Registration}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:41.900405" elapsed="0.849646"/>
+<status status="PASS" start="2025-05-25T14:34:37.826021" elapsed="0.857432"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:42.753020" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]'.</msg>
-<msg time="2025-05-22T13:39:43.110661" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]</msg>
-<arg>${Krishop_Login}</arg>
+<msg time="2025-05-25T14:34:38.686929" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btRegister"]'.</msg>
+<msg time="2025-05-25T14:34:39.026027" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btRegister"]</msg>
+<arg>${Registration}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:42.750259" elapsed="0.360718"/>
+<status status="PASS" start="2025-05-25T14:34:38.683674" elapsed="0.342449"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:39:41.899885" elapsed="1.211210"/>
+<status status="PASS" start="2025-05-25T14:34:37.825617" elapsed="1.200904"/>
 </kw>
-<kw name="Click on Mobile Number input section Login" owner="Onboard_StepDefinations">
+<kw name="Click on Mobile Number input section Registration" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:43.824510" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
+<msg time="2025-05-25T14:34:39.702529" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
 <arg>${Mobile_Number}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:43.111815" elapsed="0.712769"/>
+<status status="PASS" start="2025-05-25T14:34:39.027615" elapsed="0.675023"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:43.826085" level="INFO">Typing text '01749653931' into text field 'xpath=//android.widget.EditText[@text="মোবাইল নাম্বার"]'</msg>
-<msg time="2025-05-22T13:39:45.107788" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
+<msg time="2025-05-25T14:34:39.705873" level="INFO">Typing text '01567839601' into text field 'xpath=//android.widget.EditText[@text="মোবাইল নাম্বার"]'</msg>
+<msg time="2025-05-25T14:34:40.528976" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
 <arg>${Mobile_Number}</arg>
-<arg>${Input_Mobile_Number_Login}</arg>
+<arg>${Input_Mobile_Number_Reg}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:43.824731" elapsed="1.283217"/>
+<status status="PASS" start="2025-05-25T14:34:39.702836" elapsed="0.826283"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:39:43.111600" elapsed="1.996511"/>
+<status status="PASS" start="2025-05-25T14:34:39.027221" elapsed="1.502017"/>
 </kw>
-<kw name="Click on Password input section Wrong Password" owner="Onboard_StepDefinations">
+<kw name="Click on Proceed" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:45.874597" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
-<arg>${Password}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:45.109335" elapsed="0.765397"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:45.877744" level="INFO">Typing text '123457' into text field 'xpath=//android.widget.EditText[@text="পিন"]'</msg>
-<msg time="2025-05-22T13:39:46.147965" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
-<arg>${Password}</arg>
-<arg>${Input_Wrong_Password}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:45.874963" elapsed="0.273109"/>
-</kw>
-<status status="PASS" start="2025-05-22T13:39:45.108830" elapsed="1.039350"/>
-</kw>
-<kw name="Click on Proceed" owner="Onboard_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:46.868829" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<msg time="2025-05-25T14:34:41.742579" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
 <arg>${Proceed}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:46.149249" elapsed="0.719719"/>
+<status status="PASS" start="2025-05-25T14:34:40.530419" elapsed="1.212304"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:46.872407" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
-<msg time="2025-05-22T13:39:47.623168" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<msg time="2025-05-25T14:34:41.746691" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
+<msg time="2025-05-25T14:34:42.021164" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
 <arg>${Proceed}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:46.869239" elapsed="0.754068"/>
+<status status="PASS" start="2025-05-25T14:34:41.742983" elapsed="0.278382"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-22T13:39:52.624826" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-25T14:34:47.023479" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-22T13:39:47.623572" elapsed="5.001480"/>
+<status status="PASS" start="2025-05-25T14:34:42.021733" elapsed="5.002116"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:39:46.148813" elapsed="6.476428"/>
+<status status="PASS" start="2025-05-25T14:34:40.530005" elapsed="6.494148"/>
 </kw>
-<kw name="Click on Forget Pin" owner="Onboard_StepDefinations">
+<kw name="Click on Input otp1 otp2 otp3 otp4" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:52.976173" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvForgotPin"]</msg>
-<arg>${Forget_Pin}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:52.627833" elapsed="0.348441"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:52.978823" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvForgotPin"]'.</msg>
-<msg time="2025-05-22T13:39:54.194878" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvForgotPin"]</msg>
-<arg>${Forget_Pin}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:52.976471" elapsed="1.218768"/>
-</kw>
-<status status="PASS" start="2025-05-22T13:39:52.627315" elapsed="1.568066"/>
-</kw>
-<kw name="Click on Input otp1 otp2 otp3 otp4" owner="Onboard_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:55.411014" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]
-xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]</msg>
+<msg time="2025-05-25T14:34:47.794621" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]</msg>
 <arg>${OTP1}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:39:54.196868" elapsed="1.214254"/>
+<status status="PASS" start="2025-05-25T14:34:47.026101" elapsed="0.768669"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:55.413940" level="INFO">Typing text '1' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]'</msg>
-<msg time="2025-05-22T13:39:55.717789" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]</msg>
+<msg time="2025-05-25T14:34:47.798887" level="INFO">Typing text '1' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]'</msg>
+<msg time="2025-05-25T14:34:48.563829" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp1"]</msg>
 <arg>${OTP1}</arg>
 <arg>${Input_OTP1}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:55.411316" elapsed="0.306590"/>
+<status status="PASS" start="2025-05-25T14:34:47.795031" elapsed="0.768905"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:55.720739" level="INFO">Typing text '2' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp2"]'</msg>
-<msg time="2025-05-22T13:39:57.436305" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp2"]</msg>
+<msg time="2025-05-25T14:34:48.566364" level="INFO">Typing text '2' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp2"]'</msg>
+<msg time="2025-05-25T14:34:49.837098" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp2"]</msg>
 <arg>${OTP2}</arg>
 <arg>${Input_OTP2}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:55.718129" elapsed="1.718333"/>
+<status status="PASS" start="2025-05-25T14:34:48.564133" elapsed="1.273094"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:57.439742" level="INFO">Typing text '3' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp3"]'</msg>
-<msg time="2025-05-22T13:39:58.647236" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp3"]</msg>
+<msg time="2025-05-25T14:34:49.839734" level="INFO">Typing text '3' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp3"]'</msg>
+<msg time="2025-05-25T14:34:50.876764" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp3"]</msg>
 <arg>${OTP3}</arg>
 <arg>${Input_OTP3}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:57.436755" elapsed="1.210620"/>
+<status status="PASS" start="2025-05-25T14:34:49.837432" elapsed="1.039481"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:39:58.650562" level="INFO">Typing text '4' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp4"]'</msg>
-<msg time="2025-05-22T13:40:00.407509" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp4"]</msg>
+<msg time="2025-05-25T14:34:50.881050" level="INFO">Typing text '4' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp4"]'</msg>
+<msg time="2025-05-25T14:34:51.823820" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/otp4"]</msg>
 <arg>${OTP4}</arg>
 <arg>${Input_OTP4}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:39:58.647618" elapsed="1.760017"/>
+<status status="PASS" start="2025-05-25T14:34:50.877190" elapsed="0.946785"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:39:54.196376" elapsed="6.211390"/>
+<status status="PASS" start="2025-05-25T14:34:47.025491" elapsed="4.798645"/>
 </kw>
-<kw name="Click on Proceed" owner="Onboard_StepDefinations">
+<kw name="Click on Proceed" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:02.733489" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<msg time="2025-05-25T14:34:52.838526" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
 <arg>${Proceed}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:40:00.408759" elapsed="2.324868"/>
+<status status="PASS" start="2025-05-25T14:34:51.826188" elapsed="1.012429"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:02.737328" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
-<msg time="2025-05-22T13:40:03.400897" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<msg time="2025-05-25T14:34:52.840202" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
+<msg time="2025-05-25T14:34:53.688440" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
 <arg>${Proceed}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:40:02.734100" elapsed="0.666899"/>
+<status status="PASS" start="2025-05-25T14:34:52.838768" elapsed="0.849804"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-22T13:40:08.401756" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-25T14:34:58.689730" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-22T13:40:03.401187" elapsed="5.000777"/>
+<status status="PASS" start="2025-05-25T14:34:53.688732" elapsed="5.001219"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:40:00.408310" elapsed="7.993822"/>
+<status status="PASS" start="2025-05-25T14:34:51.825644" elapsed="6.864474"/>
 </kw>
-<kw name="Click on six digits Pin input section" owner="Onboard_StepDefinations">
+<kw name="Click on six digits Pin input section" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:09.060630" level="INFO">xpath criteria: //android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]</msg>
+<msg time="2025-05-25T14:34:59.003201" level="INFO">xpath criteria: //android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]</msg>
 <arg>${PIN}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:40:08.403742" elapsed="0.657018"/>
+<status status="PASS" start="2025-05-25T14:34:58.691252" elapsed="0.312070"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:09.063997" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]'</msg>
-<msg time="2025-05-22T13:40:09.857475" level="INFO">xpath criteria: //android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]</msg>
+<msg time="2025-05-25T14:34:59.006856" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]'</msg>
+<msg time="2025-05-25T14:34:59.760789" level="INFO">xpath criteria: //android.widget.EditText[@text="৬ সংখ্যার নতুন পিন লিখুন *"]</msg>
 <arg>${PIN}</arg>
 <arg>${Input_PIN}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:40:09.060998" elapsed="0.796591"/>
+<status status="PASS" start="2025-05-25T14:34:59.003550" elapsed="0.757395"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:40:08.403165" elapsed="1.454542"/>
+<status status="PASS" start="2025-05-25T14:34:58.690901" elapsed="1.070189"/>
 </kw>
-<kw name="Click on retype six digits Pin input section" owner="Onboard_StepDefinations">
+<kw name="Click on retype six digits Pin input section" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:10.617419" level="INFO">xpath criteria: //android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]</msg>
+<msg time="2025-05-25T14:35:00.470682" level="INFO">xpath criteria: //android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]</msg>
 <arg>${Retype_PIN}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:40:09.858933" elapsed="0.758623"/>
+<status status="PASS" start="2025-05-25T14:34:59.763019" elapsed="0.707807"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:10.620863" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]'</msg>
-<msg time="2025-05-22T13:40:11.811509" level="INFO">xpath criteria: //android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]</msg>
+<msg time="2025-05-25T14:35:00.474488" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]'</msg>
+<msg time="2025-05-25T14:35:01.267944" level="INFO">xpath criteria: //android.widget.EditText[@text="আবার ৬ সংখ্যার নতুন পিন লিখুন"]</msg>
 <arg>${Retype_PIN}</arg>
 <arg>${Input_Retype_PIN}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:40:10.617809" elapsed="1.193828"/>
+<status status="PASS" start="2025-05-25T14:35:00.471089" elapsed="0.796991"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:40:09.858534" elapsed="1.953226"/>
+<status status="PASS" start="2025-05-25T14:34:59.762108" elapsed="1.506113"/>
 </kw>
-<kw name="Click on PIN Set Done" owner="Onboard_StepDefinations">
+<kw name="Click on PIN Set Done" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:12.556461" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btDone"]</msg>
+<msg time="2025-05-25T14:35:02.001747" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btDone"]</msg>
 <arg>${PIN_Set_Done}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:40:11.812902" elapsed="0.743715"/>
+<status status="PASS" start="2025-05-25T14:35:01.269801" elapsed="0.732086"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:12.560362" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btDone"]'.</msg>
-<msg time="2025-05-22T13:40:13.205401" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btDone"]</msg>
+<msg time="2025-05-25T14:35:02.005551" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btDone"]'.</msg>
+<msg time="2025-05-25T14:35:02.759714" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btDone"]</msg>
 <arg>${PIN_Set_Done}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:40:12.556900" elapsed="0.648639"/>
+<status status="PASS" start="2025-05-25T14:35:02.002132" elapsed="0.757732"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:40:11.812504" elapsed="1.393170"/>
+<status status="PASS" start="2025-05-25T14:35:01.269193" elapsed="1.490849"/>
 </kw>
-<kw name="Click on Krishop Login" owner="Onboard_StepDefinations">
+<kw name="Click on Input Name" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:14.329262" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]</msg>
-<arg>${Krishop_Login}</arg>
+<msg time="2025-05-25T14:35:03.931801" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etName"]
+xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etName"]</msg>
+<arg>${Your_Name}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:40:13.207198" elapsed="1.122224"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:14.333081" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]'.</msg>
-<msg time="2025-05-22T13:40:15.111070" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]</msg>
-<arg>${Krishop_Login}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:40:14.329715" elapsed="0.781510"/>
-</kw>
-<status status="PASS" start="2025-05-22T13:40:13.206650" elapsed="1.904734"/>
-</kw>
-<kw name="Click on Mobile Number input section Login" owner="Onboard_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:16.288810" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
-<arg>${Mobile_Number}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:40:15.113048" elapsed="1.175881"/>
+<status status="PASS" start="2025-05-25T14:35:02.761601" elapsed="1.170321"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:16.291789" level="INFO">Typing text '01749653931' into text field 'xpath=//android.widget.EditText[@text="মোবাইল নাম্বার"]'</msg>
-<msg time="2025-05-22T13:40:16.559754" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
-<arg>${Mobile_Number}</arg>
-<arg>${Input_Mobile_Number_Login}</arg>
+<msg time="2025-05-25T14:35:03.935087" level="INFO">Typing text 'Krisop Automation' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etName"]'</msg>
+<msg time="2025-05-25T14:35:04.146418" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etName"]</msg>
+<arg>${Your_Name}</arg>
+<arg>${Input_Name}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:40:16.289142" elapsed="0.270710"/>
+<status status="PASS" start="2025-05-25T14:35:03.932142" elapsed="0.214399"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:40:15.112452" elapsed="1.447497"/>
+<status status="PASS" start="2025-05-25T14:35:02.760944" elapsed="1.385723"/>
 </kw>
-<kw name="Click on Password input section" owner="Onboard_StepDefinations">
+<kw name="Click on Male Gender" owner="Full_Cycle_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:17.869109" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
-<arg>${Password}</arg>
+<msg time="2025-05-25T14:35:04.867814" level="INFO">xpath criteria: //android.widget.RadioButton[@resource-id="asia.ifarmer.retailer:id/male"]</msg>
+<arg>${Male_Gender}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:40:16.561536" elapsed="1.307752"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:17.872809" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="পিন"]'</msg>
-<msg time="2025-05-22T13:40:18.717893" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
-<arg>${Password}</arg>
-<arg>${Input_Password}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:40:17.869600" elapsed="0.848422"/>
-</kw>
-<status status="PASS" start="2025-05-22T13:40:16.561219" elapsed="2.156936"/>
-</kw>
-<kw name="Click on Proceed" owner="Onboard_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:19.432075" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
-<arg>${Proceed}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-05-22T13:40:18.719440" elapsed="0.712810"/>
+<status status="PASS" start="2025-05-25T14:35:04.147869" elapsed="0.720070"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-05-22T13:40:19.436588" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
-<msg time="2025-05-22T13:40:19.688879" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
-<arg>${Proceed}</arg>
+<msg time="2025-05-25T14:35:04.869776" level="INFO">Clicking element 'xpath=//android.widget.RadioButton[@resource-id="asia.ifarmer.retailer:id/male"]'.</msg>
+<msg time="2025-05-25T14:35:05.169056" level="INFO">xpath criteria: //android.widget.RadioButton[@resource-id="asia.ifarmer.retailer:id/male"]</msg>
+<arg>${Male_Gender}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-05-22T13:40:19.432721" elapsed="0.256260"/>
+<status status="PASS" start="2025-05-25T14:35:04.868248" elapsed="0.300922"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:04.147419" elapsed="1.021860"/>
+</kw>
+<kw name="Click on Next" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:06.134731" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvNext"]</msg>
+<arg>${Next}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:05.170457" elapsed="0.964436"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:06.138089" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvNext"]'.</msg>
+<msg time="2025-05-25T14:35:06.431169" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvNext"]</msg>
+<arg>${Next}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:06.135159" elapsed="0.296126"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:05.169892" elapsed="1.261505"/>
+</kw>
+<kw name="Click on Image Input Box" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:07.431537" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivFarmer"]</msg>
+<arg>${Image_Input_Box}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:06.432570" elapsed="0.999120"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:07.434566" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivFarmer"]'.</msg>
+<msg time="2025-05-25T14:35:07.721479" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivFarmer"]</msg>
+<arg>${Image_Input_Box}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:07.431966" elapsed="0.289581"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:06.432185" elapsed="1.289425"/>
+</kw>
+<kw name="Click on Galary Section" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:08.957537" level="INFO">xpath criteria: //android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer:id/lytGalleryPick"]
+xpath criteria: //android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer:id/lytGalleryPick"]</msg>
+<arg>${Galary_Section}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:07.722536" elapsed="1.235150"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:08.961866" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer:id/lytGalleryPick"]'.</msg>
+<msg time="2025-05-25T14:35:09.190673" level="INFO">xpath criteria: //android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer:id/lytGalleryPick"]</msg>
+<arg>${Galary_Section}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:08.957960" elapsed="0.232815"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:07.722336" elapsed="1.468541"/>
+</kw>
+<kw name="Click on a specific Image" owner="Full_Cycle_StepDefinations">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:10.409498" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;img src="data:image/png;base64, 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
+I0aMUEREhH766SeNGzdOXbp00fz585Wbm1vinO24uDht2rRJkoqsaezMc18ad/bthg0bljpKXDjN
+4/LLLy/S7s5zAlQmBGhUSS1atND48eMVFhamuLg4vfrqq+revbvuvfdel33I9OrVyzYKk5iYqDFj
+xuj+++/Xzz//7HC6QnEKw0Vpo0nOeo2FH2QnT54sdrmr9u3ba/Hixbb1e8vLy8tLr7/+uho1aqSE
+hAS9+uqrevnll/X9998rODhYjz/+uFasWGG7QYsk/fzzz7bw2Lx5c6PjWdEPSpOcnGybimFyEWF2
+drak0vtF165d1bp1a0kX1inv0qWLnnrqKf3666/Kzc01qrWsfdGdfcgZ6tSpo7Fjx2rOnDnasWOH
+Vq1apb///e9KTEzU+PHjNW7cOGVkZNg975577lGvXr3UrVs3JSUlKTg4WNdff71tuzPPfWkqU9/e
+uHGj7bbfffv2LbLNnecEqEwI0Kiypk+frr179+rXX3/VxIkTFRwcrOXLl6t79+6aPXu2LZA4S2ho
+qHbv3q0tW7bolVdeUceOHbV06VINGjRIw4cPV1xcXJn2U7i+7NGjR0t9rDNeY+EFfCdPntQLL7xQ
+bACKiorSxx9/XKbXUJL27dtr48aN+u677/TJJ59o7ty5+u677xQTE6MpU6YUuSDr4MGDmjRpkqQL
+I25NmzY1Pp67+0FpoqOjdf78ebVq1Urt2rUr8/PK2i98fX319NNPq2fPngoICNDp06f13nvvqX//
+/rr99tu1evXqMv9BV9ZjursPOVONGjV07bXX6r333tNvv/2mHj16aMmSJRo4cGCRPxxyc3O1cuVK
+bd68WVlZWQoPD9e///3vIjfMcea5Lwt39O2jR4/q/fff12+//aa4uDglJSUpMTFRsbGxWrNmjaZM
+maJ+/fopKytLgwcPtgvQ7j4nQGVBgEaV5ufnpyuvvFJTp07V77//rkcffVSSNHPmTA0fPlxpaWl2
+t9auCB8fH0VFRWn06NH6/vvvtWjRIrVv317Lli3Tbbfdpp9//lmSSjxmgwYNJF0YxU5KSir1mBV9
+jW3btrXdnvndd99Vz549iw37F89ZroigoCB17dpVgwYNUv/+/dW1a9citxRPTU3Vhx9+qN69eysu
+Lk7NmjXTtGnTyn08d/SDwiknkoodWYuPj9eMGTMkSePGjTNaT9mkX/Tr10/ffPONDh06pB9++EGP
+P/64GjRooC1btuiuu+7ShAkTdObMGacd04o+VBEnT57Uzz//rK+++kqbNm2y/Xu1bdtWX375pZ54
+4gnt3LmzyB8CXl5eio6O1sKFC7Vy5Upt27ZNPXv2tNu3s859Wbm6b2/dulWTJk1Snz591KFDB7Vq
+1UqtW7dWp06dNHDgQL311lu2kPz222877NPuPidAZUCAhscIDQ3V888/r59++knNmjXT999/r9Gj
+R7tsBNLHx0e9e/fWypUr9fjjj+vkyZMaOnSoVqxYUeL8ynbt2tm+5v7xxx+Njlne1zh58mS98MIL
+8vPzU926dct0i96K+OKLLzRkyBA988wzevXVV/XWW2/p9ddf17PPPqu77rrLtqLA6dOnddttt+nb
+b781XjO5OK7qBxf/AZCcnGy3PSEhQffff79Onjyp66+/3vgOc+XpFwEBAerUqZOmTJmizZs36+WX
+X1Z4eLjmzZungQMHKj4+3ml90d19qLzmz5+vzp07a9CgQRo1apR69+6tvn376tChQ8rJydHSpUsV
+ERGhsWPH2p6TnJwsHx8f3XDDDbrjjjvUrVu3UufjV/Tcl4cr+nZkZKQmTJhgm4ZxsX79+mn+/Pn6
+888/9eSTT5Y61ceKcwJYhVU44BHy8/Ntv5ivueYarVixQvfff79Wr15tdIFfedSsWVNTpkxRkyZN
+NGHCBI0cObLE0VR/f3+NHDlSM2fO1PTp09WjRw/bDR3KyvQ1enl5acKECerTp48yMzNdeqc56cJI
+7I8//lhiKBsxYoSGDh2qrl27uuRD1dn9ICQkRO3atdOuXbv06aefasaMGQoMDFR6erpWrFihqVOn
+KjExUW3atNEHH3xgfLyK9ovC5eX69OmjJ598UsuXL9eAAQNsdzas6DHd3YfKY9OmTbbXe9ttt6lz
+5876/ffftWzZMg0bNkydO3e2TTEpHH2XzC72vFjh753ynPvyHktybt9u37692rdvr+eff14xMTH6
+8ccf9dFHH+nw4cNatmyZ/P39Va9ePYdrYZdUpzvOCWAl/hRElXbu3DmNGDFCl112md555x1be0RE
+hD777DO1bt1ay5cvd0stw4cP15IlSyRJTz31VImPffDBB9WsWTMlJSWpf//++vbbb3XixAmdPHlS
+//nPf7R48eJSj1ee13j55ZfriiuuKNNjK2LYsGFatmyZPvjgAz399NMaMGCA3cVlCxcu1EcffaRv
+vvnGthqEszm7HzzxxBOSLtx8JCoqStdee60iIyM1duxYJSYmqnfv3vryyy/LfSGdM/pFgwYN9Nln
+n+mRRx7RkSNHbFMvnHVMd/Wh8vjll18kXbg19/z58/XYY49p3rx5eumll7Rr1y59/PHH6tixo954
+4w01atTI9jzT1V+K+71jeu4rcixn920vLy+1bt1ajzzyiDZv3qzPP/9cvXr10ldffaXevXvrwQcf
+VGxsrHGdrjgnQGXglZqayux+VFmrVq0q8lX5oUOHiizHtHfvXt1www06f/68pAtzI/86WhMXF2db
+mmv//v12d5UzNXfuXE2YMMH2s6NjSlJMTIzuueceh3NJAwMDtWnTpjJ9TV6W11hWmZmZtvC3du1a
+tW/fvlz7caSgoEDx8fH6888/tX79en377be2ebd+fn4aMmSIRowYoS5duhSZ0+mMfx9n9YP8/Hx9
+/PHHmj17dpHQf+211+qBBx5Qv379Kjwyu3fvXt1zzz22pf0uZtIvCgoKNG3aNL322muSLtws448/
+/nD4WGf1Ran0PlTRf8+Snj979mzNnDlTgwYN0ieffGJrz83NVa9evbR9+3Z988036tmzp1JTU20X
+ra5fv15t2rQpcw2l/d4p67kvy7lwxu+48iooKNCaNWs0depU7dy5U35+fnriiSf0yCOP2E3ncNY5
+AaoKRqBRpV38od6mTRu7kaTWrVuXOhrsbMOGDdO4ceNKfVyrVq20atUqTZ48uciIZaNGjTR+/Pgy
+r6NqxWssDy8vLzVr1kz9+/fXrFmz9Mcff+i7777Tgw8+qBo1aujzzz/XbbfdpjvvvLPEka7ycNY5
+8vb21pgxY7Rr1y5t2LBBv/32m/bt26dVq1Zp4MCBTpnW0Lp1a61atUqTJk0qsgKEab/w8vLS5MmT
+NWTIkFIf66y+aLXCMPr1119r2bJltnZfX1/16tVLDRo0sE1FML1l/MVK+71jcu4reixXvv+9vLx0
+00036fvvv9fUqVMlXbipy+DBg7Vv3z6jOp15ToDKgBFoVHm7du1SbGysrrvuugqPHlspJSVFPj4+
+ZbpTmqdJTU3V0qVL9dprr6mgoEC//vort//VhVG7lJQU+fr6urVfVNW+mJubq7Fjx+qrr76SJN1y
+yy2aN2+ew4vfzp07Z7tw1XQEWnLv753K8jtu586deuyxx7R161Z16NBBq1atKjJ/vLLUCbgDARpA
+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
+AAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEAD
+AEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQ
+AABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUE
+NAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEAB
+AQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQ
+QEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAA
+FBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0A
+AAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEAD
+AEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQ
+AABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUE
+NAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEAB
+AQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQ
+QEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAA
+FBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0A
+AAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEAD
+AEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQ
+AABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUE
+NAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEAB
+AQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQ
+QEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAA
+FBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0A
+AAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEAD
+AEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQ
+AABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUE
+NAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEAB
+AQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQ
+QEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAA
+FBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0A
+AAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEAD
+AEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQ
+AABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUE
+NAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEAB
+AQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQ
+QEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAA
+FBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0A
+AAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEAD
+AEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQ
+AABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUE
+NAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEAB
+AQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQ
+QEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAA
+FBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0A
+AAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEAD
+AEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQ
+AABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUE
+NAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEAB
+AQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQ
+QEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUENAAAFBDQAABQQEADAEABAQ0AAAUa+z6p
+Vqu1HAcAAAxqdXV1SZJG4QwAAC+vr5st4QAAgAICGgAACghoAAAoIKABAKCAiwgBAKCAGWgAACjQ
+uO8DZqQBAOAn+vZ/7mMJBwAAvIR9e9kSDgAAKLDXEg6z0QAAsL+Byzgs4QAAgJcxsJnNQAMAwMvY
+awY6Ec4AAPBS+nq5rq7uwEs4BDUAAOy/hV21Wv3JEg7RDAAAexvYyH0x3ZgklUolra2tqVQqtRkZ
+AAAMYl1dXdm5c2e6urpS39jYmLFjx4pnAAB4EZVKJWPHjk1jY2Pqdu/eXRXPAADw8rq6ulJXtfgZ
+AAAOmlt5AwBAAQENAAAFBDQAABQQ0AAAUEBAAwBAAQENAAAFBDQAABQQ0AAAUEBAAwBAAQENAAAF
+BDQAABQQ0AAAUEBAAwBAAQENAAAFBDQAABQQ0AAAUEBAAwBAgcZaDwAAGL6q1Wqth8BBqqurq/UQ
+Bg0BDQAcUdVq9YAfDE11dXUH/BhOBDQAcNj19vb2f2zcsTLPbn8iG9tXZMvONWnr3JhdXVuzu2dX
+eqs9tR4qB6m+riFNDSMyojIuo5snZ3zrrEweeXymjzklk0cdl/r6+v6PY11d1VtAAOAwqFar6e3t
+TU9PT1Y+f3+Wb/pRnn7+vrR1PlfroXGEjW6ekuPGn5OTJr82x004Jw0NDamvrz9mZ6YFNADwivSF
+c8funXlw7Tfz6Pqbs2XXmloPixoZP2JWXjX10pw165q0NLUekyEtoAGAQ9bb25vu7u7c/cwXc/+a
+r6aje0eth8Qg0dw4KufMfFtePfenU6lUjqmlHQIaAChWrVbT3d2dpRvuyA9XftqMMy9q/IhZee1x
+v5D5U16XSqVyTMxGC2gAoEjfrPMtS/93Hl7/7VoPhyHi9GlX5OL57z0mZqMFNABw0Hp6erJ+21O5
+eenfZMOOJ2s9HIaYKaNOzCUn/XamjzsxjY1DdzM4AQ0wyO3YsSNLly5NksyaNStTp06t8YgYrnp6
+erL8uXvy7Sf+wlpnDllz46hccfL7c+KU84ZsRA/t+XOAYeDWW2/Nueeem3PPPTdPPPFErYfDMNXT
+05Mn1t+Zrz/yAfHMK9LZvSPfePSPsnT9nenu7t7vpjq7d+9OR0dHjUZ3cAQ0wCB311139X9+5pln
+1nAkDFd9M8/feuzPaj0UjiHfevzPs2z9Xenp6em/O+WGDRtyzz33ZNmyZYP6bpVDc94cYBi5+eab
+kySXXnppxo4dW+PRMNz09vbm2a3L8x9P/EWth8Ix6D8e/4v07PrvOW7aaVm5cmU2btyYJKlUKunp
+6Rm0SzwG56h4RXZ1teV7y/4pr57705k0au5he93tHc/lsfXfy7Pbl2b7rueyu2dnqtXeVBpaUmlo
+yZiWKZk4cnbmjD8rs8aflrrsvU3NkRoXHMvWrl2bBx98MEnypje9qcajYbipVqvp6urKzcs+kk7L
+NjgCurMr31vx95m//J2pVCppbm7OySefnClTptR6aC9JQB9jHlv/3Xx36T+lffeWdPV05i0L/+iw
+vO4dT30qP376C+mtdvc/VldXn4a6xnT3diUZ+GOWT2dk04ScPfvqnDf37ak0tByxccGx7oEHHuj/
+/NWvfnUNR8Jw1NXVlVuX/X2es9tGzUwZfUIWTLsoU0efkJHNE1NpaEl96tPduztdPZ3Z0bk5W3et
+y6otS7J844/3+nc6ScaOmJaL5v9q7lv1tazesqRG38VL21W/IaurN2duz+VZtGhRmpubaz2klyWg
+jxFtHRtz0+N/m+Wb7kpSlzNnXZU3z/+vh+W1n9jwg/xwxWfT1NCaRXN/JsdPPC8TR81JS+OoJEk1
+1ezs3JLNO1dnzdZHsmLTPVmz9dHc8dSnc88zX87o5inZ1L7ysI8LhoO77767/3Prnzmaenp6snTD
+HfZ5rqFLTnlvzpp1derrGvofq1Z701vtSUN9Y5K6JCclSc6d89bs6tqWR5/9bn789OfTvntLzp3z
+1rz2+HdmRGVMKvXNgzagk+T5hiUZ1TU3nZ3nC2iOjgdW/3t+sPyT6exuz5iWKbliwe9k3sRFh+31
+n92+Z/useRPPzYUn/OJ+X69LXUY2T8jI5gmZM/6MXDDv57Ju2+P5zD3vSWf3znR2r0xTQ2uuO+OD
+h3VcMBzceuutSZKLLroo48ePr/FoGC767jL4o2c+XeuhDFtnz74258x+S7p6OvLgum9l5eb7s6Ft
+ebZ3PJckqa9rzPjWGZk8al5mjD01c8afkWljTsq5c96ahTOvSHvn8xnfOjNJNY+vvy23Lv1obb+h
+g7C+8c6sXXtpRo0alfr6+kF9x0IBPYRtbl+dbz/2v7Jm6yNJ6nLa9Etz6SnvTVNj62E9z6xxp+Xu
+fClLn7s9H7nt6rQ0jun/Q91QX8mIypjMmXBmXnPcz6TS0JLN7avzvWUf2+s1Zo8/XTxDoQ0bNvTP
+QF900UU1Hg3DSU9PT+5a+cVs2bW21kMZtqaMPiFJsmbrI7nlib/f7+u91e5sbl+Vze2r8sSGHyRJ
+Tpx0fq4/60NpahiRptaZ6erpyHce/0geffbWozr2Q7W7bkvuX/vVnHDC76dSqSTJoI1oAT1EPb7h
++7nxkb9Kd29nRjVPzGWn/lZOmnzBETnXSZMvyOULfieL19yYze2rs61j/X7PWbP1kax6/qGcM+e6
+vcZ15swrc+eKz2Tl8/dn5+6taW0ad0TGCMeigeufzzvvvBqOhOGkt7c3uzrb88C6r9V6KMPas9se
+z5kzr8y8iefmdy66IZ3d7alWe5MkvdWedHS1Zd22x3PnU5/Ozq5tmTXutLzuhF/Y+zW2Lx0y8dxn
+ffXH2b5ja8aPnZiGhoaXP6BGBHSNffruX8uEkbNz9Wl/UHTcnHEL09Q4IieNf00uO/W30lIZfYRG
+uMeZM6/MmTOvTLJnzXO12rPn82o1z+9ck39f8udZs/WRnDvnbfuNa+lzd2Tjjqez8vn7s2Dam4/o
+OKFWFi9enH/5l3/J7//+72fOnDmH5TUHrn8+66yzjvr5GZ56enry0Npv2XWjxhav/XZam8ZnwbSL
+Mm7E9IxunrT3E0ZMz7Qx8zNj7KlZsu47efP8/5qG+kp27t6ax9fflnPmXJdZ416VCa2z8vzONbX5
+Jg5BT11nfvDYv+ZVk34qjY2NOfHEEwflLLSAPoJ6eruyeuvD2dGxKS2V0Zk57lUZURmz13N27t6a
+jTtW5uxZ16ahvjG91Z69LhZ4Kdec9odpqYzO1l3PJruefeHRuuy9I0apQzt+7oSzsqn9mazfvjTX
+nPaHaaivZPXWhzO6eVJGNk/Ixh1PZ9WWJZnQOjtJMmnk3DQ2DP6LBOBg/d7v/V5uueWWVKvVfPSj
+h2et4fe+970kyYUXXphJkya95HOPxPkZfvrWPj+64eZaD+WIevdrPpGtu57NVx8a3DtC/fjpz+fH
+T38+yZ41z431TUn2LGuYOvrEXLHgfZk2Zn4Wr/12dvd0ZN3zD+TmJ/53tu1an3mTFmVC66wcP+m8
+PL9q6AR0kqza+eOMWHFKmpqacsIJe5ayDLaIFtBHQE9vV+5c8Zk8sPqbe72Dr69rzPwpr8vFJ/9a
+RjVP7H+8u7czn733vUmSEZUx2dW1/ZDPPaF1dp7fubpmx9+18ou5a+UXD/i1h9bckIfW3JAk+cVX
+/1OmjZl/yOeBwWTdunW55ZZbkiSXX375YXnNTZs25Y477kiSvPnNL/2TmyNxfoafarWanp6erHz+
+gWztGLprn5sbR+aESa/OqOaJ6ejekVXPL87WXev2es6IyphMaJ2VkyZfkJ7erlQaW9PVvfOQz9lY
+35Tu3t1H/fgNbcszvnVmZo5dkNuWfSw9vV05cdJrsmXnmuzavS1pnZWZYxfk+Yl7/l1/dvvSV9QY
+R8vu+i0ZPbMrc8eflmq1OujiORHQh932jufy1Yf+KBvalqeurj6zxp2WCa2zs7tnV1ZvWZInNnw/
+q7csydvO/LPMGHtq8sLNRuaMPyOVhpbU1SUld65csemeVFPN8RMXpa6uPi2NozK+dcZRO/7FdHa3
+Z+fubRnfOiObdjyTbR3rM3HknIwbMT1JjviSEziaRo0aldGjR6etrS0f/ehHM3bs2Jx99tkZNWrU
+Ib9m381Tkpff//lInJ/hqaenJ09t/lGth3FIWiqj84YT/3NeNe3ivS6m7632ZOXm+3Pbk/+cjTue
+7n+8ob6St53550mSzu6daX4FF+Bv79iYMS2Ta3b8aTMuyWkzLjng106d9qacOm3PTZj+7YH/lhWb
+7z3k8xxNW6pP5JxJl/Tf4jsZXLPQAvow2tG5OZ+/733ZumtdJo+al6tP+4P+q2iTPVfM/mjF53Ln
+is/kM/e8J//5/H9OXV19kuTSU36z6O581WpvVj5/f57atGeN5HVn/EkqDS1H7fgS33nsb/LQ2htz
+6rQ35XXHv+uInANqacyYMfnoRz+ad7/73bnpppty0003pVKp5I1vfGNe+9rX5g1veEMuuOCCNDU1
+HfRr3nPPPf2fv9z65yNxfoafarWa3t7ePLPl/loPpdiU0Sfk2tM/kIkj56RarWb99iezbdezqTS0
+ZPrYk3P8pPMyfezJufGRv3rhfgl7rNv2RLp7O9NQ15iefW5A8lLmjF+YpC6rtzycanrT3du13yz3
+kTz+xbRURqelcXS27lqXCa2zMqp5YrbuerZ/67uhMPvcZ/W2B9Pd3Z2mpqZBOQstoA+T7p7OfPnB
+P8zWXesydfSJeduZf54xLXvfhrK+rjGnTrsod674TJLkC/f/bpoaRhSdZ3P7qty/+htZuuH2tO/e
+UjzOgzm+q6cjT278UZ5vX73fFb17XuOZ3P7Up7J6y5J0du/IyKbxOW7CuXnNvJ95Yc9JGH7e+c53
+5vzzz8+XvvSlfO1rX8uDDz6YW265pX9pxZlnnpm/+7u/y+tf//qDer2+9c/nn39+pk6detTPz/DS
+N8v33PYVadu9sdbDKTJ51Lxcf+b/yJiWKdmyc02+8/jf5Znnf7KDTVNDa95w4n/OOXOuy/VnfShf
+uP/30vvChfC3PfnxopuLNNY35eSpr8+c8WckSb6++I+zs2vbUTu+xLUL/yinTn1jlm/88ZDYA3pf
+O7o2ZWPb05nVfMqgi+dEQB82m3eu7n/3uGXnuvzjHT+T5saRed3x78qiudcnSdZvfzJffvAnu23s
+6tp+0O8Gn958b+5a+aWsev6hVF+4yG/q6BOzoW35YT9+d/fOfOvhDydJzpx11V7rtds6Nuaz9/5m
+OrraUl/XmJFN49K+e0uWrPt2lj53R65b+MEcN/GcgxoTHGtOOumkfOADH8gHPvCBrFu3LosXL87t
+t9+eT37yk3nooYdy2WWX5Yc//GHOPvvsl3ydLVu29Af0xRdffNTPz/DU29ubZ9uW1noYRUZUxuQt
+Cz+YMS1Tsrl9Vb758If2+3dtd8/OPL7h+zlnznVJkuvO+ON093QWnWfWuNNy1qxrcvykRfttBnC4
+jm+tjM2C6Rdl/IiZuWXpP+z39dnjTs8Fx/9cpo85JU2NI7Jr9/as2fpI7n7m37Ju2+PFYxoK1u9Y
+mhkT5g/KZRwC+jCZOvrEvP2sv8xXHvrvGTtiepoaWrJ668P53rKPZc6EM9PVsytfeeiP0tHVllOm
+vjHXnP6H+ebDH84TG77/kq+7YtM9+eGKz2bttseSJM2No7Jg2pty9uxrM3nUvPz1dy9LT++L/9jp
+UI4f2TwhU0efmPVtT+bx9bf1vwFIkkeevTUdXW0Z3Twp7zrvHzK6ZXI6unfktmUfz+K1/5FvPvLh
+/JfXfNJ+zwx7M2bMyIwZM3LFFVfkN37jN3Ldddfl7rvvzkc+8pF89rOffcljFy9e3P/5+eeff9TP
+z/DTt3xj086nX/7Jg8i0MfMz+oW1w2NapuSXzv94dvfsyn2rvpbbl/+fJMm8iYtyzel/2H9MS+Oo
+pPHgrg941fSLc87sa/e6Zmlz+6pMHHlwW0WWHD+iaWwuPvnXkyQPrvlWNrU/0/+1yaPm5fqzPpTm
+xpHprfZkV9f2jGgak5Onvj7zJp6b7zz+t3ls/XcPakxDyeadK9PT05PGxsZBt4xDQB9GM8ctyHte
+/29pqN9z95zbn/q/+dGKf829z3wly577YXb37MzCGVfkile9L3XtaqO4AAAb1UlEQVSpy08teN+L
+BvTm9mfy3aX/1L/Yf1TzxJw9+9qcO+etB7Xs45UeP3/qhVnf9mQeW/+9vQJ6d8/OF77X0/r/0mpp
+HJUrFrwvW3auzaoti/PAmm9a6wwDTJ8+Pe95z3ty991357vfffl/5ErWPx+J8zO89M3s9fb2ZusQ
+u/Pg05vvy7ce/nCuPO39aevYmK6ezkwfc3IumPezWbVlcZoaRuTKV70/zY2tWbHpnnx9yZ/kuoV/
+kuMnvfSNiU6bfkkWzb0+U0efmGTPT2af2nR3Hlx7Q1Y9/1B+/+KbUl/34gl1KMdvbl+VTe2rMmnk
+3CyY/ub+NwB9r9fcODLtu7fki/f/XjbueDpjWqbkovm/mlOmviGXnPLerN++dEjt93wwtnasS09P
+z14z0IOFgD7M+uI5SUY1TUiSPPLsnjWI5855a/+7yyRpamzNqOaJ2dG5eb/X+dID78/2jo1pamjN
+eXOvz2vm/exer/1yXunxC2dcnjuf+kye3b4067c/mWljTkqSTB51XFoqow/4I6izZl2dVVsW5+lN
+9wpo2Edj456/bltbX/5K/9tuuy1Jcu6552bGjFe+K07p+Rl++magdwyx9c9J8uTGH+Vjd/58Orra
+kiSXnvIbOXv2tTln9rU5bsI5qTS0ZOmG2/PvD38ovdXufPux/z+//vovHfC1Zo87PW846d2ZNe70
+JHvu1fDIs7fknmf+LTs6n3/ZsbzS41dsuieTRs7NSZMv2Cugmxr3THxt2P5k/04i2zueyzeW/Fne
+dd5HM2PsKTl79rVDcq3zS2nv2pze3t7+eB5Myzjqaz2AY1VvtTvff/IT/b9/7fHv3Cue+zS8yDvY
+U6a+MUlSaWhJW+fGrN/+ZNH5X+nxo5onZv6U1yZJ/ybuSXLqtIvyW2/8Ri479Tf3O2bSqOOS5IBv
+CGA46+joyKc+9akkyTXXXPOSz92+fXv/LPGll1561M/P8NXb2zukdmkYqC+ek/RfIH/S5Nem0tCS
+h9fdnK8v+dP0vrDLRlvnpuzcvfWAr/OWhR/MrHGnp6unI/ev+nr++Ue/mO8t+9hBxe/hOP7hdTel
+t9qTyaPmZd7ERf2Pb25fnc7u9nQc4O6Qj74wSTd7/MKDOsdQ0tG9fdDOQAvoI+S+VV/P7p6dqUtd
+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
+AElFTkSuQmCC
+" width="800px"&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="PASS" start="2025-05-25T14:35:09.540691" elapsed="0.870101"/>
+</kw>
+<msg time="2025-05-25T14:35:10.410921" level="INFO">xpath criteria: (//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[21]</msg>
+<msg time="2025-05-25T14:35:10.411111" level="FAIL">ValueError: Element locator 'xpath=(//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[21]' did not match any elements.</msg>
+<arg>${Specific_Image}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="FAIL" start="2025-05-25T14:35:09.192744" elapsed="1.233378">ValueError: Element locator 'xpath=(//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[21]' did not match any elements.</status>
+</kw>
+<msg time="2025-05-25T14:35:10.426239" level="INFO">${is_visible} = False</msg>
+<var>${is_visible}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${Specific_Image}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-05-25T14:35:09.192440" elapsed="1.233818"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${is_visible}</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-25T14:35:10.426364" elapsed="0.000140"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>500</arg>
+<arg>1500</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2025-05-25T14:35:10.426579" elapsed="1.360321"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-22T13:40:24.690229" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-25T14:35:12.787973" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-25T14:35:11.787230" elapsed="1.000934"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2025-05-25T14:35:09.192215" elapsed="3.596042"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:13.970797" level="INFO">xpath criteria: (//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[21]</msg>
+<arg>${Specific_Image}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:12.789076" elapsed="1.181822"/>
+</kw>
+<msg time="2025-05-25T14:35:13.971038" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${Specific_Image}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-05-25T14:35:12.788803" elapsed="1.182260"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-05-25T14:35:13.971412" level="INFO">Exiting for loop altogether.</msg>
+<arg>${is_visible}</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-25T14:35:13.971231" elapsed="0.000270"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>500</arg>
+<arg>1500</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2025-05-25T14:35:13.971617" elapsed="0.000030"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-25T14:35:13.971742" elapsed="0.000018"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2025-05-25T14:35:12.788575" elapsed="1.183223"/>
+</iter>
+<var>${index}</var>
+<value>10</value>
+<status status="PASS" start="2025-05-25T14:35:09.191891" elapsed="4.779957"/>
+</for>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:13.974215" level="INFO">Clicking element 'xpath=(//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[21]'.</msg>
+<msg time="2025-05-25T14:35:16.780838" level="INFO">xpath criteria: (//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[21]</msg>
+<arg>${Specific_Image}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:13.971952" elapsed="2.809031"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:09.191599" elapsed="7.589520"/>
+</kw>
+<kw name="Click on Image Crop" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:17.100395" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/crop_image_menu_crop"]</msg>
+<arg>${Image_Crop}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:16.782729" elapsed="0.317861"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:17.106461" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/crop_image_menu_crop"]'.</msg>
+<msg time="2025-05-25T14:35:17.921497" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/crop_image_menu_crop"]</msg>
+<arg>${Image_Crop}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:17.100980" elapsed="0.820660"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:16.782071" elapsed="1.139707"/>
+</kw>
+<kw name="Click on Next" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:19.351934" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvNext"]</msg>
+<arg>${Next}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:17.923419" elapsed="1.428629"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:19.355500" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvNext"]'.</msg>
+<msg time="2025-05-25T14:35:19.622268" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvNext"]</msg>
+<arg>${Next}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:19.352241" elapsed="0.270230"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:17.922793" elapsed="1.699879"/>
+</kw>
+<kw name="Click on a Specific Area" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:25.031541" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
+xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]</msg>
+<arg>${Specific_Area}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:19.624524" elapsed="5.407272"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:25.035554" level="INFO">Clicking element 'xpath=//androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]'.</msg>
+<msg time="2025-05-25T14:35:25.388577" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]</msg>
+<arg>${Specific_Area}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:25.032075" elapsed="0.356639"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:19.623707" elapsed="5.765149"/>
+</kw>
+<kw name="Click on Confirm" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:26.042952" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
+<arg>${Confirm}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:25.389735" elapsed="0.653411"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:26.049113" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]'.</msg>
+<msg time="2025-05-25T14:35:26.939674" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
+<arg>${Confirm}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:26.043482" elapsed="0.896295"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:25.389481" elapsed="1.550397"/>
+</kw>
+<kw name="Click on Buy First Product" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:29.911391" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[1]
+xpath criteria: (//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[1]</msg>
+<arg>${Buy_First_Product}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:26.941029" elapsed="2.970440"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:29.912948" level="INFO">Clicking element 'xpath=(//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[1]'.</msg>
+<msg time="2025-05-25T14:35:30.531155" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[1]</msg>
+<arg>${Buy_First_Product}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:29.911596" elapsed="0.619703"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:26.940624" elapsed="3.590814"/>
+</kw>
+<kw name="Click on Add to Cart" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:33.631299" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]
+xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]</msg>
+<arg>${Add_To_Cart}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:30.533150" elapsed="3.098305"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:33.635624" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]'.</msg>
+<msg time="2025-05-25T14:35:34.419112" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]</msg>
+<arg>${Add_To_Cart}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:33.631770" elapsed="0.787446"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:30.532445" elapsed="3.886868"/>
+</kw>
+<kw name="Click on Market" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:35.976888" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/navigation_bar_item_small_label_view" and @text="বাজার"]</msg>
+<arg>${Market}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:34.420940" elapsed="1.556099"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:35.980105" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/navigation_bar_item_small_label_view" and @text="বাজার"]'.</msg>
+<msg time="2025-05-25T14:35:37.855350" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/navigation_bar_item_small_label_view" and @text="বাজার"]</msg>
+<arg>${Market}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:35.977284" elapsed="1.878254"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:34.420594" elapsed="3.435086"/>
+</kw>
+<kw name="Click on Buy Second Product" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:39.571620" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[2]</msg>
+<arg>${Buy_Second_Product}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:37.857218" elapsed="1.714561"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:39.575845" level="INFO">Clicking element 'xpath=(//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[2]'.</msg>
+<msg time="2025-05-25T14:35:40.373271" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[2]</msg>
+<arg>${Buy_Second_Product}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:39.572054" elapsed="0.801412"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:37.856688" elapsed="2.516965"/>
+</kw>
+<kw name="Click on Add to Cart" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:42.097143" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]
+xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]</msg>
+<arg>${Add_To_Cart}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:40.375238" elapsed="1.722016"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:42.100508" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]'.</msg>
+<msg time="2025-05-25T14:35:42.502047" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]</msg>
+<arg>${Add_To_Cart}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:42.097443" elapsed="0.404684"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:40.374628" elapsed="2.127571"/>
+</kw>
+<kw name="Click on Proceed" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:45.061294" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:42.502955" elapsed="2.558481"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:45.065633" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
+<msg time="2025-05-25T14:35:45.785474" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:45.061817" elapsed="0.723825"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-25T14:35:50.786668" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-22T13:40:19.689177" elapsed="5.001284"/>
+<status status="PASS" start="2025-05-25T14:35:45.785930" elapsed="5.000970"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:40:18.718957" elapsed="5.971674"/>
+<status status="PASS" start="2025-05-25T14:35:42.502705" elapsed="8.284361"/>
+</kw>
+<kw name="Click on My Shop Name input Shop Name" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:51.349954" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etShopName"]</msg>
+<arg>${Shop_Name}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:50.788847" elapsed="0.561258"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:51.353769" level="INFO">Typing text 'Test 1 Enterprise' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etShopName"]'</msg>
+<msg time="2025-05-25T14:35:52.115124" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etShopName"]</msg>
+<arg>${Shop_Name}</arg>
+<arg>${Input_Shop_Name}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:51.350374" elapsed="0.764907"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:50.788281" elapsed="1.327153"/>
+</kw>
+<kw name="Click on My Shop Address input Shop Address" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:53.164148" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etShopAddress"]</msg>
+<arg>${Shop_Address}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:52.116818" elapsed="1.047469"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:53.167775" level="INFO">Typing text 'Test 1' into text field 'xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etShopAddress"]'</msg>
+<msg time="2025-05-25T14:35:53.476192" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="asia.ifarmer.retailer:id/etShopAddress"]</msg>
+<arg>${Shop_Address}</arg>
+<arg>${Input_Shop_Address}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:53.164507" elapsed="0.311811"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:52.116353" elapsed="1.360106"/>
+</kw>
+<kw name="Click on Delivery Area" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:54.351041" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvAddress"]</msg>
+<arg>${Delivery_Area}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:53.477662" elapsed="0.873522"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:54.354690" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvAddress"]'.</msg>
+<msg time="2025-05-25T14:35:56.289673" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvAddress"]</msg>
+<arg>${Delivery_Area}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:54.351436" elapsed="1.938368"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:53.477140" elapsed="2.812789"/>
+</kw>
+<kw name="Click on a Specific Area" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:56.643815" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]</msg>
+<arg>${Specific_Area}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:56.291419" elapsed="0.352537"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:56.647663" level="INFO">Clicking element 'xpath=//androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]'.</msg>
+<msg time="2025-05-25T14:35:58.048778" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]</msg>
+<arg>${Specific_Area}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:56.644196" elapsed="1.404734"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:56.290858" elapsed="1.758212"/>
+</kw>
+<kw name="Click on Confirm" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:58.351383" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
+<arg>${Confirm}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:58.050919" elapsed="0.300666"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:35:58.356665" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]'.</msg>
+<msg time="2025-05-25T14:35:58.736510" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]</msg>
+<arg>${Confirm}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:35:58.351907" elapsed="0.384716"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:58.050536" elapsed="0.686191"/>
+</kw>
+<kw name="Click on Created Area" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:00.387559" level="INFO">xpath criteria: (//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivStatus"])[1]</msg>
+<arg>${Created_Area}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:35:58.738005" elapsed="1.649693"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:00.391871" level="INFO">Clicking element 'xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivStatus"])[1]'.</msg>
+<msg time="2025-05-25T14:36:00.600727" level="INFO">xpath criteria: (//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivStatus"])[1]</msg>
+<arg>${Created_Area}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:36:00.387953" elapsed="0.212888"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:35:58.737625" elapsed="1.863321"/>
+</kw>
+<kw name="Click on Proceed" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:01.647198" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:36:00.602060" elapsed="1.045281"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:01.651512" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]'.</msg>
+<msg time="2025-05-25T14:36:01.940262" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]</msg>
+<arg>${Proceed}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:36:01.647712" elapsed="0.292665"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-25T14:36:06.941349" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-25T14:36:01.940582" elapsed="5.000898"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:36:00.601696" elapsed="6.339881"/>
+</kw>
+<kw name="Click on Order Confirm" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:07.124222" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btPayment"]</msg>
+<arg>${Order_Confirm}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:36:06.942731" elapsed="0.181627"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:07.127479" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btPayment"]'.</msg>
+<msg time="2025-05-25T14:36:07.357359" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btPayment"]</msg>
+<arg>${Order_Confirm}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:36:07.124602" elapsed="0.232869"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:36:06.942295" elapsed="0.415282"/>
+</kw>
+<kw name="Click on See Cash Order" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:08.489435" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btCashOrder"]
+xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btCashOrder"]</msg>
+<arg>${See_Cash_Order}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:36:07.358780" elapsed="1.130801"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:08.493609" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btCashOrder"]'.</msg>
+<msg time="2025-05-25T14:36:08.687731" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btCashOrder"]</msg>
+<arg>${See_Cash_Order}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:36:08.489844" elapsed="0.198027"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:36:07.358327" elapsed="1.329682"/>
+</kw>
+<kw name="Click on Confirm Payment" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:11.012666" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirmPayment"]
+xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirmPayment"]
+xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirmPayment"]</msg>
+<arg>${Confirm_Payment}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:36:08.689311" elapsed="2.323520"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:11.016811" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirmPayment"]'.</msg>
+<msg time="2025-05-25T14:36:11.368091" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirmPayment"]</msg>
+<arg>${Confirm_Payment}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:36:11.013103" elapsed="0.355096"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:36:08.688850" elapsed="2.679453"/>
+</kw>
+<kw name="Click on Bkash Payment" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:12.450280" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBkashPayment"]
+xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBkashPayment"]</msg>
+<arg>${Bkash_Payment}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:36:11.369462" elapsed="1.080958"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:12.454241" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBkashPayment"]'.</msg>
+<msg time="2025-05-25T14:36:12.698392" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBkashPayment"]</msg>
+<arg>${Bkash_Payment}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:36:12.450670" elapsed="0.247856"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:36:11.369070" elapsed="1.329577"/>
+</kw>
+<kw name="Click on Payment" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:13.574204" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btPayment"]</msg>
+<arg>${Payment}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:36:12.699753" elapsed="0.874594"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:13.577761" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btPayment"]'.</msg>
+<msg time="2025-05-25T14:36:13.811158" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btPayment"]</msg>
+<arg>${Payment}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:36:13.574605" elapsed="0.236677"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:36:12.699383" elapsed="1.112015"/>
+</kw>
+<kw name="Click on Bkash Account input Bkash Number" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:18.366708" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="WALLET"]
+xpath criteria: //android.widget.EditText[@resource-id="WALLET"]
+xpath criteria: //android.widget.EditText[@resource-id="WALLET"]</msg>
+<arg>${Bkash_Account}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:36:13.812950" elapsed="4.553888"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:18.370584" level="INFO">Typing text '01619777282' into text field 'xpath=//android.widget.EditText[@resource-id="WALLET"]'</msg>
+<msg time="2025-05-25T14:36:18.682039" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="WALLET"]</msg>
+<arg>${Bkash_Account}</arg>
+<arg>${Input_Bkash_Account}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:36:18.367086" elapsed="0.315076"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:36:13.812532" elapsed="4.869745"/>
+</kw>
+<kw name="Click on Bkash Confirm" owner="Full_Cycle_StepDefinations">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:18.883029" level="INFO">xpath criteria: //android.widget.Button[@text="Confirm"]</msg>
+<arg>${Bkash_Confirm}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-25T14:36:18.683491" elapsed="0.199844"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-25T14:36:18.887438" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="Confirm"]'.</msg>
+<msg time="2025-05-25T14:36:19.209427" level="INFO">xpath criteria: //android.widget.Button[@text="Confirm"]</msg>
+<arg>${Bkash_Confirm}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-25T14:36:18.883595" elapsed="0.326011"/>
+</kw>
+<status status="PASS" start="2025-05-25T14:36:18.683176" elapsed="0.526612"/>
 </kw>
 <kw name="Close app" owner="AppSetup">
 <kw name="Close Application" owner="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2025-05-22T13:40:24.692091" elapsed="0.508132"/>
+<status status="PASS" start="2025-05-25T14:36:19.211179" elapsed="0.664303"/>
 </kw>
-<status status="PASS" start="2025-05-22T13:40:24.691604" elapsed="0.508725"/>
+<status status="PASS" start="2025-05-25T14:36:19.210703" elapsed="0.664876"/>
 </kw>
-<tag>forget</tag>
-<status status="PASS" start="2025-05-22T13:39:14.703466" elapsed="70.497379"/>
+<tag>fullcycle</tag>
+<status status="PASS" start="2025-05-25T14:34:08.173705" elapsed="131.702497"/>
 </test>
-<doc>Onbording Module Test Case for Kri-Shop App</doc>
-<status status="PASS" start="2025-05-22T13:39:14.545495" elapsed="70.656735"/>
+<doc>Full Cycle Module Test Case for Kri-Shop App</doc>
+<status status="PASS" start="2025-05-25T14:34:07.997236" elapsed="131.880419"/>
 </suite>
-<status status="PASS" start="2025-05-22T13:39:14.525140" elapsed="70.678991"/>
+<status status="PASS" start="2025-05-25T14:34:07.972254" elapsed="131.906878"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">forget</stat>
+<stat pass="1" fail="0" skip="0">fullcycle</stat>
 </tag>
 <suite>
 <stat name="Test Suites" id="s1" pass="1" fail="0" skip="0">Test Suites</stat>
-<stat name="Onboard Gherkin" id="s1-s1" pass="1" fail="0" skip="0">Test Suites.Onboard Gherkin</stat>
+<stat name="Full Cycle Gherkin" id="s1-s1" pass="1" fail="0" skip="0">Test Suites.Full Cycle Gherkin</stat>
 </suite>
 </statistics>
 <errors>
