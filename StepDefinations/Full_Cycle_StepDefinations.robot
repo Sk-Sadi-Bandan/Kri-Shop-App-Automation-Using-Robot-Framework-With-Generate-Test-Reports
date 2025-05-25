@@ -16,13 +16,8 @@ ${Input_OTP4}                                    4
 ${Input_PIN}                                     123456
 ${Input_Retype_PIN}                              123456
 ${Input_Name}                                    Krisop Automation
-
-${Input_Mobile_Number_Login}                     01567839601
-${Input_Password}                                123456
-
 ${Input_Shop_Name}                               Test 1 Enterprise
 ${Input_Shop_Address}                            Test 1
-
 ${Input_Bkash_Account}                           01619777282
 
 
@@ -92,15 +87,6 @@ Click on a specific Image
 Click on Image Crop
     Wait Until Element Is visible               ${Image_Crop}
     Click Element                               ${Image_Crop}
-Click on Krishop Login
-    Wait Until Element Is visible               ${Krishop_Login}
-    Click Element                               ${Krishop_Login}
-Click on Mobile Number input section Login
-    Wait Until Element Is visible               ${Mobile_Number}
-    Input Text                                  ${Mobile_Number}            ${Input_Mobile_Number_Login}
-Click on Password input section
-    Wait Until Element Is visible               ${Password}
-    Input Text                                  ${Password}                 ${Input_Password}
 Click on Buy First Product
     Wait Until Element Is visible               ${Buy_First_Product}
     Click Element                               ${Buy_First_Product}
@@ -146,3 +132,4 @@ Click on Bkash Account input Bkash Number
 Click on Bkash Confirm
     Wait Until Element Is visible               ${Bkash_Confirm}
     Click Element                               ${Bkash_Confirm}
+

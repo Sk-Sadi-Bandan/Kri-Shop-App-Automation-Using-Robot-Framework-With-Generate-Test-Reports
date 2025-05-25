@@ -29,15 +29,6 @@ ${Galary_Section}                   xpath=//android.widget.LinearLayout[@resourc
 ${Specific_Image}                   xpath=(//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[21]
 ${Image_Crop}                       xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/crop_image_menu_crop"]
 
-${Specific_Area}                    xpath=//androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer:id/rvCoverageAreas"]/android.widget.LinearLayout[3]
-${Confirm}                          xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]
-${Menu}                             xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
-${Login}                            xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]
-${Krishop_Login}                    xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]
-${Mobile_Number}                    xpath=//android.widget.EditText[@text="মোবাইল নাম্বার"]
-${Password}                         xpath=//android.widget.EditText[@text="পিন"]
-${Proceed}                          xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btProceed"]
-
 ${Buy_First_Product}                xpath=(//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[1]
 ${Add_To_Cart}                      xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]
 ${Market}                           xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/navigation_bar_item_small_label_view" and @text="বাজার"]
@@ -48,19 +39,12 @@ ${Shop_Address}                     xpath=//android.widget.EditText[@resource-id
 ${Delivery_Area}                    xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvAddress"]
 ${Created_Area}                     xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivStatus"])[1]
 
-${Add}                              xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivAdd"]
-${Subtract}                         xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivSubtract"]
-${Remove}                           xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivDelete"]
-${Yes}                              xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/confirm_button_material"]
-
 ${Order_Confirm}                    xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btPayment"]
 
-${History}                          xpath=//android.widget.FrameLayout[@content-desc="ইতিহাস"]
-${Cash_Order}                       xpath=//android.widget.TextView[@text="নগদ অর্ডার"]
-${Pending_Order}                    xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvOrderStatus" and @text="পেন্ডিং"]
 ${See_Cash_Order}                   xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btCashOrder"]
 ${Confirm_Payment}                  xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirmPayment"]
 ${Bkash_Payment}                    xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBkashPayment"]
 ${Payment}                          xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btPayment"]
 ${Bkash_Account}                    xpath=//android.widget.EditText[@resource-id="WALLET"]
-${Bkash_Confirm}                          xpath=//android.widget.Button[@text="Confirm"]
+${Bkash_Confirm}                    xpath=//android.widget.Button[@text="Confirm"]
+
