@@ -8,7 +8,7 @@ Resource           ../Locators/Full_Cycle_Locators.robot
 
 *** Variables ***
 #################################  User Variable  #################################
-${Input_Mobile_Number_Reg}                       01567839601
+${Input_Mobile_Number_Reg}                       01567839604
 ${Input_OTP1}                                    1
 ${Input_OTP2}                                    2
 ${Input_OTP3}                                    3
