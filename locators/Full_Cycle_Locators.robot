@@ -48,3 +48,7 @@ ${Payment}                          xpath=//android.widget.Button[@resource-id="
 ${Bkash_Account}                    xpath=//android.widget.EditText[@resource-id="WALLET"]
 ${Bkash_Confirm}                    xpath=//android.widget.Button[@text="Confirm"]
 
+
+#Below 2 code add for continous test
+${Krishop_Login}                    xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btLogin"]
+${Password}                         xpath=//android.widget.EditText[@text="পিন"]

@@ -8,7 +8,7 @@ Resource           ../Locators/Full_Cycle_Locators.robot
 
 *** Variables ***
 #################################  User Variable  #################################
-${Input_Mobile_Number_Reg}                       01567839605
+${Input_Mobile_Number_Reg}                       01567839607
 ${Input_OTP1}                                    1
 ${Input_OTP2}                                    2
 ${Input_OTP3}                                    3
@@ -19,6 +19,10 @@ ${Input_Name}                                    Krisop Automation
 ${Input_Shop_Name}                               Test 1 Enterprise
 ${Input_Shop_Address}                            Test 1
 ${Input_Bkash_Account}                           01619777282
+
+#Below 2 code add for continous test
+${Input_Mobile_Number_Login}                     01567839606
+${Input_Password}                                123456
 
 
 
@@ -129,7 +133,20 @@ Click on Payment
 Click on Bkash Account input Bkash Number
     Wait Until Element Is visible               ${Bkash_Account}
     Input Text                                  ${Bkash_Account}             ${Input_Bkash_Account}
+    Sleep                                       2s
 Click on Bkash Confirm
     Wait Until Element Is visible               ${Bkash_Confirm}
     Click Element                               ${Bkash_Confirm}
+    Sleep                                       2s
 
+
+#Below 3 code add for continous test
+Click on Krishop Login
+    Wait Until Element Is visible               ${Krishop_Login}
+    Click Element                               ${Krishop_Login}
+Click on Mobile Number input section Login
+    Wait Until Element Is visible               ${Mobile_Number}
+    Input Text                                  ${Mobile_Number}            ${Input_Mobile_Number_Login}
+Click on Password input section
+    Wait Until Element Is visible               ${Password}
+    Input Text                                  ${Password}                 ${Input_Password}

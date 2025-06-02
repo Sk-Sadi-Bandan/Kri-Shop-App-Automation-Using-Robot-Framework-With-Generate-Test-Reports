@@ -19,6 +19,13 @@ Scenario: Verify that Full Cycle of Product Buy in Krishop is Successfully
     Click on Confirm
     Click on Menu button
     Click on Login
+
+    #Below 4 code add for continous test
+    #Click on Krishop Login
+    #Click on Mobile Number input section Login
+    #Click on Password input section
+    #Click on Proceed
+
     Click on Krishop Registration
     Click on Mobile Number input section Registration
     Click on Proceed
@@ -37,18 +44,21 @@ Scenario: Verify that Full Cycle of Product Buy in Krishop is Successfully
     Click on Next
     Click on a Specific Area
     Click on Confirm
+
     Click on Buy First Product
     Click on Add to Cart
     Click on Market
     Click on Buy Second Product
     Click on Add to Cart
     Click on Proceed
+
     Click on My Shop Name input Shop Name
     Click on My Shop Address input Shop Address
     Click on Delivery Area
     Click on a Specific Area
     Click on Confirm
     Click on Created Area
+
     Click on Proceed
     Click on Order Confirm
     Click on See Cash Order
