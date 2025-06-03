@@ -7,7 +7,7 @@ Resource           ../StepDefinations/Full_Cycle_StepDefinations.robot
 
 
 *** Variables ***
-${Specific_Area}                    xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivStatus"])[2]
+${Specific_Area}                    xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ivStatus"])[1]
 ${Confirm}                          xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btConfirm"]
 ${Menu}                             xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer:id/ibMenu"]
 ${Login}                            xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/tvLogIn"]
