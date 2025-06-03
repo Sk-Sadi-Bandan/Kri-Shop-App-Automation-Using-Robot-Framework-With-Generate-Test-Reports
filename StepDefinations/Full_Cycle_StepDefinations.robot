@@ -8,7 +8,7 @@ Resource           ../Locators/Full_Cycle_Locators.robot
 
 *** Variables ***
 #################################  User Variable  #################################
-${Input_Mobile_Number_Reg}                       01567839607
+${Input_Mobile_Number_Reg}                       01567839611
 ${Input_OTP1}                                    1
 ${Input_OTP2}                                    2
 ${Input_OTP3}                                    3
@@ -81,11 +81,11 @@ Click on Galary Section
     Wait Until Element Is visible               ${Galary_Section}
     Click Element                               ${Galary_Section}
 Click on a specific Image
-    FOR    ${index}    IN RANGE    10
+    FOR    ${index}    IN RANGE    2
         ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Specific_Image}
         Exit For Loop If    ${is_visible}
         Swipe    500    1500    500    500
-        Sleep    1s
+        Sleep    2s
     END
     Click Element                               ${Specific_Image}
 Click on Image Crop
