@@ -56,7 +56,7 @@ Scenario: Verify that Krishop Login is Successfully
 
 #Test Case 3
 Scenario: Verify that Krishop doesn't Login with Unregistered Number
-    [Tags]    unreglogin
+    [Tags]    unreg
     Open app
     Click on a Specific Area
     Click on Menu button

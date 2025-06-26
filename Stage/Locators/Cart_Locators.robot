@@ -15,11 +15,11 @@ ${Mobile_Number}                    xpath=//android.widget.EditText[@text="ম�
 ${Password}                         xpath=//android.widget.EditText[@text="পিন"]
 ${Proceed}                          xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]
 
-${Buy_First_Product}                xpath=(//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[1]
+${Buy_First_Product}                xpath=(//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/buyTextView"])[1]
 ${Cash}                             xpath=//android.widget.RadioButton[@resource-id="asia.ifarmer.retailer:id/rbOnCash"]
 ${Add_To_Cart}                      xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btAddToCart"]
 ${Market}                           xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer:id/navigation_bar_item_small_label_view" and @text="বাজার"]
-${Buy_Second_Product}               xpath=(//android.widget.Button[@resource-id="asia.ifarmer.retailer:id/btBuy"])[2]
+${Buy_Second_Product}               xpath=(//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/buyTextView"])[2]
 
 ${Credit}                           xpath=//android.widget.RadioButton[@resource-id="asia.ifarmer.retailer:id/rbOnCredit"]
 

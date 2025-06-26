@@ -40,8 +40,20 @@ Click on Proceed
     Click Element                               ${Proceed}
 
 Click on Buy First Product
-    Wait Until Element Is visible               ${Buy_First_Product}
-    Click Element                               ${Buy_First_Product}
+    #       start-x start-y end-x  end-y  duration
+    Swipe    1000    2500    1000    1000    500
+    Wait Until Element Is Visible               ${Buy_First_Product}
+    #Click Element                               ${Buy_First_Product}
+
+Click on a specific Image
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Specific_Image}
+        Exit For Loop If    ${is_visible}
+        Swipe    500    1500    500    500
+        Sleep    2s
+    END
+    Click Element                               ${Specific_Image}
+
 Click on Cash
     Wait Until Element Is visible               ${Cash}
     Click Element                               ${Cash}

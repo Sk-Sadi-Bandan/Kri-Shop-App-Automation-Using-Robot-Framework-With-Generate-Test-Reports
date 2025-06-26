@@ -8,7 +8,7 @@ Resource           ../Locators/Onboard_Locators.robot
 
 *** Variables ***
 #################################  User Variable  #################################
-${Input_Mobile_Number_Reg}                       01567839603
+${Input_Mobile_Number_Reg}                       01567839608
 ${Input_OTP1}                                    1
 ${Input_OTP2}                                    2
 ${Input_OTP3}                                    3
@@ -20,7 +20,7 @@ ${Input_Name}                                    Krisop Automation
 ${Input_Mobile_Number_Login}                     01567839601
 ${Input_Password}                                123456
 
-${Input_Unreg_Mobile_Number_Login}               01567839606
+${Input_Unreg_Mobile_Number_Login}               01567839608
 
 ${Input_Wrong_Password}                          123457
 
