@@ -39,21 +39,14 @@ Click on Proceed
     Wait Until Element Is visible               ${Proceed}
     Click Element                               ${Proceed}
 
-Click on Buy First Product
-    #       start-x start-y end-x  end-y  duration
-    Swipe    1000    2500    1000    1000    500
-    Wait Until Element Is Visible               ${Buy_First_Product}
-    #Click Element                               ${Buy_First_Product}
-
-Click on a specific Image
+Click on Cart First Product
     FOR    ${index}    IN RANGE    10
-        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Specific_Image}
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Cart_First_Product}
         Exit For Loop If    ${is_visible}
-        Swipe    500    1500    500    500
-        Sleep    2s
+        Swipe    360    1200    360    400
+        Sleep    1s
     END
-    Click Element                               ${Specific_Image}
-
+    Click Element                               ${Cart_First_Product}
 Click on Cash
     Wait Until Element Is visible               ${Cash}
     Click Element                               ${Cash}
@@ -63,9 +56,9 @@ Click on Add to Cart
 Click on Market
     Wait Until Element Is visible               ${Market}
     Click Element                               ${Market}
-Click on Buy Second Product
-    Wait Until Element Is visible               ${Buy_Second_Product}
-    Click Element                               ${Buy_Second_Product}
+Click on Cart Second Product
+    Wait Until Element Is visible               ${Cart_Second_Product}
+    Click Element                               ${Cart_Second_Product}
 
 
 ################################# Test Case 2 #################################
