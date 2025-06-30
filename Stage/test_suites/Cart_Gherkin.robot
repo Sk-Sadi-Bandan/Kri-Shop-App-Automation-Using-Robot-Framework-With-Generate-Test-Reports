@@ -46,13 +46,13 @@ Scenario: Verify that Product Add to Cart By Credit is Successfully
     Click on Password input section
     Click on Proceed
 
-    Click on Cart First Product
-    # Click on Credit
-    Click on Add to Cart
+    Click on Credit First Product
+    Click on Cart
+    Click on Take to Cart
     Click on Market
-    Click on Cart Second Product
-    # Click on Credit
-    Click on Add to Cart
+    Click on Credit Second Product
+    Click on Cart
+    Click on Take to Cart
     Click on Proceed
     Close app
 
@@ -97,8 +97,8 @@ Scenario: Verify that Product Checkout is Successfully
     # Click on Cash
     Click on Add to Cart
     Click on Proceed
-    Click on Proceed
-    Click on Order Confirm
+    Click on Payment
+    Click on Complete Order
     Close app
 
 

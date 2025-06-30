@@ -62,9 +62,28 @@ Click on Cart Second Product
 
 
 ################################# Test Case 2 #################################
-Click on Credit
-    Wait Until Element Is visible               ${Credit}
-    Click Element                               ${Credit}
+Click on Credit First Product
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Credit_First_Product}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1200    360    400
+        Sleep    1s
+    END
+    Click Element                               ${Credit_First_Product}
+Click on Cart
+    Wait Until Element Is visible               ${Cart}
+    Click Element                               ${Cart}
+Click on Take to Cart
+    Wait Until Element Is visible               ${Take_To_Cart}
+    Click Element                               ${Take_To_Cart}
+Click on Credit Second Product
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Credit_Second_Product}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1200    360    400
+        Sleep    1s
+    END
+    Click Element                               ${Credit_Second_Product}
 
 
 ################################# Test Case 3 #################################
@@ -83,9 +102,13 @@ Click on Yes
 
 
 ################################# Test Case 4 #################################
-Click on Order Confirm
-    Wait Until Element Is visible               ${Order_Confirm}
-    Click Element                               ${Order_Confirm}
+Click on Payment
+    Wait Until Element Is visible               ${Payment}
+    Click Element                               ${Payment}
+Click on Complete Order
+    Wait Until Element Is visible               ${Complete_Order}
+    Click Element                               ${Complete_Order}
+    Sleep                                       3s
 
 
 ################################# Test Case 5 #################################
@@ -101,6 +124,7 @@ Click on First Pending Order
 Click on Confirm Payment
     Wait Until Element Is visible               ${Confirm_Payment}
     Click Element                               ${Confirm_Payment}
+    Sleep                                       3s
 
 
 ################################# Test Case 6 #################################
