@@ -8,7 +8,7 @@ Resource           ../Locators/Onboard_Locators.robot
 
 *** Variables ***
 #################################  User Variable  #################################
-${Input_Mobile_Number_Reg}                       01567839608
+${Input_Mobile_Number_Reg}                       01567839617
 ${Input_OTP1}                                    1
 ${Input_OTP2}                                    2
 ${Input_OTP3}                                    3
