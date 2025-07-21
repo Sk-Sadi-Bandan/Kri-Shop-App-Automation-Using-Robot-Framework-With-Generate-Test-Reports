@@ -13,11 +13,26 @@ Resource           ../StepDefinations/Bazer_StepDefinations.robot
 
 #Test Case 1
 Scenario: Verify that Full Cycle of Product Buy in Krishop is Successfully
-    [Tags]    fullcycle
+    [Tags]    search
     Open app
     Click on a Specific Area
-    Click on Confirm
     Click on Menu button
     Click on Login
+    Click on Krishop Login
+    Click on Mobile Number input section Login
+    Click on Password input section
+    Click on Proceed
+    
+    Click on Product Catagory
+    Click on Search Product
+    Click on Search some product input section
+    
 
+#Test Case 2
+Scenario: Verify that Full Cycle of Product Buy in Krishop is Successfully
+    [Tags]    swipe
+    Open app
+    Click on a Specific Area
+    Click on Product Catagory
+    
     
