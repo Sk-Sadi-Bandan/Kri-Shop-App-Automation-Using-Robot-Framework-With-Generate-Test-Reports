@@ -18,4 +18,11 @@ ${Proceed}                          xpath=//android.widget.Button[@resource-id="
 ${Search}                           xpath=//android.widget.TextView[@text="পণ্য খুঁজুন"]
 ${Search_Product}                   xpath=//android.widget.EditText[@resource-id="asia.ifarmer.retailer.dev:id/searchEd"]
 
-${Product_Catagory}                 xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/categoryNameTv" and @text="অটোমেশন"]
+${Product_Category_See_All}         xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/seeAllProductTv"]
+${Product_Category_1}               xpath=(//android.widget.ImageView[@content-desc="কৃ SHOP"])[1]
+${Product_Category_2}               xpath=(//android.widget.ImageView[@content-desc="কৃ SHOP"])[2]
+${Product_Category_3}               xpath=(//android.widget.ImageView[@content-desc="কৃ SHOP"])[3]
+${Product_Category_4}               xpath=(//android.widget.ImageView[@content-desc="কৃ SHOP"])[4]
+${Product_Category_5}               xpath=(//android.widget.ImageView[@content-desc="কৃ SHOP"])[5]
+${Product_Category_6}               xpath=(//android.widget.ImageView[@content-desc="কৃ SHOP"])[6]
+${Product_Sub_Category}             xpath=//android.view.ViewGroup[@resource-id="asia.ifarmer.retailer.dev:id/rootView"]

@@ -58,12 +58,31 @@ Click on Search some product input section
 
 
 #################################  Test Case 2  #################################
-Click on Product Catagory
-    FOR    ${index}    IN RANGE    10
-        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Product_Catagory}
-        Exit For Loop If    ${is_visible}
-        Swipe    650    500    150    500
-        Sleep    2s
-    END
-    Click Element    ${Product_Catagory}
+Click on Product Category see all
+    Wait Until Element Is visible               ${Product_Category_See_All}
+    Click Element                               ${Product_Category_See_All}
+Click on first Product Category
+    Wait Until Element Is visible               ${Product_Category_1}
+    Click Element                               ${Product_Category_1}
+Click on second Product Category
+    Wait Until Element Is visible               ${Product_Category_2}
+    Click Element                               ${Product_Category_2}
+Click on third Product Category
+    Wait Until Element Is visible               ${Product_Category_3}
+    Click Element                               ${Product_Category_3}
+Click on fourth Product Category
+    Wait Until Element Is visible               ${Product_Category_4}
+    Click Element                               ${Product_Category_4}
+Click on fifth Product Category
+    Wait Until Element Is visible               ${Product_Category_5}
+    Click Element                               ${Product_Category_5}
+Click on sixth Product Category
+    Wait Until Element Is visible               ${Product_Category_6}
+    Click Element                               ${Product_Category_6}
+Click on a specific Product Sub Category
+    Wait Until Element Is visible               ${Product_Sub_Category}
+    Click Element                               ${Product_Sub_Category}
+
+
+#################################  Test Case 3  #################################
 
