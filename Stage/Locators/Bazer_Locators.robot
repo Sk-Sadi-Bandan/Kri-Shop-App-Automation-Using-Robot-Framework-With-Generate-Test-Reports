@@ -26,3 +26,8 @@ ${Product_Category_4}               xpath=(//android.widget.ImageView[@content-d
 ${Product_Category_5}               xpath=(//android.widget.ImageView[@content-desc="কৃ SHOP"])[5]
 ${Product_Category_6}               xpath=(//android.widget.ImageView[@content-desc="কৃ SHOP"])[6]
 ${Product_Sub_Category}             xpath=//android.view.ViewGroup[@resource-id="asia.ifarmer.retailer.dev:id/rootView"]
+
+${Reset_Button}                     xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/resetAll"]
+${Credit_Filter}                    xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/titleTv" and @text="বাকি পণ্য"]
+${Discount_Filter}                  xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/titleTv" and @text="ডিসকাউন্ট পণ্য"]
+${Bets_Filter}                      xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/titleTv" and @text="সেরা পণ্য"]

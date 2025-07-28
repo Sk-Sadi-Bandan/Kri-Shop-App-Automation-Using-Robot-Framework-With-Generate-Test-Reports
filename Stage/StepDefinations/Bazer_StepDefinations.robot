@@ -85,4 +85,18 @@ Click on a specific Product Sub Category
 
 
 #################################  Test Case 3  #################################
+Click on Reset Button
+    Wait Until Element Is visible               ${Reset_Button}
+    Click Element                               ${Reset_Button}
+Click on Filter Credit Product
+    Wait Until Element Is visible               ${Credit_Filter}
+    Click Element                               ${Credit_Filter}
+Click on Filter Discount Product
+    Wait Until Element Is visible               ${Discount_Filter}
+    Click Element                               ${Discount_Filter}
+Click on Filter Best Product
+    Wait Until Element Is visible               ${Bets_Filter}
+    Click Element                               ${Bets_Filter}
 
+
+#################################  Test Case 4  #################################
