@@ -31,3 +31,8 @@ ${Reset_Button}                     xpath=//android.widget.Button[@resource-id="
 ${Credit_Filter}                    xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/titleTv" and @text="বাকি পণ্য"]
 ${Discount_Filter}                  xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/titleTv" and @text="ডিসকাউন্ট পণ্য"]
 ${Bets_Filter}                      xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/titleTv" and @text="সেরা পণ্য"]
+
+${First_Product_Description}        xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/imageViewer"])[1]
+${Second_Product_Description}       xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/imageViewer"])[2]
+${Third_Product_Description}        xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/imageViewer"])[3]
+${Back_Product_Description}         xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/backButton"]

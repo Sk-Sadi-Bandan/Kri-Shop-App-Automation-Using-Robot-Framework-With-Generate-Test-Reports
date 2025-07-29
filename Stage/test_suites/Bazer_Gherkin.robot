@@ -77,8 +77,8 @@ Scenario: Verify that Filter Option is Successfully Working
     
     
 #Test Case 4
-Scenario: Verify that Filter Option is Successfully Working
-    [Tags]    filter
+Scenario: Verify that Product description is Successfully Working
+    [Tags]    description
     Open app
     Click on a Specific Area
     Click on Menu button
@@ -88,15 +88,11 @@ Scenario: Verify that Filter Option is Successfully Working
     Click on Password input section
     Click on Proceed
 
-    Click on Filter Credit Product
-    Click on Reset Button
-    Click on Filter Discount Product
-    Click on Reset Button
-    Click on Filter Best Product
-    Click on Reset Button
-    Click on Filter Best Product
-    Click on Filter Discount Product
-    Click on Filter Credit Product
-    Click on Reset Button
+    Click on first product description
+    Click on back product description
+    Click on second product description
+    Click on back product description
+    Click on third product description
+    Click on back product description
     Close app
     

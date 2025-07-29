@@ -100,3 +100,32 @@ Click on Filter Best Product
 
 
 #################################  Test Case 4  #################################
+Click on first product description
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${First_Product_Description}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Click Element                               ${First_Product_Description}
+Click on second product description
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Second_Product_Description}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Click Element                               ${Second_Product_Description}
+Click on third product description
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Third_Product_Description}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Click Element                               ${Third_Product_Description}
+Click on back product description
+    Wait Until Element Is visible               ${Back_Product_Description}
+    Click Element                               ${Back_Product_Description}
+    Sleep                                       2s
+
