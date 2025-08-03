@@ -9,12 +9,8 @@ Resource           ../StepDefinations/Cart_StepDefinations.robot
 
 ***Keywords***
 
-***Test Cases*** 
-
-#Test Case 1
-Scenario: Verify that Product Add to Cart By Cash is Successfully
-    [Tags]    productaddcash
-    Open app
+# ================== Reusable Login Keyword ==================
+Login To Krishop
     Click on a Specific Area
     Click on Menu button
     Click on Login
@@ -22,6 +18,14 @@ Scenario: Verify that Product Add to Cart By Cash is Successfully
     Click on Mobile Number input section Login
     Click on Password input section
     Click on Proceed
+
+***Test Cases*** 
+
+#Test Case 1
+Scenario: Verify that Product Add to Cart By Cash is Successfully
+    [Tags]    productaddcash
+    Open app
+    Login To Krishop
 
     Click on Cart First Product
     # Click on Cash
@@ -38,13 +42,7 @@ Scenario: Verify that Product Add to Cart By Cash is Successfully
 Scenario: Verify that Product Add to Cart By Credit is Successfully
     [Tags]    productaddcredit
     Open app
-    Click on a Specific Area
-    Click on Menu button
-    Click on Login
-    Click on Krishop Login
-    Click on Mobile Number input section Login
-    Click on Password input section
-    Click on Proceed
+    Login To Krishop
 
     Click on Credit First Product
     Click on Cart
@@ -61,13 +59,7 @@ Scenario: Verify that Product Add to Cart By Credit is Successfully
 Scenario: Verify that Remove Product in Cart is Successfully
     [Tags]    removeproduct
     Open app
-    Click on a Specific Area
-    Click on Menu button
-    Click on Login
-    Click on Krishop Login
-    Click on Mobile Number input section Login
-    Click on Password input section
-    Click on Proceed
+    Login To Krishop
 
     Click on Cart First Product
     # Click on Cash
@@ -85,13 +77,7 @@ Scenario: Verify that Remove Product in Cart is Successfully
 Scenario: Verify that Product Checkout is Successfully
     [Tags]    productcheckout
     Open app
-    Click on a Specific Area
-    Click on Menu button
-    Click on Login
-    Click on Krishop Login
-    Click on Mobile Number input section Login
-    Click on Password input section
-    Click on Proceed
+    Login To Krishop
 
     Click on Cart First Product
     # Click on Cash
@@ -106,13 +92,7 @@ Scenario: Verify that Product Checkout is Successfully
 Scenario: Verify that Payment Confirm Process is Successfully
     [Tags]    payment
     Open app
-    Click on a Specific Area
-    Click on Menu button
-    Click on Login
-    Click on Krishop Login
-    Click on Mobile Number input section Login
-    Click on Password input section
-    Click on Proceed
+    Login To Krishop
 
     Click on History
     Click on Cash Order
@@ -125,13 +105,7 @@ Scenario: Verify that Payment Confirm Process is Successfully
 Scenario: Verify that Payment Cancel Process is Successfully
     [Tags]    cancelorder
     Open app
-    Click on a Specific Area
-    Click on Menu button
-    Click on Login
-    Click on Krishop Login
-    Click on Mobile Number input section Login
-    Click on Password input section
-    Click on Proceed
+    Login To Krishop
 
     Click on History
     Click on Cash Order

@@ -9,16 +9,23 @@ Resource           ../StepDefinations/Full_Cycle_StepDefinations.robot
 
 ***Keywords***
 
+# ================== Reusable Login Keyword ==================
+Login To Krishop
+    Click on a Specific Area
+    Click on Menu button
+    Click on Login
+    Click on Krishop Login
+    Click on Mobile Number input section Login
+    Click on Password input section
+    Click on Proceed
+
 ***Test Cases*** 
 
 #Test Case 1
 Scenario: Verify that Full Cycle of Product Buy in Krishop is Successfully
     [Tags]    fullcycle
     Open app
-    Click on a Specific Area
-    Click on Confirm
-    Click on Menu button
-    Click on Login
+    Login To Krishop
 
     #Below 4 code add for continous test
     #Click on Krishop Login

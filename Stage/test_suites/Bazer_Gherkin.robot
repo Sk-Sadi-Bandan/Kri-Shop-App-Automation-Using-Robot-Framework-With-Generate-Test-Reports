@@ -9,12 +9,8 @@ Resource           ../StepDefinations/Bazer_StepDefinations.robot
 
 ***Keywords***
 
-***Test Cases*** 
-
-#Test Case 1
-Scenario: Verify that Product Search is Successfully
-    [Tags]    search
-    Open app
+# ================== Reusable Login Keyword ==================
+Login To Krishop
     Click on a Specific Area
     Click on Menu button
     Click on Login
@@ -22,7 +18,15 @@ Scenario: Verify that Product Search is Successfully
     Click on Mobile Number input section Login
     Click on Password input section
     Click on Proceed
-    
+
+***Test Cases*** 
+
+#Test Case 1
+Scenario: Verify that Product Search is Successfully
+    [Tags]    search
+    Open app
+    Login To Krishop
+
     Click on Search Product
     Click on Search some product input section
     Close app
@@ -32,13 +36,7 @@ Scenario: Verify that Product Search is Successfully
 Scenario: Verify that Product Catagory is Successfully Displayed
     [Tags]    catagory
     Open app
-    Click on a Specific Area
-    Click on Menu button
-    Click on Login
-    Click on Krishop Login
-    Click on Mobile Number input section Login
-    Click on Password input section
-    Click on Proceed
+    Login To Krishop
 
     Click on Product Category see all
     Click on first Product Category
@@ -55,13 +53,7 @@ Scenario: Verify that Product Catagory is Successfully Displayed
 Scenario: Verify that Filter Option is Successfully Working
     [Tags]    filter
     Open app
-    Click on a Specific Area
-    Click on Menu button
-    Click on Login
-    Click on Krishop Login
-    Click on Mobile Number input section Login
-    Click on Password input section
-    Click on Proceed
+    Login To Krishop
 
     Click on Filter Credit Product
     Click on Reset Button
@@ -80,14 +72,8 @@ Scenario: Verify that Filter Option is Successfully Working
 Scenario: Verify that Product description is Successfully Working
     [Tags]    description
     Open app
-    Click on a Specific Area
-    Click on Menu button
-    Click on Login
-    Click on Krishop Login
-    Click on Mobile Number input section Login
-    Click on Password input section
-    Click on Proceed
-
+    Login To Krishop
+    
     Click on first product description
     Click on back product description
     Click on second product description
