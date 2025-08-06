@@ -34,7 +34,7 @@ Scenario: Verify that Product Search is Successfully
 
 #Test Case 2
 Scenario: Verify that Product Catagory is Successfully Displayed
-    [Tags]    catagory
+    [Tags]    category
     Open app
     Login To Krishop
 
@@ -45,6 +45,7 @@ Scenario: Verify that Product Catagory is Successfully Displayed
     Click on fourth Product Category
     Click on fifth Product Category
     Click on sixth Product Category
+    Click on seventh Product Category
     Click on a specific Product Sub Category
     Close app
     

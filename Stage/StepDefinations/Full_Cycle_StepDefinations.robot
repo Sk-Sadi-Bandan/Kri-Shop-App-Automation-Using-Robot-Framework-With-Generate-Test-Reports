@@ -21,7 +21,7 @@ ${Input_Shop_Address}                            Test 1
 ${Input_Bkash_Account}                           01619777282
 
 #Below 2 code add for continous test
-${Input_Mobile_Number_Login}                     01567839606
+${Input_Mobile_Number_Login}                     01567839602
 ${Input_Password}                                123456
 
 

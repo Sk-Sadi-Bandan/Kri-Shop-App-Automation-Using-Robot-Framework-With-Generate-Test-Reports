@@ -17,10 +17,10 @@ ${Input_PIN}                                     123456
 ${Input_Retype_PIN}                              123456
 ${Input_Name}                                    Krisop Automation
 
-${Input_Mobile_Number_Login}                     01567839601
+${Input_Mobile_Number_Login}                     01567839602
 ${Input_Password}                                123456
 
-${Input_Unreg_Mobile_Number_Login}               01567839608
+${Input_Unreg_Mobile_Number_Login}               01567839688
 
 ${Input_Wrong_Password}                          123457
 

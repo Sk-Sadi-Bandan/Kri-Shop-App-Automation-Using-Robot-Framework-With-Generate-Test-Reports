@@ -8,7 +8,7 @@ Resource           ../Locators/Cart_Locators.robot
 
 *** Variables ***
 #################################  User Variable  #################################
-${Input_Mobile_Number_Login}                     01567839601
+${Input_Mobile_Number_Login}                     01567839602
 ${Input_Password}                                123456
 
 ${Input_Cancel_Order}                            Test Cancel
@@ -16,7 +16,7 @@ ${Input_Cancel_Order}                            Test Cancel
 
 
 *** Keywords ***
-#################################  Test Case 1  #################################
+# ================== Reusable Login Keyword ==================
 Click on a Specific Area
     Wait Until Element Is visible               ${Specific_Area}
     Click Element                               ${Specific_Area}
@@ -39,6 +39,8 @@ Click on Proceed
     Wait Until Element Is visible               ${Proceed}
     Click Element                               ${Proceed}
 
+
+#################################  Test Case 1  #################################
 Click on Cart First Product
     FOR    ${index}    IN RANGE    10
         ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Cart_First_Product}
