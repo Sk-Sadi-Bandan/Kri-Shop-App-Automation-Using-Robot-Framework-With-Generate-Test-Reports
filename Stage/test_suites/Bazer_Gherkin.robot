@@ -83,3 +83,68 @@ Scenario: Verify that Product description is Successfully Working
     Click on back product description
     Close app
     
+
+#Test Case 5
+Scenario: Verify that Regular Product Cart and Remove is Successfully Working
+    [Tags]    regularcart
+    Open app
+    Login To Krishop
+    
+    Click on first regular product Cart
+    Click on Add to Cart
+    Click on Add More Product
+    Click on second regular product Cart
+    Click on Add to Cart
+    Click on Remove Product
+    Click on Yes
+    Click on Remove Product
+    Click on Yes
+    Close app
+
+
+#Test Case 6
+Scenario: Verify that Credit Product Cart and Remove is Successfully Working
+    [Tags]    creditcart
+    Open app
+    Login To Krishop
+    
+    Click on Filter Credit Product
+    Click on first credit product Cart
+    Click on Add to Cart
+    Click on Add More Product
+    Click on second credit product Cart
+    Click on Add to Cart
+    Click on Remove Product
+    Click on Yes
+    Click on Remove Product
+    Click on Yes
+    Close app
+    
+
+#Test Case 7
+Scenario: Verify that Regular Product Quick Order is Successfully Working
+    [Tags]    regularquick
+    Open app
+    Login To Krishop
+    
+    Click on first regular product kinun
+    Click on Add
+    Click on Add
+    Click on Payment
+    Click on Complete Order
+    Close app
+    
+
+#Test Case 8
+Scenario: Verify that Credit Product Quick Order is Successfully Working
+    [Tags]    creditquick
+    Open app
+    Login To Krishop
+    
+    Click on Filter Credit Product
+    Click on first credit product kinun
+    Click on Add
+    Click on Add
+    Click on Proceed Complete Order
+    Close app
+    

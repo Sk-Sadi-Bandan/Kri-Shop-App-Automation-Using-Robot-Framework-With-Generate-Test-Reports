@@ -38,3 +38,21 @@ ${First_Product_Description}        xpath=(//android.widget.ImageView[@resource-
 ${Second_Product_Description}       xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/imageViewer"])[2]
 ${Third_Product_Description}        xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/imageViewer"])[3]
 ${Back_Product_Description}         xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/backButton"]
+
+${Regular_First_Product_Cart}       xpath=(//android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer.dev:id/cartTextView"])[1]
+${Regular_Second_Product_Cart}      xpath=(//android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer.dev:id/cartTextView"])[2]
+${Add_to_Cart}                      xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btAddToCart"]
+${Add_More_Product}                 xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvAddMoreProduct"]
+${Remove}                           xpath=(//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/ivDelete"])[1]
+${Yes}                              xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/confirm_button_material"]
+
+${Credit_Filter}                    xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/titleTv" and @text="বাকি পণ্য"]
+${Credit_First_Product_Cart}        xpath=(//android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer.dev:id/cartTextView"])[1]
+${Credit_Second_Product_Cart}       xpath=(//android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer.dev:id/cartTextView"])[2]
+
+${Regular_First_Product_Kinun}      xpath=(//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/buyTextView"])[1]
+${Add}                              xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/ivAdd"]
+${Payment}                          xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btPayment"]
+${Complete_Order}                   xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btCompleteOrder"]
+
+${Proceed_Complete_Order}           xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]

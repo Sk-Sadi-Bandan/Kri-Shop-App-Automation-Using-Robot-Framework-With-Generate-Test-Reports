@@ -154,3 +154,102 @@ Click on back product description
     Click Element                               ${Back_Product_Description}
     Sleep                                       2s
 
+
+#################################  Test Case 5  #################################
+Click on first regular product Cart
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Regular_First_Product_Cart}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Regular_First_Product_Cart}
+    Click Element                               ${Regular_First_Product_Cart}
+Click on second regular product Cart
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Regular_Second_Product_Cart}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Regular_Second_Product_Cart}
+    Click Element                               ${Regular_Second_Product_Cart}
+Click on Add to Cart
+    Wait Until Element Is visible               ${Add_to_Cart}
+    Element Should Be Visible                   ${Add_to_Cart}
+    Click Element                               ${Add_to_Cart}
+Click on Add More Product
+    Wait Until Element Is visible               ${Add_More_Product}
+    Element Should Be Visible                   ${Add_More_Product}
+    Click Element                               ${Add_More_Product}
+Click on Remove Product
+    Wait Until Element Is visible               ${Remove}
+    Element Should Be Visible                   ${Remove}
+    Click Element                               ${Remove}
+Click on Yes
+    Wait Until Element Is visible               ${Yes}
+    Element Should Be Visible                   ${Yes}
+    Click Element                               ${Yes}
+    Sleep                                       2s
+
+
+#################################  Test Case 6  #################################
+Click on first credit product Cart
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Credit_First_Product_Cart}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Credit_First_Product_Cart}
+    Click Element                               ${Credit_First_Product_Cart}
+Click on second credit product Cart
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Credit_Second_Product_Cart}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Credit_Second_Product_Cart}
+    Click Element                               ${Credit_Second_Product_Cart}
+
+
+#################################  Test Case 7  #################################
+Click on first regular product kinun
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Regular_First_Product_Kinun}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Regular_First_Product_Kinun}
+    Click Element                               ${Regular_First_Product_Kinun}
+Click on Add
+    Wait Until Element Is visible               ${Add}
+    Element Should Be Visible                   ${Add}
+    Click Element                               ${Add}
+Click on Payment
+    Wait Until Element Is visible               ${Payment}
+    Element Should Be Visible                   ${Payment}
+    Click Element                               ${Payment}
+Click on Complete Order
+    Wait Until Element Is visible               ${Complete_Order}
+    Element Should Be Visible                   ${Complete_Order}
+    Click Element                               ${Complete_Order}
+    Sleep                                       3s
+
+
+#################################  Test Case 8  #################################
+Click on first credit product kinun
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Regular_First_Product_Kinun}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Regular_First_Product_Kinun}
+    Click Element                               ${Regular_First_Product_Kinun}
+Click on Proceed Complete Order
+    Wait Until Element Is visible               ${Proceed_Complete_Order}
+    Element Should Be Visible                   ${Proceed_Complete_Order}
+    Click Element                               ${Proceed_Complete_Order}
