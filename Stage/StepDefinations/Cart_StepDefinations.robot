@@ -19,24 +19,31 @@ ${Input_Cancel_Order}                            Test Cancel
 # ================== Reusable Login Keyword ==================
 Click on a Specific Area
     Wait Until Element Is visible               ${Specific_Area}
+    Element Should Be Visible                   ${Specific_Area}
     Click Element                               ${Specific_Area}
 Click on Menu button
     Wait Until Element Is visible               ${Menu}
+    Element Should Be Visible                   ${Menu}
     Click Element                               ${Menu}
 Click on Login
     Wait Until Element Is visible               ${Login}
+    Element Should Be Visible                   ${Login}
     Click Element                               ${Login}
 Click on Krishop Login
     Wait Until Element Is visible               ${Krishop_Login}
+    Element Should Be Visible                   ${Krishop_Login}
     Click Element                               ${Krishop_Login}
 Click on Mobile Number input section Login
     Wait Until Element Is visible               ${Mobile_Number}
+    Element Should Be Visible                   ${Mobile_Number}
     Input Text                                  ${Mobile_Number}            ${Input_Mobile_Number_Login}
 Click on Password input section
     Wait Until Element Is visible               ${Password}
+    Element Should Be Visible                   ${Password}
     Input Text                                  ${Password}                 ${Input_Password}
 Click on Proceed
     Wait Until Element Is visible               ${Proceed}
+    Element Should Be Visible                   ${Proceed}
     Click Element                               ${Proceed}
 
 
@@ -48,18 +55,23 @@ Click on Cart First Product
         Swipe    360    1200    360    400
         Sleep    1s
     END
+    Element Should Be Visible                   ${Cart_First_Product}
     Click Element                               ${Cart_First_Product}
 Click on Cash
     Wait Until Element Is visible               ${Cash}
+    Element Should Be Visible                   ${Cash}
     Click Element                               ${Cash}
 Click on Add to Cart
     Wait Until Element Is visible               ${Add_To_Cart}
+    Element Should Be Visible                   ${Add_To_Cart}
     Click Element                               ${Add_To_Cart}
 Click on Market
     Wait Until Element Is visible               ${Market}
+    Element Should Be Visible                   ${Market}
     Click Element                               ${Market}
 Click on Cart Second Product
     Wait Until Element Is visible               ${Cart_Second_Product}
+    Element Should Be Visible                   ${Cart_Second_Product}
     Click Element                               ${Cart_Second_Product}
 
 
@@ -71,12 +83,15 @@ Click on Credit First Product
         Swipe    360    1200    360    400
         Sleep    1s
     END
+    Element Should Be Visible                   ${Credit_First_Product}
     Click Element                               ${Credit_First_Product}
 Click on Cart
     Wait Until Element Is visible               ${Cart}
+    Element Should Be Visible                   ${Cart}
     Click Element                               ${Cart}
 Click on Take to Cart
     Wait Until Element Is visible               ${Take_To_Cart}
+    Element Should Be Visible                   ${Take_To_Cart}
     Click Element                               ${Take_To_Cart}
 Click on Credit Second Product
     FOR    ${index}    IN RANGE    10
@@ -85,30 +100,37 @@ Click on Credit Second Product
         Swipe    360    1200    360    400
         Sleep    1s
     END
+    Element Should Be Visible                   ${Credit_Second_Product}
     Click Element                               ${Credit_Second_Product}
 
 
 ################################# Test Case 3 #################################
 Click on Add
     Wait Until Element Is visible               ${Add}
+    Element Should Be Visible                   ${Add}
     Click Element                               ${Add}
 Click on Subtract
     Wait Until Element Is visible               ${Subtract}
+    Element Should Be Visible                   ${Subtract}
     Click Element                               ${Subtract}
 Click on Remove Product
     Wait Until Element Is visible               ${Remove}
+    Element Should Be Visible                   ${Remove}
     Click Element                               ${Remove}
 Click on Yes
     Wait Until Element Is visible               ${Yes}
+    Element Should Be Visible                   ${Yes}
     Click Element                               ${Yes}
 
 
 ################################# Test Case 4 #################################
 Click on Payment
     Wait Until Element Is visible               ${Payment}
+    Element Should Be Visible                   ${Payment}
     Click Element                               ${Payment}
 Click on Complete Order
     Wait Until Element Is visible               ${Complete_Order}
+    Element Should Be Visible                   ${Complete_Order}
     Click Element                               ${Complete_Order}
     Sleep                                       3s
 
@@ -116,15 +138,19 @@ Click on Complete Order
 ################################# Test Case 5 #################################
 Click on History
     Wait Until Element Is visible               ${History}
+    Element Should Be Visible                   ${History}
     Click Element                               ${History}
 Click on Cash Order
     Wait Until Element Is visible               ${Cash_Order}
+    Element Should Be Visible                   ${Cash_Order}
     Click Element                               ${Cash_Order}
 Click on First Pending Order
     Wait Until Element Is visible               ${Pending_Order}
+    Element Should Be Visible                   ${Pending_Order}
     Click Element                               ${Pending_Order}
 Click on Confirm Payment
     Wait Until Element Is visible               ${Confirm_Payment}
+    Element Should Be Visible                   ${Confirm_Payment}
     Click Element                               ${Confirm_Payment}
     Sleep                                       3s
 
@@ -137,11 +163,14 @@ Click on Cancel Order
         Swipe    500    1500    500    500
         Sleep    2s
     END
+    Element Should Be Visible                   ${Cancel_Order}
     Click Element                               ${Cancel_Order}
 Click on Cancel Order input section
     Wait Until Element Is visible               ${Cancel_Order_Input}
+    Element Should Be Visible                   ${Cancel_Order_Input}
     Input Text                                  ${Cancel_Order_Input}       ${Input_Cancel_Order}
 Click on Confirm Cancel Order
     Wait Until Element Is visible               ${Confirm_Cancel_Order}
+    Element Should Be Visible                   ${Confirm_Cancel_Order}
     Click Element                               ${Confirm_Cancel_Order}
 

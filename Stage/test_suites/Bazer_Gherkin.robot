@@ -148,3 +148,45 @@ Scenario: Verify that Credit Product Quick Order is Successfully Working
     Click on Proceed Complete Order
     Close app
     
+
+#Test Case 9
+Scenario: Verify that Call function is Successfully Working
+    [Tags]    homecall
+    Open app
+    Login To Krishop
+    
+    Click on Call Icon
+    Click on Not Now
+    Click on Call Icon
+    Click on Cross Icon
+    Click on Call Icon
+    Click on Call Now
+    Close app
+
+
+#Test Case 10
+Scenario: Verify that Notification function is Successfully Working
+    [Tags]    notification
+    Open app
+    Login To Krishop
+    Click on Notification Icon
+    Click on customer add from notification
+    Click on Back button
+    Click on business report from notification
+    Click on Back button
+    Click on update business info from notification
+    Click on Profile Back button
+    Click on today lenden entry from notification
+    Close app
+
+
+#Test Case 11
+Scenario: Verify that Notification function is Successfully Working
+    [Tags]    swipe
+    Open app
+    #Login To Krishop
+    Click on a Specific Area
+    Swipe Banner Right To Left
+    Swipe Banner Left to Right
+    Close app
+

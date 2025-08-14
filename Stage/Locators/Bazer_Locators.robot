@@ -56,3 +56,16 @@ ${Payment}                          xpath=//android.widget.Button[@resource-id="
 ${Complete_Order}                   xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btCompleteOrder"]
 
 ${Proceed_Complete_Order}           xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]
+
+${Call_Icon}                        xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/callButton"]
+${Not_Now}                          xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btNegative"]
+${Cross_Icon}                       xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/ivDismiss"]
+${Call_Now}                         xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btPositive"]
+
+${Notification_Icon}                xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/notificationButton"]
+${Lenden_Entry}                     xpath=//android.widget.TextView[@text='আজকের দিনের লেনদেন গুলো অ্যাপে এন্ট্রি দিয়েছেন কি?']
+${Customer_Add}                     xpath=//android.widget.TextView[@text='আজই কাস্টমার অ্যাড করুন!']
+${Business_Report}                  xpath=//android.widget.TextView[@text='আপনার ব্যবসায়ের সাপ্তাহিক রিপোর্ট']
+${Update_Business_Info}             xpath=//android.widget.TextView[@text='আপনার ব্যবসার সকল তথ্য আপডেট করুন']
+${Back_Button}                      xpath=//android.widget.ImageButton
+${Profile_Back_Button}              xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/backButton"]

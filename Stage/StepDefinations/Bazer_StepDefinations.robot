@@ -16,30 +16,40 @@ ${Product2}                                      fish feed
 ${Product3}                                      বীজ
 ${Product4}                                      চকলেট
 
+${DEVICE_HEIGHT}                                 1600
+${DEVICE_WIDTH}                                  720
+
 
 
 *** Keywords ***
 # ================== Reusable Login Keyword ==================
 Click on a Specific Area
     Wait Until Element Is visible               ${Specific_Area}
+    Element Should Be Visible                   ${Specific_Area}
     Click Element                               ${Specific_Area}
 Click on Menu button
     Wait Until Element Is visible               ${Menu}
+    Element Should Be Visible                   ${Menu}
     Click Element                               ${Menu}
 Click on Login
     Wait Until Element Is visible               ${Login}
+    Element Should Be Visible                   ${Login}
     Click Element                               ${Login}
 Click on Krishop Login
     Wait Until Element Is visible               ${Krishop_Login}
+    Element Should Be Visible                   ${Krishop_Login}
     Click Element                               ${Krishop_Login}
 Click on Mobile Number input section Login
     Wait Until Element Is visible               ${Mobile_Number}
+    Element Should Be Visible                   ${Mobile_Number}
     Input Text                                  ${Mobile_Number}            ${Input_Mobile_Number_Login}
 Click on Password input section
     Wait Until Element Is visible               ${Password}
+    Element Should Be Visible                   ${Password}
     Input Text                                  ${Password}                 ${Input_Password}
 Click on Proceed
     Wait Until Element Is visible               ${Proceed}
+    Element Should Be Visible                   ${Proceed}
     Click Element                               ${Proceed}
 
 
@@ -253,3 +263,100 @@ Click on Proceed Complete Order
     Wait Until Element Is visible               ${Proceed_Complete_Order}
     Element Should Be Visible                   ${Proceed_Complete_Order}
     Click Element                               ${Proceed_Complete_Order}
+
+
+#################################  Test Case 9  #################################
+Click on Call Icon
+    Wait Until Element Is visible               ${Call_Icon}
+    Element Should Be Visible                   ${Call_Icon}
+    Click Element                               ${Call_Icon}
+Click on Not Now
+    Wait Until Element Is visible               ${Not_Now}
+    Element Should Be Visible                   ${Not_Now}
+    Click Element                               ${Not_Now}
+Click on Cross Icon
+    Wait Until Element Is visible               ${Cross_Icon}
+    Element Should Be Visible                   ${Cross_Icon}
+    Click Element                               ${Cross_Icon}
+Click on Call Now
+    Wait Until Element Is visible               ${Call_Now}
+    Element Should Be Visible                   ${Call_Now}
+    Click Element                               ${Call_Now}
+    Sleep                                       3s
+
+
+#################################  Test Case 10  #################################
+Click on Notification Icon
+    Wait Until Element Is visible               ${Notification_Icon}
+    Element Should Be Visible                   ${Notification_Icon}
+    Click Element                               ${Notification_Icon}
+Click on today lenden entry from notification
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Lenden_Entry}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Lenden_Entry}
+    Click Element                               ${Lenden_Entry}
+    Sleep                                       3s
+Click on customer add from notification
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Customer_Add}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Customer_Add}
+    Click Element                               ${Customer_Add}
+    Sleep                                       3s
+Click on business report from notification
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Business_Report}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Business_Report}
+    Click Element                               ${Business_Report}
+    Sleep                                       3s
+Click on update business info from notification
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Update_Business_Info}
+        Exit For Loop If    ${is_visible}
+        Swipe    360    1350    360    200
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Update_Business_Info}
+    Click Element                               ${Update_Business_Info}
+    Sleep                                       3s
+Click on Back button
+    Wait Until Element Is visible               ${Back_Button}
+    Element Should Be Visible                   ${Back_Button}
+    Click Element                               ${Back_Button}
+Click on Profile Back button
+    Wait Until Element Is visible               ${Profile_Back_Button}
+    Element Should Be Visible                   ${Profile_Back_Button}
+    Click Element                               ${Profile_Back_Button}
+
+
+#################################  Test Case 11  #################################
+Swipe Banner Right To Left
+    FOR    ${index}    IN RANGE    5
+        ${start_x}=    Evaluate    ${DEVICE_WIDTH} * 0.9
+        ${end_x}=      Evaluate    ${DEVICE_WIDTH} * 0.1
+        ${y_axis}=     Evaluate    ${DEVICE_HEIGHT} * 0.25
+        Swipe    ${start_x}    ${y_axis}    ${end_x}    ${y_axis}
+        Sleep    1s
+    END
+    Sleep                                       1s
+Swipe Banner Left to Right
+    FOR    ${index}    IN RANGE    5
+        ${start_x}=    Evaluate    ${DEVICE_WIDTH} * 0.1
+        ${end_x}=      Evaluate    ${DEVICE_WIDTH} * 0.9
+        ${y_axis}=     Evaluate    ${DEVICE_HEIGHT} * 0.25
+        Swipe    ${start_x}    ${y_axis}    ${end_x}    ${y_axis}
+        Sleep    1s
+    END
+    Sleep                                       1s
+
