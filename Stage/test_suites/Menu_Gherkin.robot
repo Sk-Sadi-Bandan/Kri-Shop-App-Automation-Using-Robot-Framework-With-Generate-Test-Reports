@@ -48,6 +48,8 @@ Scenario: Verify that Profile option is working Successfully
     Click on Personal Information
     Scroll Personal Information Page
     Click on Change Information
+    Click on Profile Image
+    Click on Profile Image Back button
     Click on Front Page NID Picture
     Click on cross button
     Click on Back Page NID Picture
@@ -83,3 +85,126 @@ Scenario: Verify that Profile option is working Successfully
     Click on Created New Area from Profile
     Click on Back button
     Click on Back button
+
+
+#Test Case 3
+Scenario: Verify that Reward option is working Successfully
+    [Tags]    reward
+    Open app
+    Login To Krishop
+    Click on Menu button
+    Click on Reward
+    Click on Collect Reward
+    Click on Alright
+    Click on History
+    Click on Back button
+
+
+#Test Case 4
+Scenario: Verify that Privacy Policy option is working Successfully
+    [Tags]    privacy
+    Open app
+    Login To Krishop
+    Click on Menu button
+    Click on Privacy Policy
+    Click on Go Back
+
+
+#Test Case 5
+Scenario: Verify that App Introduction option is working Successfully
+    [Tags]    appintro
+    Open app
+    Login To Krishop
+    Click on Menu button
+    Click on App Introduction
+    Click on Next
+    Click on Next
+    Click on Next
+    Click on Previous
+    Click on Previous
+    Click on Previous
+    Click on Cross Button
+
+
+#Test Case 6
+Scenario: Verify that Report option is working Successfully
+    [Tags]    report
+    Open app
+    Login To Krishop
+    Click on Menu button
+    Click on Report
+    Click on Profit and loss report
+    
+    Click on Daily
+    Click on greater than arrow
+    Click on greater than arrow
+    Click on Less than arrow
+    Click on Less than arrow
+    Click on Total sell arrow open
+    Click on Total sell arrow close
+
+    Click on Weekly
+    Click on greater than arrow
+    Click on greater than arrow
+    Click on Less than arrow
+    Click on Less than arrow
+    Click on Total sell arrow open
+    Click on Total sell arrow close
+
+    Click on Monthly
+    Click on greater than arrow
+    Click on greater than arrow
+    Click on Less than arrow
+    Click on Less than arrow
+    Click on Total sell arrow open
+    Click on Total sell arrow close
+
+    Click on Yearly
+    Click on greater than arrow
+    Click on greater than arrow
+    Click on Less than arrow
+    Click on Less than arrow
+    Click on Total sell arrow open
+    Click on Total sell arrow close
+
+    Click on Back button
+    Click on Back button
+
+
+#Test Case 7
+Scenario: Verify that Profile Delete option is working Successfully
+    [Tags]    profiledelete
+    Open app
+    Login To Krishop
+    Click on Menu button
+    Click on Profile Delete
+    Click on Cross button
+    Click on Profile Delete
+    Click on No
+    Click on Profile Delete
+    Click on Yes
+    Click on Okay
+    
+
+#Test Case 8
+Scenario: Verify that Free Call option is working Successfully
+    [Tags]    freecall
+    Open app
+    Login To Krishop
+    Click on Menu button
+    Click on Free Call
+    Click on Cross button
+    Click on Free Call
+    Click on Not Now
+    Click on Free Call
+    Click on Call Now
+
+
+#Test Case 9
+Scenario: Verify that Logout option is working Successfully
+    [Tags]    logout
+    Open app
+    Login To Krishop
+    Click on Menu button
+    Click on Logout
+    Click on Deny
