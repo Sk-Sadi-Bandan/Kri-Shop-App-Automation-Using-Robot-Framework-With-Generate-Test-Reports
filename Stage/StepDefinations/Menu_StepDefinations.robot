@@ -117,10 +117,10 @@ Click on Profile Image
     Wait Until Element Is visible               ${Profile_Image}
     Element Should Be Visible                   ${Profile_Image}
     Click Element                               ${Profile_Image}
-Click on Profile Image Back button
-    Wait Until Element Is visible               ${Profile_Image_Back}
-    Element Should Be Visible                   ${Profile_Image_Back}
-    Click Element                               ${Profile_Image_Back}
+Click on Back button1
+    Wait Until Element Is visible               ${Back_Button1}
+    Element Should Be Visible                   ${Back_Button1}
+    Click Element                               ${Back_Button1}
 Click on Front Page NID Picture
     Wait Until Element Is visible               ${NID_Front_Page}
     Element Should Be Visible                   ${NID_Front_Page}
@@ -250,3 +250,99 @@ Click on Created New Area from Profile
 
 
 #################################  Test Case 3  #################################
+Click on Reward
+    Wait Until Element Is visible               ${Reward}
+    Element Should Be Visible                   ${Reward}
+    Click Element                               ${Reward}
+Click on Collect Reward
+    FOR    ${index}    IN RANGE    10
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Collect_Reward}
+        Exit For Loop If    ${is_visible}
+        ${start_x}=    Evaluate    ${DEVICE_WIDTH} / 2
+        ${start_y}=    Evaluate    ${DEVICE_HEIGHT} * 0.80
+        ${end_y}=      Evaluate    ${DEVICE_HEIGHT} * 0.20
+        Swipe    ${start_x}    ${start_y}    ${start_x}    ${end_y}
+        Sleep    1s
+    END
+    Element Should Be Visible                   ${Collect_Reward}
+    Click Element                               ${Collect_Reward}
+Click on Alright
+    Wait Until Element Is visible               ${Alright}
+    Element Should Be Visible                   ${Alright}
+    Click Element                               ${Alright}
+Click on History
+    Wait Until Element Is visible               ${History}
+    Element Should Be Visible                   ${History}
+    Click Element                               ${History}
+    Sleep                                       2s
+
+
+#################################  Test Case 4  #################################
+Click on Privacy Policy
+    Wait Until Element Is visible               ${Privacy_Policy}
+    Element Should Be Visible                   ${Privacy_Policy}
+    Click Element                               ${Privacy_Policy}
+Click on Go Back
+    Wait Until Element Is visible               ${Go_Back}
+    Element Should Be Visible                   ${Go_Back}
+    Click Element                               ${Go_Back}
+    Sleep                                       2s
+
+
+#################################  Test Case 5  #################################
+Click on App Introduction
+    Wait Until Element Is visible               ${App_Introduction}
+    Element Should Be Visible                   ${App_Introduction}
+    Click Element                               ${App_Introduction}
+Click on Next
+    Wait Until Element Is visible               ${Next}
+    Element Should Be Visible                   ${Next}
+    Click Element                               ${Next}
+Click on Previous
+    Wait Until Element Is visible               ${Previous}
+    Element Should Be Visible                   ${Previous}
+    Click Element                               ${Previous}
+Click on Finish Button
+    Wait Until Element Is visible               ${Finish_Button}
+    Element Should Be Visible                   ${Finish_Button}
+    Click Element                               ${Finish_Button}
+    Sleep                                       2s
+
+
+#################################  Test Case 5  #################################
+Click on Report
+    Wait Until Element Is visible               ${Report}
+    Element Should Be Visible                   ${Report}
+    Click Element                               ${Report}
+Click on Profit and loss report
+    Wait Until Element Is visible               ${Profit_Loss_Report}
+    Element Should Be Visible                   ${Profit_Loss_Report}
+    Click Element                               ${Profit_Loss_Report}
+Click on Daily
+    Wait Until Element Is visible               ${Daily}
+    Element Should Be Visible                   ${Daily}
+    Click Element                               ${Daily}
+Click on Weekly
+    Wait Until Element Is visible               ${Weekly}
+    Element Should Be Visible                   ${Weekly}
+    Click Element                               ${Weekly}
+Click on Monthly
+    Wait Until Element Is visible               ${Monthly}
+    Element Should Be Visible                   ${Monthly}
+    Click Element                               ${Monthly}
+Click on Yearly
+    Wait Until Element Is visible               ${Yearly}
+    Element Should Be Visible                   ${Yearly}
+    Click Element                               ${Yearly}
+Click on Back arrow
+    Wait Until Element Is visible               ${Back_Arrow}
+    Element Should Be Visible                   ${Back_Arrow}
+    Click Element                               ${Back_Arrow}
+Click on Next arrow
+    Wait Until Element Is visible               ${Next_Arrow}
+    Element Should Be Visible                   ${Next_Arrow}
+    Click Element                               ${Next_Arrow}
+Click on Total sell
+    Wait Until Element Is visible               ${Total_Sell}
+    Element Should Be Visible                   ${Total_Sell}
+    Click Element                               ${Total_Sell}

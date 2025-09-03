@@ -49,7 +49,7 @@ Scenario: Verify that Profile option is working Successfully
     Scroll Personal Information Page
     Click on Change Information
     Click on Profile Image
-    Click on Profile Image Back button
+    Click on Back button1
     Click on Front Page NID Picture
     Click on cross button
     Click on Back Page NID Picture
@@ -97,7 +97,7 @@ Scenario: Verify that Reward option is working Successfully
     Click on Collect Reward
     Click on Alright
     Click on History
-    Click on Back button
+    Click on Back button1
 
 
 #Test Case 4
@@ -123,7 +123,7 @@ Scenario: Verify that App Introduction option is working Successfully
     Click on Previous
     Click on Previous
     Click on Previous
-    Click on Cross Button
+    Click on Finish Button
 
 
 #Test Case 6
@@ -136,39 +136,39 @@ Scenario: Verify that Report option is working Successfully
     Click on Profit and loss report
     
     Click on Daily
-    Click on greater than arrow
-    Click on greater than arrow
-    Click on Less than arrow
-    Click on Less than arrow
-    Click on Total sell arrow open
-    Click on Total sell arrow close
+    Click on Back arrow
+    Click on Back arrow
+    Click on Next arrow
+    Click on Next arrow
+    Click on Total sell
+    Click on Total sell
 
     Click on Weekly
-    Click on greater than arrow
-    Click on greater than arrow
-    Click on Less than arrow
-    Click on Less than arrow
-    Click on Total sell arrow open
-    Click on Total sell arrow close
+    Click on Back arrow
+    Click on Back arrow
+    Click on Next arrow
+    Click on Next arrow
+    Click on Total sell
+    Click on Total sell
 
     Click on Monthly
-    Click on greater than arrow
-    Click on greater than arrow
-    Click on Less than arrow
-    Click on Less than arrow
-    Click on Total sell arrow open
-    Click on Total sell arrow close
+    Click on Back arrow
+    Click on Back arrow
+    Click on Next arrow
+    Click on Next arrow
+    Click on Total sell
+    Click on Total sell
 
     Click on Yearly
-    Click on greater than arrow
-    Click on greater than arrow
-    Click on Less than arrow
-    Click on Less than arrow
-    Click on Total sell arrow open
-    Click on Total sell arrow close
+    Click on Back arrow
+    Click on Back arrow
+    Click on Next arrow
+    Click on Next arrow
+    Click on Total sell
+    Click on Total sell
 
-    Click on Back button
-    Click on Back button
+    Click on Back button1
+    Click on Back button1
 
 
 #Test Case 7
