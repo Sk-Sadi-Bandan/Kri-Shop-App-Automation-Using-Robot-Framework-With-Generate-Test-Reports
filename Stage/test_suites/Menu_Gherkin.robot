@@ -85,6 +85,7 @@ Scenario: Verify that Profile option is working Successfully
     Click on Created New Area from Profile
     Click on Back button
     Click on Back button
+    Close app
 
 
 #Test Case 3
@@ -98,6 +99,7 @@ Scenario: Verify that Reward option is working Successfully
     Click on Alright
     Click on History
     Click on Back button1
+    Close app
 
 
 #Test Case 4
@@ -108,6 +110,7 @@ Scenario: Verify that Privacy Policy option is working Successfully
     Click on Menu button
     Click on Privacy Policy
     Click on Go Back
+    Close app
 
 
 #Test Case 5
@@ -124,6 +127,7 @@ Scenario: Verify that App Introduction option is working Successfully
     Click on Previous
     Click on Previous
     Click on Finish Button
+    Close app
 
 
 #Test Case 6
@@ -169,6 +173,7 @@ Scenario: Verify that Report option is working Successfully
 
     Click on Back button1
     Click on Back button1
+    Close app
 
 
 #Test Case 7
@@ -178,12 +183,13 @@ Scenario: Verify that Profile Delete option is working Successfully
     Login To Krishop
     Click on Menu button
     Click on Profile Delete
-    Click on Cross button
+    Click on Dismiss button
     Click on Profile Delete
     Click on No
     Click on Profile Delete
     Click on Yes
     Click on Okay
+    Close app
     
 
 #Test Case 8
@@ -193,11 +199,12 @@ Scenario: Verify that Free Call option is working Successfully
     Login To Krishop
     Click on Menu button
     Click on Free Call
-    Click on Cross button
+    Click on Dismiss button
     Click on Free Call
     Click on Not Now
     Click on Free Call
     Click on Call Now
+    Close app
 
 
 #Test Case 9
@@ -208,3 +215,5 @@ Scenario: Verify that Logout option is working Successfully
     Click on Menu button
     Click on Logout
     Click on Deny
+    Close app
+

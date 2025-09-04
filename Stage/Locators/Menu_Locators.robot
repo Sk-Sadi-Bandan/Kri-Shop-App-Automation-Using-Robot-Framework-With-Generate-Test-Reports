@@ -76,6 +76,7 @@ ${Next_Arrow}                       xpath=//android.widget.ImageButton[@resource
 ${Total_Sell}                       xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]
 
 ${Profile_Delete}                   xpath=//android.widget.TextView[@text="প্রোফাইল ডিলিট"]
+${Dismiss_Button}                   xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/ivDismiss"]
 ${No}                               xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btPositive"]
 ${Yes}                              xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btNegative"]
 ${Okay}                             xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btPositive"]

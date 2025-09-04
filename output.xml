@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-09-03T15:35:28.782574" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-09-04T11:34:01.446065" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Suites" source="E:\KriShop\Stage\test_suites">
 <suite id="s1-s1" name="Menu Gherkin" source="E:\KriShop\Stage\test_suites\Menu_Gherkin.robot">
-<test id="s1-s1-t1" name="Scenario: Verify that Report option is working Successfully" line="130">
+<test id="s1-s1-t1" name="Scenario: Verify that Logout option is working Successfully" line="211">
 <kw name="Open app" owner="AppSetup">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
@@ -22,15 +22,14 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-09-03T15:35:29.113594" elapsed="17.362929"/>
+<status status="PASS" start="2025-09-04T11:34:01.652702" elapsed="16.054330"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:35:29.113020" elapsed="17.363759"/>
+<status status="PASS" start="2025-09-04T11:34:01.652265" elapsed="16.054895"/>
 </kw>
 <kw name="Login To Krishop">
 <kw name="Click on a Specific Area" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:35:52.715600" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]
-xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]
+<msg time="2025-09-04T11:34:23.030420" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]
@@ -38,1622 +37,258 @@ xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.i
 xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]</msg>
 <arg>${Specific_Area}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:35:46.477790" elapsed="6.237958"/>
+<status status="PASS" start="2025-09-04T11:34:17.708115" elapsed="5.322482"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:35:53.115389" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]</msg>
+<msg time="2025-09-04T11:34:23.423094" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]</msg>
 <arg>${Specific_Area}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:35:52.716011" elapsed="0.399530"/>
+<status status="PASS" start="2025-09-04T11:34:23.030878" elapsed="0.392291"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:35:53.120665" level="INFO">Clicking element 'xpath=//androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]'.</msg>
-<msg time="2025-09-03T15:35:53.582633" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]</msg>
+<msg time="2025-09-04T11:34:23.425093" level="INFO">Clicking element 'xpath=//androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]'.</msg>
+<msg time="2025-09-04T11:34:23.807086" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="asia.ifarmer.retailer.dev:id/rvDeliveryArea"]/android.widget.LinearLayout[1]</msg>
 <arg>${Specific_Area}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:35:53.115856" elapsed="0.466916"/>
+<status status="PASS" start="2025-09-04T11:34:23.423297" elapsed="0.383919"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:35:46.477600" elapsed="7.105312"/>
+<status status="PASS" start="2025-09-04T11:34:17.707946" elapsed="6.099407"/>
 </kw>
 <kw name="Click on Menu button" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:35:54.890330" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
+<msg time="2025-09-04T11:34:26.425886" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
 <arg>${Menu}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:35:53.583670" elapsed="1.306812"/>
+<status status="PASS" start="2025-09-04T11:34:23.808480" elapsed="2.617593"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:35:59.705492" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
+<msg time="2025-09-04T11:34:27.096597" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
 <arg>${Menu}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:35:54.890742" elapsed="4.814925"/>
+<status status="PASS" start="2025-09-04T11:34:26.426370" elapsed="0.670381"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:35:59.711352" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]'.</msg>
-<msg time="2025-09-03T15:36:00.890392" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
+<msg time="2025-09-04T11:34:27.100144" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]'.</msg>
+<msg time="2025-09-04T11:34:30.806531" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
 <arg>${Menu}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:35:59.705978" elapsed="1.184571"/>
+<status status="PASS" start="2025-09-04T11:34:27.097032" elapsed="3.709633"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:35:53.583230" elapsed="7.307454"/>
+<status status="PASS" start="2025-09-04T11:34:23.807684" elapsed="6.999108"/>
 </kw>
 <kw name="Click on Login" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:01.719395" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvLogIn"]</msg>
+<msg time="2025-09-04T11:34:31.131037" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvLogIn"]</msg>
 <arg>${Login}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:00.891433" elapsed="0.828090"/>
+<status status="PASS" start="2025-09-04T11:34:30.807497" elapsed="0.323753"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:02.072129" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvLogIn"]</msg>
+<msg time="2025-09-04T11:34:31.424833" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvLogIn"]</msg>
 <arg>${Login}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:01.719756" elapsed="0.352513"/>
+<status status="PASS" start="2025-09-04T11:34:31.131518" elapsed="0.293428"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:02.077478" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvLogIn"]'.</msg>
-<msg time="2025-09-03T15:36:02.700270" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvLogIn"]</msg>
+<msg time="2025-09-04T11:34:31.427855" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvLogIn"]'.</msg>
+<msg time="2025-09-04T11:34:31.760979" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvLogIn"]</msg>
 <arg>${Login}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:02.072579" elapsed="0.627819"/>
+<status status="PASS" start="2025-09-04T11:34:31.425165" elapsed="0.335932"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:36:00.890978" elapsed="1.809538"/>
+<status status="PASS" start="2025-09-04T11:34:30.807059" elapsed="0.954148"/>
 </kw>
 <kw name="Click on Krishop Login" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:03.576564" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]</msg>
+<msg time="2025-09-04T11:34:32.634817" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]
+xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]</msg>
 <arg>${Krishop_Login}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:02.701212" elapsed="0.875507"/>
+<status status="PASS" start="2025-09-04T11:34:31.761799" elapsed="0.873135"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:03.787715" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]</msg>
+<msg time="2025-09-04T11:34:32.836983" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]</msg>
 <arg>${Krishop_Login}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:03.577044" elapsed="0.210855"/>
+<status status="PASS" start="2025-09-04T11:34:32.635156" elapsed="0.201961"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:03.792244" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]'.</msg>
-<msg time="2025-09-03T15:36:04.032667" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]</msg>
+<msg time="2025-09-04T11:34:32.841635" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]'.</msg>
+<msg time="2025-09-04T11:34:33.115342" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]</msg>
 <arg>${Krishop_Login}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:03.788269" elapsed="0.244533"/>
+<status status="PASS" start="2025-09-04T11:34:32.837364" elapsed="0.278086"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:36:02.700808" elapsed="1.332127"/>
+<status status="PASS" start="2025-09-04T11:34:31.761437" elapsed="1.354127"/>
 </kw>
 <kw name="Click on Mobile Number input section Login" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:05.163304" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]
-xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
+<msg time="2025-09-04T11:34:34.091010" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
 <arg>${Mobile_Number}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:04.033642" elapsed="1.129790"/>
+<status status="PASS" start="2025-09-04T11:34:33.116135" elapsed="0.974991"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:05.379593" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
+<msg time="2025-09-04T11:34:34.301742" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
 <arg>${Mobile_Number}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:05.163663" elapsed="0.216114"/>
+<status status="PASS" start="2025-09-04T11:34:34.091343" elapsed="0.210556"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:05.384374" level="INFO">Typing text '01567839601' into text field 'xpath=//android.widget.EditText[@text="মোবাইল নাম্বার"]'</msg>
-<msg time="2025-09-03T15:36:06.677039" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
+<msg time="2025-09-04T11:34:34.306522" level="INFO">Typing text '01567839601' into text field 'xpath=//android.widget.EditText[@text="মোবাইল নাম্বার"]'</msg>
+<msg time="2025-09-04T11:34:35.067403" level="INFO">xpath criteria: //android.widget.EditText[@text="মোবাইল নাম্বার"]</msg>
 <arg>${Mobile_Number}</arg>
 <arg>${Input_Mobile_Number_Login}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:05.380079" elapsed="1.297087"/>
+<status status="PASS" start="2025-09-04T11:34:34.302183" elapsed="0.765372"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:36:04.033212" elapsed="2.644079"/>
+<status status="PASS" start="2025-09-04T11:34:33.115788" elapsed="1.951920"/>
 </kw>
 <kw name="Click on Password input section" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:07.993182" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
+<msg time="2025-09-04T11:34:35.807555" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
 <arg>${Password}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:06.678005" elapsed="1.315319"/>
+<status status="PASS" start="2025-09-04T11:34:35.068415" elapsed="0.739294"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:08.266397" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
+<msg time="2025-09-04T11:34:36.053899" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
 <arg>${Password}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:07.993623" elapsed="0.272927"/>
+<status status="PASS" start="2025-09-04T11:34:35.807992" elapsed="0.246114"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:08.272046" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="পিন"]'</msg>
-<msg time="2025-09-03T15:36:08.578127" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
+<msg time="2025-09-04T11:34:36.061080" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text="পিন"]'</msg>
+<msg time="2025-09-04T11:34:36.845498" level="INFO">xpath criteria: //android.widget.EditText[@text="পিন"]</msg>
 <arg>${Password}</arg>
 <arg>${Input_Password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:08.266901" elapsed="0.311358"/>
+<status status="PASS" start="2025-09-04T11:34:36.054502" elapsed="0.791070"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:36:06.677575" elapsed="1.900811"/>
+<status status="PASS" start="2025-09-04T11:34:35.068135" elapsed="1.777527"/>
 </kw>
 <kw name="Click on Proceed" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:09.706559" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]</msg>
+<msg time="2025-09-04T11:34:37.597043" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]</msg>
 <arg>${Proceed}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:08.579122" elapsed="1.127571"/>
+<status status="PASS" start="2025-09-04T11:34:36.846011" elapsed="0.751158"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:09.971408" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]</msg>
+<msg time="2025-09-04T11:34:37.796567" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]</msg>
 <arg>${Proceed}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:09.706945" elapsed="0.264591"/>
+<status status="PASS" start="2025-09-04T11:34:37.597408" elapsed="0.199378"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:09.976109" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]'.</msg>
-<msg time="2025-09-03T15:36:10.894461" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]</msg>
+<msg time="2025-09-04T11:34:37.803757" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]'.</msg>
+<msg time="2025-09-04T11:34:38.088251" level="INFO">xpath criteria: //android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btProceed"]</msg>
 <arg>${Proceed}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:09.971784" elapsed="0.922796"/>
+<status status="PASS" start="2025-09-04T11:34:37.797169" elapsed="0.291204"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:36:08.578724" elapsed="2.315966"/>
+<status status="PASS" start="2025-09-04T11:34:36.845810" elapsed="1.242681"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:35:46.477302" elapsed="24.417457"/>
+<status status="PASS" start="2025-09-04T11:34:17.707665" elapsed="20.380888"/>
 </kw>
 <kw name="Click on Menu button" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:14.682253" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]
+<msg time="2025-09-04T11:34:41.101438" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]
 xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
 <arg>${Menu}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:10.896160" elapsed="3.786282"/>
+<status status="PASS" start="2025-09-04T11:34:38.090046" elapsed="3.011536"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:16.917176" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
+<msg time="2025-09-04T11:34:41.733312" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
 <arg>${Menu}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:14.682770" elapsed="2.234529"/>
+<status status="PASS" start="2025-09-04T11:34:41.101843" elapsed="0.631620"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:16.921515" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]'.</msg>
-<msg time="2025-09-03T15:36:17.875786" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
+<msg time="2025-09-04T11:34:41.737376" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]'.</msg>
+<msg time="2025-09-04T11:34:44.110212" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/profilePhoto"]</msg>
 <arg>${Menu}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:16.917521" elapsed="0.958394"/>
+<status status="PASS" start="2025-09-04T11:34:41.733740" elapsed="2.376622"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:36:10.895581" elapsed="6.980496"/>
+<status status="PASS" start="2025-09-04T11:34:38.089402" elapsed="6.021090"/>
 </kw>
-<kw name="Click on Report" owner="Menu_StepDefinations">
+<kw name="Click on Logout" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:18.878810" level="INFO">xpath criteria: //android.widget.TextView[@text="রিপোর্ট"]</msg>
-<arg>${Report}</arg>
+<msg time="2025-09-04T11:34:45.897760" level="INFO">xpath criteria: //android.widget.TextView[@text="লগ আউট"]</msg>
+<arg>${Logout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:17.877337" elapsed="1.001594"/>
+<status status="PASS" start="2025-09-04T11:34:44.111947" elapsed="1.785959"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:19.291810" level="INFO">xpath criteria: //android.widget.TextView[@text="রিপোর্ট"]</msg>
-<arg>${Report}</arg>
+<msg time="2025-09-04T11:34:46.257777" level="INFO">xpath criteria: //android.widget.TextView[@text="লগ আউট"]</msg>
+<arg>${Logout}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:18.879155" elapsed="0.412797"/>
+<status status="PASS" start="2025-09-04T11:34:45.898171" elapsed="0.359741"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:19.296886" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="রিপোর্ট"]'.</msg>
-<msg time="2025-09-03T15:36:19.970974" level="INFO">xpath criteria: //android.widget.TextView[@text="রিপোর্ট"]</msg>
-<arg>${Report}</arg>
+<msg time="2025-09-04T11:34:46.262448" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="লগ আউট"]'.</msg>
+<msg time="2025-09-04T11:34:46.660346" level="INFO">xpath criteria: //android.widget.TextView[@text="লগ আউট"]</msg>
+<arg>${Logout}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:19.292256" elapsed="0.678885"/>
+<status status="PASS" start="2025-09-04T11:34:46.258158" elapsed="0.402368"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:36:17.876846" elapsed="2.094414"/>
+<status status="PASS" start="2025-09-04T11:34:44.111322" elapsed="2.549341"/>
 </kw>
-<kw name="Click on Profit and loss report" owner="Menu_StepDefinations">
+<kw name="Click on Deny" owner="Menu_StepDefinations">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:21.023699" level="INFO">xpath criteria: //android.widget.TextView[@text="লাভ ক্ষতি অনুযায়ী রিপোর্ট"]
-xpath criteria: //android.widget.TextView[@text="লাভ ক্ষতি অনুযায়ী রিপোর্ট"]</msg>
-<arg>${Profit_Loss_Report}</arg>
+<msg time="2025-09-04T11:34:47.376804" level="INFO">xpath criteria: //android.widget.Button[@resource-id="android:id/button2"]</msg>
+<arg>${Deny}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:19.972624" elapsed="1.051414"/>
+<status status="PASS" start="2025-09-04T11:34:46.661586" elapsed="0.715377"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:21.303619" level="INFO">xpath criteria: //android.widget.TextView[@text="লাভ ক্ষতি অনুযায়ী রিপোর্ট"]</msg>
-<arg>${Profit_Loss_Report}</arg>
+<msg time="2025-09-04T11:34:47.552050" level="INFO">xpath criteria: //android.widget.Button[@resource-id="android:id/button2"]</msg>
+<arg>${Deny}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:21.024304" elapsed="0.279469"/>
+<status status="PASS" start="2025-09-04T11:34:47.377638" elapsed="0.174483"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:21.309183" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="লাভ ক্ষতি অনুযায়ী রিপোর্ট"]'.</msg>
-<msg time="2025-09-03T15:36:21.576788" level="INFO">xpath criteria: //android.widget.TextView[@text="লাভ ক্ষতি অনুযায়ী রিপোর্ট"]</msg>
-<arg>${Profit_Loss_Report}</arg>
+<msg time="2025-09-04T11:34:47.557881" level="INFO">Clicking element 'xpath=//android.widget.Button[@resource-id="android:id/button2"]'.</msg>
+<msg time="2025-09-04T11:34:47.761658" level="INFO">xpath criteria: //android.widget.Button[@resource-id="android:id/button2"]</msg>
+<arg>${Deny}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:21.304053" elapsed="0.272890"/>
+<status status="PASS" start="2025-09-04T11:34:47.552241" elapsed="0.209540"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:36:19.972111" elapsed="1.604977"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-04T11:34:49.763398" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-04T11:34:47.762011" elapsed="2.001678"/>
 </kw>
-<kw name="Click on Daily" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:23.262761" level="INFO">xpath criteria: //android.widget.TextView[@text="দৈনিক"]
-xpath criteria: //android.widget.TextView[@text="দৈনিক"]</msg>
-<arg>${Daily}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:21.578648" elapsed="1.684304"/>
+<status status="PASS" start="2025-09-04T11:34:46.661388" elapsed="3.102517"/>
 </kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:23.557474" level="INFO">xpath criteria: //android.widget.TextView[@text="দৈনিক"]</msg>
-<arg>${Daily}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:23.263307" elapsed="0.294307"/>
+<kw name="Close app" owner="AppSetup">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-09-04T11:34:49.765784" elapsed="0.574788"/>
 </kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:23.562423" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="দৈনিক"]'.</msg>
-<msg time="2025-09-03T15:36:23.899927" level="INFO">xpath criteria: //android.widget.TextView[@text="দৈনিক"]</msg>
-<arg>${Daily}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:23.557902" elapsed="0.342217"/>
+<status status="PASS" start="2025-09-04T11:34:49.765197" elapsed="0.575506"/>
 </kw>
-<status status="PASS" start="2025-09-03T15:36:21.578007" elapsed="2.322257"/>
-</kw>
-<kw name="Click on Back arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:24.552154" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:23.901872" elapsed="0.650462"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:24.985405" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:24.552597" elapsed="0.432894"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:24.989359" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]'.</msg>
-<msg time="2025-09-03T15:36:25.364581" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:24.985653" elapsed="0.379111"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:23.901087" elapsed="1.463860"/>
-</kw>
-<kw name="Click on Back arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:26.231598" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:25.366266" elapsed="0.865486"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:26.478452" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:26.232017" elapsed="0.246589"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:26.482931" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]'.</msg>
-<msg time="2025-09-03T15:36:26.741956" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:26.478836" elapsed="0.263263"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:25.365841" elapsed="1.376390"/>
-</kw>
-<kw name="Click on Next arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:27.890733" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:26.743540" elapsed="1.147326"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:28.193812" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:27.891108" elapsed="0.302881"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:28.198791" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]'.</msg>
-<msg time="2025-09-03T15:36:29.069653" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:28.194247" elapsed="0.875526"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:26.743017" elapsed="2.326874"/>
-</kw>
-<kw name="Click on Next arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:30.144005" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:29.071117" elapsed="1.073057"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:30.423194" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:30.144403" elapsed="0.278952"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:30.428042" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]'.</msg>
-<msg time="2025-09-03T15:36:31.483498" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:30.423716" elapsed="1.059915"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:29.070653" elapsed="2.413106"/>
-</kw>
-<kw name="Click on Total sell" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:32.346102" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:31.485239" elapsed="0.861008"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:32.586186" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:32.346445" elapsed="0.239880"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:32.591491" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]'.</msg>
-<msg time="2025-09-03T15:36:33.576357" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:32.586587" elapsed="0.989936"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:31.484591" elapsed="2.092060"/>
-</kw>
-<kw name="Click on Total sell" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:33.952027" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:33.577872" elapsed="0.374290"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:34.305638" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:33.952418" elapsed="0.353333"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:34.309654" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]'.</msg>
-<msg time="2025-09-03T15:36:35.699514" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:34.305958" elapsed="1.393676"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:33.577416" elapsed="2.122338"/>
-</kw>
-<kw name="Click on Weekly" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:36.067027" level="INFO">xpath criteria: //android.widget.TextView[@text="সাপ্তাহিক"]</msg>
-<arg>${Weekly}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:35.701070" elapsed="0.366089"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:36.370605" level="INFO">xpath criteria: //android.widget.TextView[@text="সাপ্তাহিক"]</msg>
-<arg>${Weekly}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:36.067403" elapsed="0.303392"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:36.375749" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="সাপ্তাহিক"]'.</msg>
-<msg time="2025-09-03T15:36:36.728717" level="INFO">xpath criteria: //android.widget.TextView[@text="সাপ্তাহিক"]</msg>
-<arg>${Weekly}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:36.371120" elapsed="0.357782"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:35.700495" elapsed="1.028647"/>
-</kw>
-<kw name="Click on Back arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:38.076904" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:36.730966" elapsed="1.346144"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:38.414793" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:38.077486" elapsed="0.337410"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:38.418371" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]'.</msg>
-<msg time="2025-09-03T15:36:38.838104" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:38.415082" elapsed="0.423164"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:36.730290" elapsed="2.108081"/>
-</kw>
-<kw name="Click on Back arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:39.729140" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:38.839414" elapsed="0.889861"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:39.950620" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:39.729519" elapsed="0.221223"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:39.955480" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]'.</msg>
-<msg time="2025-09-03T15:36:41.102959" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:39.950991" elapsed="1.152105"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:38.838928" elapsed="2.264291"/>
-</kw>
-<kw name="Click on Next arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:41.987971" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:41.104719" elapsed="0.883367"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:42.303351" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:41.988317" elapsed="0.315164"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:42.306897" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]'.</msg>
-<msg time="2025-09-03T15:36:44.129554" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:42.303797" elapsed="1.825874"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:41.104160" elapsed="3.025624"/>
-</kw>
-<kw name="Click on Next arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:44.470379" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:44.130943" elapsed="0.339576"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:44.726646" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:44.470816" elapsed="0.255907"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:44.729934" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]'.</msg>
-<msg time="2025-09-03T15:36:45.727305" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:44.726871" elapsed="1.000566"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:44.130497" elapsed="1.597063"/>
-</kw>
-<kw name="Click on Total sell" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:46.056581" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:45.729088" elapsed="0.327619"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:46.314508" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:46.056939" elapsed="0.257709"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:46.319417" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]'.</msg>
-<msg time="2025-09-03T15:36:47.234757" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:46.314900" elapsed="0.919948"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:45.728574" elapsed="1.506344"/>
-</kw>
-<kw name="Click on Total sell" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:47.545602" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:47.235799" elapsed="0.309933"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:47.798633" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:47.545977" elapsed="0.252793"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:47.803597" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]'.</msg>
-<msg time="2025-09-03T15:36:49.036579" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:47.799024" elapsed="1.237679"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:47.235459" elapsed="1.801358"/>
-</kw>
-<kw name="Click on Monthly" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:49.414360" level="INFO">xpath criteria: //android.widget.TextView[@text="মাসিক"]</msg>
-<arg>${Monthly}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:49.038225" elapsed="0.376273"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:50.155630" level="INFO">xpath criteria: //android.widget.TextView[@text="মাসিক"]</msg>
-<arg>${Monthly}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:49.414756" elapsed="0.740987"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:50.160079" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="মাসিক"]'.</msg>
-<msg time="2025-09-03T15:36:50.535348" level="INFO">xpath criteria: //android.widget.TextView[@text="মাসিক"]</msg>
-<arg>${Monthly}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:50.155978" elapsed="0.379494"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:49.037592" elapsed="1.498001"/>
-</kw>
-<kw name="Click on Back arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:51.334729" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:50.536920" elapsed="0.797935"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:52.077442" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:51.335257" elapsed="0.742334"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:52.083114" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]'.</msg>
-<msg time="2025-09-03T15:36:52.413267" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:52.077999" elapsed="0.335407"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:50.536402" elapsed="1.877174"/>
-</kw>
-<kw name="Click on Back arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:53.306428" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:52.414963" elapsed="0.891608"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:54.084860" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:53.306822" elapsed="0.778162"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:54.091489" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]'.</msg>
-<msg time="2025-09-03T15:36:54.441842" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:54.085211" elapsed="0.356781"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:52.414430" elapsed="2.027703"/>
-</kw>
-<kw name="Click on Next arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:55.497542" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:54.443702" elapsed="1.054020"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:56.402419" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:55.497978" elapsed="0.904567"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:56.406910" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]'.</msg>
-<msg time="2025-09-03T15:36:58.152985" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:56.402775" elapsed="1.750340"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:54.442992" elapsed="3.710248"/>
-</kw>
-<kw name="Click on Next arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:58.569150" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:58.154797" elapsed="0.414500"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:59.199981" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:58.569574" elapsed="0.630540"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:36:59.205006" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]'.</msg>
-<msg time="2025-09-03T15:36:59.522736" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:36:59.200428" elapsed="0.322448"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:58.154072" elapsed="1.368939"/>
-</kw>
-<kw name="Click on Total sell" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:01.577815" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:36:59.524430" elapsed="2.053515"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:02.221242" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:01.578187" elapsed="0.643224"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:02.226329" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]'.</msg>
-<msg time="2025-09-03T15:37:03.180672" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:02.221675" elapsed="0.959142"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:36:59.523845" elapsed="3.657121"/>
-</kw>
-<kw name="Click on Total sell" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:04.224866" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:03.182368" elapsed="1.042631"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:04.594039" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:04.225253" elapsed="0.368926"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:04.599302" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]'.</msg>
-<msg time="2025-09-03T15:37:05.876787" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:04.594469" elapsed="1.282480"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:37:03.181937" elapsed="2.695139"/>
-</kw>
-<kw name="Click on Yearly" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:06.248629" level="INFO">xpath criteria: //android.widget.TextView[@text="বাৎসরিক"]</msg>
-<arg>${Yearly}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:05.878715" elapsed="0.370048"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:06.498248" level="INFO">xpath criteria: //android.widget.TextView[@text="বাৎসরিক"]</msg>
-<arg>${Yearly}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:06.249007" elapsed="0.249379"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:06.503099" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="বাৎসরিক"]'.</msg>
-<msg time="2025-09-03T15:37:06.759742" level="INFO">xpath criteria: //android.widget.TextView[@text="বাৎসরিক"]</msg>
-<arg>${Yearly}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:06.498645" elapsed="0.261252"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:37:05.877896" elapsed="0.882124"/>
-</kw>
-<kw name="Click on Back arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:08.250051" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:06.761161" elapsed="1.488974"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:08.508044" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:08.250293" elapsed="0.257891"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:08.512887" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]'.</msg>
-<msg time="2025-09-03T15:37:10.266052" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:08.508446" elapsed="1.757742"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:37:06.760803" elapsed="3.505519"/>
-</kw>
-<kw name="Click on Back arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:10.474653" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:10.269583" elapsed="0.205195"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:10.682730" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:10.475016" elapsed="0.207849"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:10.687780" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]'.</msg>
-<msg time="2025-09-03T15:37:12.324095" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivPreviousDate"]</msg>
-<arg>${Back_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:10.683119" elapsed="1.641094"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:37:10.268868" elapsed="2.055481"/>
-</kw>
-<kw name="Click on Next arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:12.679256" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:12.325639" elapsed="0.353754"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:13.347575" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:12.679651" elapsed="0.668123"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:13.354575" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]'.</msg>
-<msg time="2025-09-03T15:37:13.737907" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:13.348132" elapsed="0.389921"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:37:12.325077" elapsed="1.413118"/>
-</kw>
-<kw name="Click on Next arrow" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:15.362044" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:13.739781" elapsed="1.622385"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:15.687398" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:15.362397" elapsed="0.325140"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:15.691604" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]'.</msg>
-<msg time="2025-09-03T15:37:16.539778" level="INFO">xpath criteria: //android.widget.ImageButton[@resource-id="asia.ifarmer.retailer.dev:id/ivNextDate"]</msg>
-<arg>${Next_Arrow}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:15.687793" elapsed="0.852106"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:37:13.739001" elapsed="2.801012"/>
-</kw>
-<kw name="Click on Total sell" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:17.756714" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:16.541224" elapsed="1.215625"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:17.984692" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:17.757100" elapsed="0.227730"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:17.989992" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]'.</msg>
-<msg time="2025-09-03T15:37:19.413446" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:17.985335" elapsed="1.428234"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:37:16.540610" elapsed="2.873076"/>
-</kw>
-<kw name="Click on Total sell" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:20.432176" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:19.415066" elapsed="1.017284"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:20.774011" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:20.432629" elapsed="0.341524"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:20.778872" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]'.</msg>
-<msg time="2025-09-03T15:37:22.472178" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvTotalSell"]</msg>
-<arg>${Total_Sell}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:20.774454" elapsed="1.697842"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:37:19.414467" elapsed="3.057941"/>
-</kw>
-<kw name="Click on Back button1" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:23.365285" level="INFO">xpath criteria: //android.widget.ImageButton</msg>
-<arg>${Back_Button1}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:22.474047" elapsed="0.891371"/>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:23.661760" level="INFO">xpath criteria: //android.widget.ImageButton</msg>
-<arg>${Back_Button1}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-09-03T15:37:23.365662" elapsed="0.296225"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:23.666468" level="INFO">Clicking element 'xpath=//android.widget.ImageButton'.</msg>
-<msg time="2025-09-03T15:37:23.929778" level="INFO">xpath criteria: //android.widget.ImageButton</msg>
-<arg>${Back_Button1}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-09-03T15:37:23.662158" elapsed="0.267752"/>
-</kw>
-<status status="PASS" start="2025-09-03T15:37:22.473523" elapsed="1.456516"/>
-</kw>
-<kw name="Click on Back button1" owner="Menu_StepDefinations">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<kw name="Capture Page Screenshot" owner="AppiumLibrary">
-<msg time="2025-09-03T15:37:26.307556" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;img src="data:image/png;base64, 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
-FsnJyTA2Nq6QAQ3KyyADNFUejUYDtVoNtVot9nbrSl2eFRpBwIrIBwh/nA5BqxHromUA5Kam67r0
-SwAAIABJREFUmNW4Npwtqv/OAhFRRREEAYcPH0a3bt0KDMMpCAJyc3OL7dCiyjV58mRJo4iZm5tj
-8eLFFdiiZxcDND03tIKApFwNErPzxn22MTVGLVNjGPFLn4iIngFhYWEICQkp9fzdu3eHj49PBbbo
-2cUATUREREQkQeUX/BIRERERVWMM0EREREREEjBAExERERFJwABNRERERCQBAzQRERERkQQM0ERE
-REREEjBAExERERFJwABNRERERCQBAzQRERERkQQM0EREREREEjBAExERERFJwABNRERERCQBAzQR
-ERERkQQM0EREREREEjBAExERERFJwABNRERERCQBAzQRERERkQQM0EREREREEjBAExERERFJwABN
-RERERCQBAzQRERERkQQM0EREREREEjBAExERERFJwABNRERERCQBAzQRERERkQQM0EREREREEjBA
-ExERERFJwABNRERERCQBAzQRERERkQQM0EREREREEjBAExERERFJwABNRERERCQBAzQRERERkQQM
-0EREREREEjBAExERERFJwABNRERERCQBAzQRERERkQQM0EREREREEjBAExERERFJwABNRERERCQB
-AzQRERERkQQM0EREREREEjBAExERERFJwABNRERERCQBAzQRERERkQQM0EREREREEjBAExERERFJ
-wABNRERERCQBAzQRERERkQQM0EREREREEhhXdQNImri4eISGHkPYP2G4eesm0lLTYGVtBQcHBzRq
-1BBNmjZB69atYWlpUdVNrVI7tu/ElStXYW1tjXffexvm5uZV3SQiIiJ6RsgEQRCquhFUsszMTKxa
-+ROW/bgCarX6qfNaWFrg9ddfw5tvvg5PL89KaqFh+WjKx9i+bQcAIPrODcjl8nKtT6VSQaFQ6KNp
-REREVM2xhKMauHvnLoYOeQOLA5YWCM8vvOCNbt1exMs9XkLTZk3FXtaM9AysXbMO3bv1wKyZXyIh
-IaGqml5ltBqNeDs7O7tc67p69RqGDxtZ3iYRERHRM4IlHAYuNiYWo0e9jevXrwMAnJycMGXqJHTr
-9iIcHR0LzJuRkYFLFy/j0KHD2LhhE3JychD4ywbs2b0PX86ZiQED+sPI6PnYZ3J0chJvX79+Az4+
-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
-0tLSkZKcDIWJAvb29jA2rhb7YURERER6Ua0CNFB0iO4/sB/eGz+2CltFRERERM8Lg6+BftKTNdEW
-Fkq89PKLVdwqIiIiInpeVLseaJ2bN2/hm9nzMOPLz+HR4Nm6NDcRERERGa5qG6ABQBAEXt6biIiI
-iCpVtSvhyI/hmYiIiIgqW7UO0ERERERElY0BmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIi
-koABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiI
-iCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIi
-IiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiI
-iIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYi
-IiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJjFNS
-Uqq6DURERERE1QZ7oImIiIiIJGCAJiIiIiKSgAGaiIiIiEgCBmgiIiIiIgkYoImIiIiIJGCAJiIi
-IiKSgAGaiIiIiEgCBmgiIiIiIgkYoImIiIiIJGCAJiIiIiKSgAGaiIiIiEgCBmgiIiIiIgkYoImI
-iIiIJGCAJiIiIiKSgAGaiIiIiEgCBmgiIiIiIgkYoImIiIiIJGCAJiIiIiKSgAGaiIiIiEgCBmgi
-IiIiIgkYoImIiIiIJGCAJiIiIiKSgAGaiIiIiEgCBmgiIiIiIgkYoImIiIiIJGCAJiIiIiKSgAGa
-iIiIiEgCBmgiIiIiIgkYoImIiIiIJGCAJiIiIiKSgAGaiIiIiEgCBmgiIiIiIgkYoImIiIiIJGCA
-JiIiIiKSwLiqG1AUQRCKvE1EREREzz6ZTFbkbUNhcAFaEIQC/4iIiIjo+SOTycTwbGgh2qACtCAI
-0Gq14v9qtRoajYZBmoiIiOg5IZPJIJfLYWxsDCMjI8hkMvF/Q2EwAVoXmrVaLTQaDXJycqBUKlGz
-Zk0oFIqqbh4RERERVQKVSoWUlBRkZmbC1NQUcrkcAAwqRBvESYT5Sza0Wi1yc3NhZmbG8ExERET0
-nFEoFKhZsybMzMyQm5srVicYUnmvQQRo4L8eaI1Gg9zcXNSoUaOqm0REREREVaRGjRrIzc2FRqMR
-Q7ShMJgADaBA7bOJiUlVN4eIiIiIqoiJiQnUarXBhWfAwAI08F+IJiIiIqLnmyGGZ8AAAzQRERER
-kSFjgCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIi
-IiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiI
-iIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYi
-IiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJ
-iIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZo
-IiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoAB
-moiIiIhIAgZoIiIiIiIJGKCJiIiIiCRggCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKCJiIiIiCRg
-gCYiIiIikoABmoiIiIhIAgZoIiIiIiIJGKBJ73bv3g1fX1/IZLJi//n6+mLJkiVV3VQiIiIiyYyr
-ugH0bAkNDcXAgQNLnC8sLAyTJ0+GIAiYPHlyJbSMiIiISD8YoEmvZs+eDQCw/24EakzoU+x8ORG3
-Edvpc6xfv54BmoiIiKoVlnBQhbDo2/qpj5s2cwOQ1xNNREREVJ2wB5r0ys3NDceOHUPCWwth0bdV
-gccU9WrB6s0uVdQyIiIiIv1ggCa9Wrx4McLCwhAeHo7ciNuFHjd2qQXzTo2qoGVERERE+sESDtKr
-GjVqIDAwULxv5tcKFv49oPDyqMJWEREREekPe6BJr8LCwtCla1cAgPXI12DePq8WOn3fYaiiblZl
-04iIiIj0gj3QpDeBgYHo2rUrUlNSUHPKWNj07w5FDSUAQB0bV8WtIyIiItIP9kCTXgQGBmL06NEA
-gJpTxsLy5Y4AAA2AlMDfkRN2CQCguvsQ5lXVSCIiIiI9YICmcisuPAPA4+XrkX3qnHg/ZdUBKFxr
-IeOP8wCALl04KgcRERFVLwzQVC5PC8+PFq1FRsgJuLq6Yvfu3Rg1ahTCw8MR1/crcR7dhVfo+ZCT
-k4Pjx4/j6tWruH//PoyMjODk5IQmTZqgdevWMDfn8YmqcPv2bYSHh+POnTtITExEdnY2FAoFLCws
-YGNjg/r168PNzQ1eXl6Qy+V63faz/pk4ePAgkpOT0blzZ9SpU6dM6/jzzz/RoEEDuLi46Ll1RFRW
-DNBUZiWF5/Tgv9G8eXOEhoaiRo0aCA0NRWBgIHbv3g0fHx+MGjUKPj4+VdV8qmS7d+/GlClTcPt2
-4eENAaBWrVqYMGECxo4dy6BQSa5du4Zp06Zh9+7dpZrfw8MDr732GkaNGgVPT89yb/95+EysXLkS
-e/fuxenTpyUH6EePHmHOnDlYtmwZhgwZgt9//x0ymayCWkpEUsiSk5OFqm6EIAjQarVQq9XIzc1F
-WloaGjZsWNXNoqd4WnhO3X0Yj3/+rUB4pueXIAiYM2cO5syZAwBo3bo1hgwZAjc3NxgbG+PRo0c4
-c+YMdu7ciaSkJFhZWWHOnDmYMGECTE1Nq7j1z647d+7Az88P8fHx8PPzw6BBg+Dl5YWaNWvCzMwM
-Go0G2dnZSEhIQHR0NEJDQxEcHAyVSgUA+OKLLzBr1qwyvUfP02di6NCh2LZtGw4cOIBevXqVahlB
-ELBnzx5x56JJkyZYuXIlOnbsWPLCRM+Yq1evwsrKCiYmJjA2NoaRkZFB7EgyQJNkTwvPANApTYvU
-X/ciMDCQ4ZmwdOlSTJo0CQqFAqtWrcKIESNgbFz44FdSUhK2bNmCL7/8Eg8fPkSnTp2wevVqeHt7
-V0Grn33Lly/HBx98gCFDhuDXX38t8j15UkxMDAIDA/H1119DpVKhf//+2LJlC8zMzCRt+3n6TMyb
-Nw/Tpk3DwIEDsWnTJiiVyqfOHxMTg2nTpmHz5s0AgI8//hgzZsyAjY1NZTSXyOAwQD8FA3T1UVJ4
-frWuB35o1qkqmkYG6PTp0+jcuTNUKhV27dqFAQMGlLhMQkICZsyYgbVr18Le3h6rV6/GwIEDK6G1
-z5c1a9bgnXfegbe3Nz755BM4OjrCxMQEACCTyaBUKuHi4oJ69eoVWvbs2bPo06cPEhMTMWfOHMya
-NavU233ePhMxMTFo3bo17t+/Dw8PD/Tq1Qu1atWCQqEAABgbG8PS0hIeHh6IiYnBF198gYcPH8Lb
-2xvLly9H9+7dq/gZEFUtBuinYICuHooLz9r0TDz45kcI0bHITk2ryiaSAcnKykKnTp1w4cIFTJ8+
-Hd98802plxUEAVu2bMH48eORkpKCjRs34q233qrA1j5/kpKSMGDAAPz1119PnW/QoEFYuXIlHBwc
-Ckzfv38/+vbtC4VCgTt37qB27dolbvN5/UxcunQJkydPRkhISKnmnzhxIubMmQNbW9sKbhmR4WOA
-fgoGaMP3tPCc8Pl85N66i+bNmyMsLKwqm1ktPH78GNHR0WjUqFG1H2HgaSIiItC8eXMAQHx8PJyc
-nCSv4+LFi5g1axbWrVvHMCFRaT5nubm5OH36NK5cuYJHjx5BpVJBEPJ+ErKzs3H48GGEh4dj+PDh
-2LBhQ4FlBUFA9+7d8eeff+Lnn3/GO++8U2KbnoXPRGRkJGQyGby8vAo9VtJrHh0djdu3byMtLU2s
-JddqtZg1axauXbsGAOjbty+CgoIq9kkQVSMM0E/BAC1NcnIywsPDK3QM5dDQUKxfv148Oz40NBTA
-08MzTxgsnQMHDqBPnz7Ys2cPXnnllapuToWaP38+Pv/8c8yfPx+ffvppVTfnuaKPz1l6ejpatWqF
-yMhIJCcnF6rDXbhwIT7++GO8//77WLZsWanWWd0/E2+++SZOnDiBqKioQic0lvU1v3btGr755hts
-3rwZjo6OiI+PN4iAQJUnMDAQc+bMQdeuXREQEMDf0nwMNUBzGLtqJDQ0FFOmTCnQy+vj44OAgAB0
-7dpVb9sZPXo0AgMDnzrP8xCed+zYobd1paSkIDk5GePGjROnrV27FiqVCikpKYiLi9PrTmOzZs2K
-HGbswYMHOH78uN62U5yUlBRYW1vD1dUV9erVw2effQaFQoF69epVyPPt16+fWL+bX2U835SUFAAo
-10leKSkpUCgUJZ5gVhKZTAYrKyt06NBBnFbez1mbNm1gZ2eHrVu3ws7ODjKZTOyljo+PBwCcOHFC
-/HtxdHQscrQI3XtRUZ+J9PR0WFpaljifXC4vsu46MzMTx48fx/Xr15GVlYU6deqgQ4cOcHNzKzTv
-3bt3sXTpUri7uyMlJQVKpbJAYC7Laz5w4EDs2rUL9+/fx5YtW8TPc8+ePUv1vKh6mz17Nu7cuYPA
-wECEhYXhzz//fOZ+U5817IGuJvKXUBhZmcPUuy5yIu9Bm5YFAFi8eLFexlQODAxEYGAg5DZK2H0z
-HGYuNSE8SkX6nxFI3nwMAOAwcyKSN+95psMzgArZw/Xx8cG4ceMKBOmKsH79eowYMaJf14cLAAAg
-AElEQVTQ9LNnz6Jt27YVuu2qUFTvKPDsPt/idOzYEX///XeFfs502yjOmDFjsHbt2kLTK/q9sLGx
-EXdmnsbe3h6PHj0S72u1Wvz666+YNm0aYmNjC80/YcIEzJo1C46OjgDyeqB/++23QvNV1Gt+9+7d
-ajsGNpXegAEDsGfPHvG+j48PQ/T/GWoPNAN0NRAWFgZfX18AgP13I2DzXi8YJaXDKD0bSZtC8fD7
-nXrdnpG1OZz/XgCFa628+3GPIctVF9rWsxyeAWDBggVlXvbGjRtYvXo1GjZsiFGjRollNydOnICJ
-iQkePnyIpk2b4q233kJycjJiYmLQtGlTvbW9W7duaNWqVaHpd+/exZYtW6BWqzF9+nRx+syZMwv0
-cuV/fOLEiXB2dgYAzJkzB5mZmfj0009hb29f7PZ1gfZ/7N15mJV13fjxzwCjIrGFaC4pCqmJBpb6
-01wAydTCBRcy1DCXEg2BNDEDIkTTNHdTzAR3e0IBM1fKXVNT5HFBTUtRHyUXZhRZZOD8/pjOYUZm
-hvkAMqO+Xtc11wVzztz3zTAD77nPdykrK4sXXnghrrzyyk/0z3vCCSfUuZRa8c9blw8//DDGjh1b
-631nnnnmcv9hnjhxYsycOTOOOeaY6NatW1RUVEREpL4Pzj///HjzzTdj6NChscEGG0RFRUWUl5fH
-kiVLShPr9txzz9h9993rPcZrr70WF198cWy88cZx/PHHR0REeXl5zJo1KyZMmFDv11mXLl1W+hzF
-8bsf/7uNqN5s5cADD1zmWDX/Llb2a+KDDz4o/RnOOOOMaNmyZXzwwQfRtm3bWs8rLy+PJ598Mq69
-9tqIiNhuu+3iwAMPjFNOOSUiqu86Dx8+PC6//PKIqH4lY88994z27dvHG2+8ETfeeGM89dRTsfXW
-W8ekSZNiiy22iEMPPTSuv/76GDRoUGy11VZRUVERb775ZkyePLnB7+2P/5vQWMccc4zx/58DFRUV
-0bt375gxY0bpfSK6WnMN6KioqCg09ducOXMK7777bmH27NmF1157rfDcc88VWGrQoEGFiCh0POWg
-QtfKGwtdK28sbPbe9YWvPHtJYfMZFxY6Hbt3ISIKLdq0Lqy1zRYr/NZq3U6FiCi0H7x36TxdK28s
-dHvzqsLmMy4sbD7jwkKLtq0LEVHo0aNHYc6cObWuc8KECYUxY8bUeps+fXrp8enTp9d6bOLEiav7
-U7naTJs2rRARhX79+tV6/7PPPlvo3LlzISIKBx98cBNdXbWqqqrCtttuW4iIwm233VbrsUWLFhXK
-y8sLEVF4++23S+/v1Kn6a+Sf//xno89z2223NYs/b32eeeaZwvrrr1+IiMItt9yy3Of369evEBGF
-adOmrfA5t9lmm0JE1Pr+KBQKhRtuuKEQEaW3/v37F5599tk6j/Hoo48WIqKw4447LvNYQ19nq+oc
-hcKK/92uzNfEwoULC9dff33p+hcuXFjvc6+55prCWmutVWjbtm3hqquuKixatKj02Pz58wuHHHJI
-ISIKm266aeGee+6p81znnXdeISIKa621VuFf//pX4dBDD63za2V539v1/ZsARXPmzCn06NGj1vdn
-z549l/m/9vPmueeeK7z22muF2bNnF959993CnDlzmrxbKyoqCsZAfwoUfyJt892ldxTLWraIwtpr
-RNn786NNn23i3ctuj1brdY4vnXXKCp+n4ropUXHd1GjRvk2t9xdatCj9es0tNoz5/3gpzj///Fo/
-FY8ZM6a0q1hN0x+9J6ZcdU71c075aUy9s/Z41OnTp8f555+/wte8ui1evHilfvrdaqut4tRTT43h
-w4fXen+hUIiXXnopHn/88RgwYECtTSUeeeSRWLhwYeywww7LjJFdvHhxvP7667FgwYL05hItW7aM
-gw46KKZPnx5PP/107L333qXHWrVqFdttt1088sgj8be//S0GDBiwAn/a+i1ZsiRmzpwZjz32WBx+
-+OF1bqIxffr0uPzyy+Nvf/tbzJkzJ7p37x7f/e5347DDDluh1Rvqs8kmm5TG8u67776x/fbbxx57
-7BFHHXVUbLbZZqvsPI1x0EEHxVZbbRX33HNPXHHFFTF58uS49dZbY9SoUXHSSSc1etWW+r7OVuU5
-Vrfnnnsubrjhhrj66qtj1qxZy33+zTffHIcffnh06tQpbr/99th+++1LjxUKhTj55JPjxhtvjI03
-3jhuv/32Or9/1lhjjejXr18MHz48FixYEHvvvXe9r4429DmHxujQoUPce++9te5EP/XUU9GnTx93
-opuhFst/Ck2pOKEgIqLVxp1rP/jfsG3Ztvo/vCVzP1wl51xSWfs4ZUuWlH696P/ei4hYZmJNcZWO
-Xx733Vpv5w/7VsR/Ho/4z+Nx/k+/HaOP2jlGH7FDjD5ih4iIuOCCC1bJNX+SFi1aFBMnToxevXrF
-F77whejUqVP079+/tNRUoVCIu+++O84888wYP358zJo1K1q0qP9bq67/qOfPnx/bb799HHroofH0
-00/Xeuy0006LPn361PmDxmmnnRZdunSJLbfcslHjP2t6/fXXS8M0RowYEQcffHBMmjQpFi9eHBFR
-esl+0KBBceyxx8bVV18d7777bkRUrzbwyCOPxMsvvxxVVVWp80ZELFy4MHbdddc48sgj61z68MEH
-H4xvfvObcdlll8WLL74Yb7/9dtx7773xs5/9LHbaaad4/PHHG32u+fPnx+mnnx7bbbfdMp+jqqqq
-OPjgg0u/b9u2bTz++ONxxhlnxA477FD6ul5dWrVqFV/72tdi6NCh8eSTT8Yf//jH2HjjjWP06NGx
-3377xdtvv93oY9X3A9WqPMcnbfHixXHHHXfE/vvvH927d49x48bFrFmzlhmq8XGvvfZaHHnkkRER
-ce2119aK54jqr/2bb64ejvaFL3wh+vbtG927d48xY8bEvHnzSs97+umn49vf/nbp9y+88EJMmTKl
-3vOuyA6JS5YsiVmzZsWTTz4ZzzzzTHz00UfpY/DZUYzo4nKPEUsjujhcjObBHehmrObEwYiID//y
-j2h36NKl68rmLYyIiHn/eOm/7yiLiuumxoqqml0dRx9cf3+0H/yd0hjoeL96ouKca++Nqv97LzbZ
-ZJM6Z6ZHRIw57rv1Hr/Lhp1i9FG7RCyq/g9q7MTHVvhaV5eqqqo4+uijS2vglpeXx5w5c2LKlCkx
-ZcqUUoCefvrppY9p27Zt7LHHHqnzrL322tG/f/+YOHFiTJs2rTTmvVAoxMMPPxwRETvuuGOtj7nr
-rrtq3fW/4oor4sQTT2zU+WbPnr3MDmeTJk2KSZMmxSGHHBITJkyIgQMHRmVlZYwePTrGjx8f48eP
-Lz33hBNOKP16vfXWix/+8Idx9NFHR9euXRt1/tatW0f//v3jyiuvjLvuumuZ8dq//e1vY8GCBdG/
-f/+48MIL40tf+lLMmjUrzj777LjssstiwIAB8fe//700sWt557rjjjviiSeeiLvuuqtWMD/66KNx
-xx13RETE3XffHX379o25c+fGpZdeGiNGjIjDDjssHn/88UZtElL097//PW666aZ44YUXok2bNrH1
-1lvH3nvvHV//+tcbfYyI6q+1gw8+uPRKwd133x133XVXHHrooanjNPU5VkRVVVXcfvvt8Zvf/KY0
-YXH99dePH//4xzFgwID44he/2OCrEGeeeWZUVlbG4MGDY6+99lrm8S9/+ctx5513xn777RdvvPFG
-bLbZZjFz5sz41a9+FS1atIjRo0fHY489Fvvuu2/Mnj07hgwZEmeffXYcd9xxceWVV67SP+u0adNi
-zz33LP2+a9euMXHixDpXMuHzob470f3794977rmnia+OInegm6ma8fyFb1UvSfXuqVfHolf/e3do
-7oIo+6gqFr3xbmliX9Xsd/47DGPF3uZOq/6Paknlh/H6bqfE3D8/FoWX3oyPnvpXvHvZ7aXzfJqG
-XKys22+/Pa6++uooLy+Pa665JubOnRvz5s2Lm266KdZbb704/fTT4/TTT48ePXrEH/7wh5gwYUJs
-ueWWpbtbGfvtt19ERFxzzTWlu8BlZWWlYQQPP/xwLF68OObOnRvXXnttHHTQQRER8f3vfz8iIi68
-8MJYsGBBo8514403xosvvhhbbLFFPP/881FZWRn3339/bLHFFnHjjTfGOeecE2VlZXHcccfFSy+9
-FNOmTStNtCpe6/Dhw2OvvfaK9957L84888z4xje+Ebfddluj/7z77LNPRERcffXVy9zFfuml6h8K
-jznmmNhoo42iVatWsdlmm8Ull1wSAwcOjFdeeaVW0C9P8W7k+PHjS0uwRVRPRouovnP4rW99q7QM
-3MknnxxHHHFEaSJZYxQKhRg3blzstNNOcc4558Sf//znuPHGG2PkyJHxjW98IwYNGhT/+c9/IiIa
-fIWi6IEHHojvfOc7pb/nr371q3Vuq70yVsc5sh588MHo27dv7LvvvqUVRa699tr45z//Gb/85S+X
-O8G8srKytAznkCFD6n1e9+7d4/7774/XX389nnzyyXjyySdjrbXWiuuuuy4efvjh2GuvvWL27Nlx
-yimnxHnnnRdrrrlmnHPOOav0zxpRPYSoZ8+esfvuu0fHjh3j5ZdfjgEDBqRfUeKzpa470ffee2+t
-m2o0LXegm6H6dv2bO+2heH3XEdH2gJ2i1VprxOIP5sf7Ux+NJR/Mj0GDBqVmdjfk/PPPj6lTp8bs
-w85d5rEJEybUuYZq0bYHnREd2ta/lm2hal5Uz42otjJr564Oxbu/P/rRj2ptG3zAAQdE+/bt41vf
-+lZERPzud7+Lb37zm6XHDj744LjrrrtS5+rbt2906tQpnn766XjwwQdLG+Uce+yx8eMf/zhGjRoV
-55xzTq3/WCdOnBiHH354vPjii/HEE0/E9OnTY6eddlruud57r3oozu6771562XnXXXeNK664Inbd
-ddc499xz44QTToh27dpFhw4dom/fvtG3b9/4+c9/Hu+++26cc8450a1bt4io3hL6/PPPj7Fjx8bA
-gQPj+eefb9QY5b59+0bHjh3jhRdeiPvvv7/WahCbbbZZPPPMM/H+++/X+pgWLVrET3/607j++uvj
-D3/4Q4wcObJRMXrAAQfEiBEj4q9//Ws89NBDpbt7Xbt2jfLy8thoo42iqqqq1ljsI444IiZOnBh3
-3nlno8a1PvjggzFq1KiIiDj11FNLd3affPLJuOiii+Lqq6+ORx99NKZOnVrnmtVFzz//fIwaNSom
-TZoUEdUrR4wYMSL22WefZTbuWFGr4xwrYtiwYaVhXZtvvnmMGzcu9t9//ygvL2/0MR5++OGYN29e
-bL/99suN7Q022KD0669+9avRrVu3eOaZZ6Jfv34xZ86cGDduXJx66qmlOQ8dO3aM3r17r9KhPVts
-sUVMnz49IiLeeuut2GmnneKVV16Jxx57LP1KFp8tdd2JLv5wOGHChKa8NEJANzvDhw8v3eGtGc9f
-/NHAmPf36bGkcl5UTvhrrY8ZOnToKr0r3Lt375g4cWJMmTIlXnnllejQoUN06dIlxowZU+/QjS5d
-usR9990XTz2/7DqqDdl0001XxSV/Yop3Rusac9m3b9/Ybbfd4v7776+1Tmu7du1i2LBh6YBu27Zt
-HHvssXH66afHpZdeWgroo446Klq3bh3jx4+PJ554Ijp16hT9+vWLIUOGxDe+8Y2IiNhjjz3iiSee
-iGeffbZRAb3ddtvFgAEDSh9ftPPOO0e3bt3ipZdeihdeeGGZsaN16dixY4wZMyb+8Y9/xG233RYP
-Pvhg6Y7m8v68xx9/fIwbNy4uvfTSWgE9duzYOOOMM0qRXtPXvva1iKheFu29996LddZZZ7nnat++
-ffzsZz+Lk08+OU4//fS49dZbo2XLltGtW7eYM2dOtGnTZpmP2XDDDSNi6d3w5Zk2bVpERBx88MG1
-hvRss802MWDAgDjvvPPiF7/4Rey9997x73//u85jTJ06NQ455JBYsGBBfPWrX43TTjst9t1331RA
-Ls/qOMeKKn7Ou3TpEuPHj49ddtmlzgmmDSmu5VxzM5nG+Ne//hXPPPNMRCz9oXDo0KHLPC8znCfr
-S1/6Uunf3+IPuXy+dejQIaZMmRI9e/Ys3TwR0c2DgG5GijsAtmizdqzz06Ni7Z2qx0wWd/1bMnde
-9OjRo7SucIcOHWL//fevN2pXxhFHHJG6o13c8vud328dHdq0rPd5S2bPj8LC6kmJa57yUp0TyJqT
-LbfcMiIiJk+eHCeffPIy67GOHDkyZs+evcyd9IbuMDbkqKOOit/+9rfxxz/+MYYMGRI777xztGzZ
-Mg4//PA4/PDDY/HixdGy5bKf386dq8erN3aSyT777FMaQlFTWVlZKRivuuqq+MpXvtKomd9lZWW1
-7kg31pFHHhnnnHNOTJo0KR5++OHSXfyaL1t+XIsWLWLttdeOefPmxdy5cxsV0BHVw0Euv/zyuOOO
-O2L8+PFx3HHHRVlZWZ3xHLH0c9nY43/4YfXk27omkrVu3TpOPfXU6NatW3zve9+r9xgbbbRRaRhO
-//79o3379lFVVbVK43Z1nGNFDRgwIE4++eR45ZVXok+fPtGjR4847rjjYuDAgY3eja84CbKhdco/
-bv78+XHIIYeUfv/73/8+jj766NzFryLFTV4a+3XHZ1+XLl1Kd6JFdPNhDHQzUTOev3TmiGXiueau
-f8OGDYsxY8bEsGHDPpF4XhkNxfOn0b777hsbbrhhvPDCC3HIIYfEiy++WOvxPfbYIw477LBo167d
-KjnfpptuGiNHjoyIiBNPPDHmzp1b6/G64jli6ZbKK/Of7ty5c2stV3fJJZfExhtvHGeddVa9Y6tf
-f/31+Mc//hHXXXddXHXVVRERqaXfNt100zj55JMjIuKkk04qRWhD3nrrrdJKCZlI6tChQ1x00UUR
-Uf25Ld4xrs8tt9wSEdUTDWfPnr3c43fv3j0iIqZMmVLvDxEDBgwofZ7q8vWvfz123XXXiKjeIGSP
-PfaITTbZJH7xi1/Ea6+9ttxraIzVcY4Vtckmm8Rjjz0WF198cXznO9+JGTNmxI9//OPYdtttGz2v
-oLgMX83VNBpjq622ivLy8rjxxhubLJ5nz54dd955Z5SXl5e+niCielOVj7/SXIxomoaAbgaWxnPr
-+NKZI2KNrtWTeOqK5+a+DmTFh4ub+hJWqc6dO8e1114b7du3j7vuuiu22GKLuOyyyz7Rcw4ZMiS2
-2mqrePTRR2Po0KHLXdaqsrIyrrvuuoiojoAVddZZZ8Wf/vSniIjo06dP/OhHP4r27dvHKaecEocc
-ckjMmzdvmZfTr7zyyth+++3jsMMOi8rKyujbt28pzhrrpJNOip49e8YjjzwSw4cPL+1yV5/bb789
-Iqp30VvecmYft9dee8Wvf/3rWLBgQXznO9+JCy+8cJnYraqqiquuuipOO+200vv69OkTzz33XETU
-v8X7gQceWBpDu8cee5Su8+Pq2mK9qKysLP785z/HI488En/4wx+if//+8fbbb8cZZ5wRm2++eZx7
-7rkrvczZ6jjHyth+++3j+OOPj7/85S/x9NNPx+DBg+Oll16KAw88MIYOHRrz589v8OPXXXfdiIhG
-rRVd1Lp16/j9738fDzzwQIOvEKyM4tdNcYJwXc4777xYtGhRHH744at0rXM+/Z566qll5mLUNcSI
-1UdAN7E+ffrUiOdTSvH80cuz4vUjf7bceJ4yZUp07NgxysrKGv3WsWPHWkMnnnrqqRU6Rs2JNMU7
-4esc80y0Gjij3rc1hr8Ya57yUqx5SvUwgYZeqm8uevfuHQ899FD069cvIpYO6/iktGvXLm644Ybo
-2LFjXHnllXHYYYeVxnV+XGVlZRx33HHx5ptvxo477ljn9t2NVVzO7aqrroq//e1vMX78+Hj22Wfj
-+OOPj6lTp8aIESOW2cilc+fOsfvuu8f+++8fv/nNb2LSpEnp4Stt27aN6667Ljp37hy///3vY+DA
-gfHyyy/X+dw777wzTjrppIionti5IkaMGBG//vWvY9GiRTF06NDo2rVr7LvvvvGTn/wkfvCDH8Tm
-m29eGr40duzYGDlyZMycOTP23HPPmDlzZr1DHdq1axdTpkyJbt26xRNPPFGagFqXhrasbt++fey4
-445x5JFHxs033xxvvPFGjBs3LtZcc8048cQTo3///vHOO++s1Fa2q+Mcq8LWW28dv/vd7+LBBx+M
-bbbZJi688MI4+uijY+HChfV+THG5wFtuuaW0ykpjlJeXx//7f/9vpa+5PsU74/WNbb7uuuvirLPO
-irZt28app576iV0Hnz7FIU01h+gNGjToc7UiVnNkDHQTGjZsWNx7772xxmZfjnVHnRCt1qt++f2j
-l2fFWz+vHvM8aNCgBl+mGTZsWFRUVESv7b9S/4kKhYiqBVFc/eK+p94onTsiSmOqe3217rGgpcMs
-XLqhyv3/qojhw4eXZo8Xx0D32GKj6NCugZ3MFs2vdR2vvvpqg+dsLrp37x633HJLzJgxY7W8tPq1
-r30tpk6dGt/73vfiT3/6U9xxxx3xgx/8IHbZZZdYZ511Yt68eTFz5sy48sor48UXX4y11147xo8f
-36gVKepTvHNXc5m3du3axQUXXBDl5eV1/mM9ePDgGDx48Aqfs2irrbaKO++8Mw488MDSetT9+/eP
-7bbbLtq0aRPvvfde3H///aWv2cGDB0f//v1X6FxlZWVxyimnxM477xznnXdeTJ48Of785z/Xes62
-224bv/zlL0tLC3bt2jV++MMfxg9+8IMG7wx27949/v73v8f48ePjqKOOWqHr+7gNNtggfvGLX8Sg
-QYPihBNOiMmTJ8dee+1VGuqzMt55551o3br1J3qOlb22Nm3axM477xzTpk2Lo446Kq6//voGhypt
-ueWWsdNOO8UjjzwSF198cfz85z9fjVddv4022igiqocEPf/886UfxCsrK+PCCy+M0aNHR0T1mNbG
-rqfOZ19FRUX0799/mXg2fKPpCegmNHVq9aYnKxrPEVEK0HsnNLzM1uL3Xy1tYNKq10Vx3333lR4r
-Lo/z11HLrnhQU2MmAD51U8N3Tj5+HZ+mnZXKysqiZ8+eq+18u+66azzwwAMxevTouP766+OSSy6J
-Sy65ZJnn9ejRI6688srS6hQrasiQIXHwwQcvs2FLy5Yt49e//nU8//zzpbvUn4Rtt902Hn300Tjn
-nHPiwgsvjMmTJ8fkyZNrPWe99daLkSNHxuDBg1f67uiuu+4au+66a7z22mvx8ssvxzvvvBPt2rWL
-DTbYILp3717r+EcccUQsWrSoUXe9O3Xq9IncQdxoo43if/7nf+L000+PMWPGrPAPEEWTJk2KgQMH
-xvrrrx933313bL755qv8HKvy2tZdd924/vrrS5vr1KesrCzOPPPM6NWrV5x66qmxZMmSOOaYY2Ld
-ddeNysrKuO+++2KfffZZ7XfXv/zlL8fRRx8dV1xxReyyyy7Rr1+/WLhwYdx5550xZ86c6NixY1xx
-xRVxwAEHrNbrovmqqKiIPn361Pq/Vjw3HwK6CRXHXrZoU/2y+IL/fT7+M+6iRsczn31du3aN6667
-Lk499dR46KGH4tlnn42333471l577dhwww1jl112id12222VrN1b145tRWuttVZcdNFF8ZWvNPBK
-xyrQuXPnOOuss2LEiBHx6KOPxssvvxzz58+PddZZJzbaaKPYeeedlxlGsrK+/OUv11qGsD5HH310
-PPnkk5/4GPiGtGrVKkaPHh2tW7eOESNGrNSxbr755li0aFHMmjUr7r///th8881X+TlW9bUVh/vs
-sMMODY5x3m233eLSSy+NwYMHx8iRI2PkyJHRqVOn0lb0d955Z60tuleXcePGxdtvvx1Tp04tTSZt
-27ZtDBkyJH760582u0nhNJ264nm//fbTBc2IgG5CRxxxRFxwwQXxf0N+GWtstnHMe+TJiFixdZ1/
-9bu/NPj4kgVzIgpLd3vbZJNNav361VdfjbE3vdXgMQofVkVUNbwJynKvY2FFxJKGJ4mxrO7duzf5
-rPxu3brVipBP0he/+MXYe++9P/HzZJSVlcWoUaPiT3/600p/DoqT9D6+ykpjr+NnP/tZvPbaa3Hx
-xRev8DUcdNBBMXny5Nhwww2jd+/en8g5PolrW2+99eLss89e7mS/Y489Nrbeeus477zz4rbbbot3
-33031l577ejXr1+jtoD/JKy33noxefLk+Ne//hVvvfVWtGnTJrp27ZqeDMtnW13x3KNHD/HczJRV
-VFQUlv+0T1ahUIglS5ZEVVVVfPTRR/HBBx8sdwepz4KKioo44ogjSkM5iuNNM+sv9+7du9ZwjMaq
-eYd7//33L11DRq9evWqNo25oea7GHAM+L/bZZ5+49dZbY9q0adG3b98mu44PP/ww1lhjjWaxBvTH
-rcprW7RoUVRWVkbHjh3rXQoSmoP64vnTsArXJ2XmzJnRtm3bWGONNaJVq1bRokWLJp/gHOEOdJMq
-7jD0yiuvxCuvvBI9e/ZMf4MUv8lGH9jwHZXC3EVR+O/qSeOmvVcruovH+OVx3234GAvmRCypvos9
-duJjpbHTEUsnES7/OqqisLhQ53XAZ82sWbNiwoQJMX369Jg9e3asv/76se2228att94aEZHeZW9V
-q28TmeZgVV5beXm5jUlo9sTzp4s70J9yxZ/Cqq5veDm4j08AjFi62kLxGIVnftfgMT4+AbDmMYp3
-wlfmOuCz5H//93+jd+/eMWfOnOjcuXN07Ngx/v3vf9da53r06NExZsyYZnE3BWg64rl+zfUOtHWg
-AT4B48ePjzlz5sQFF1wQb775Zrzwwgvx/vvvx7XXXlt6ztixY+P73/9+k+8ACDSt/fffXzx/yhjC
-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
-QUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJ
-AhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ
-0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKA
-BgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0
-AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKAB
-ACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0A
-AAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAA
-SBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBA
-goAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAAS
-BDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAg
-oAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQB
-DQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAho
-AABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUAD
-AECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoA
-ABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAA
-kCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCA
-BAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAk
-CGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBB
-QAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkC
-GgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQ
-AACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAG
-AIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQA
-ACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEA
-IEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAA
-CQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABI
-ENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECC
-gAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIE
-NAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCg
-AQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAEN
-AAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgA
-AEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMA
-QIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAA
-EgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQ
-IKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAE
-AQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQI
-aAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFA
-AwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIa
-AAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAA
-AJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYA
-gAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJAhoAABIENAAA
-JAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAg
-QUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKABgCABAENAAAJ
-AhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0AAAkCGgAAEgQ
-0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKABACBBQAMAQIKA
-BgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0AAAkCGgAAEgQ0
-AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAASBDQAACQIKAB
-ACBBQAMAQIKABgCABAENAAAJAhoAABIENAAAJAhoAABIENAAAJAgoAEAIEFAAwBAgoAGAIAEAQ0A
-AAkCGgAAEgQ0AAAkCGgAAEgQ0AAAkCCgAQAgQUADAECCgAYAgAQBDQAACQIaAAASBDQAACQIaAAA
-SBDQ8P/bu4PWqM6+j+P/PHdKZiFEEHoEIQMVU1Cc0nLHRSHQhVkZdy5Ed/Ul9A3c76CvQFdJ34DJ
-SgsFXRmhrVmZheBAJZOVIxQykOK9KM3TZPo89ReTmZp8PlDoHJo516In+c4117kOAEBAQAMAQEBA
-AwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMA
-QEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBA
-QAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEAD
-AEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBA
-QEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBA
-AwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMA
-QEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBA
-QAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEAD
-AEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBA
-QEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBA
-AwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMA
-QEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBA
-QAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEAD
-AEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBA
-QEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBA
-AwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMA
-QEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBA
-QAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEAD
-AEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBA
-QEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBA
-AwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMA
-QEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBA
-QAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEAD
-AEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBA
-QEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBA
-AwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMA
-QEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBA
-QAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEAD
-AEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBA
-QEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBA
-AwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMA
-QEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBA
-QAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEAD
-AEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBA
-QEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBA
-AwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMA
-QEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBA
-QAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEAD
-AEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBA
-QEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBAAwBAQEADAEBAQAMAQEBA
-AwBAYKKq3o57EAAA8KEwAw0AAAEBDQAAAQENAAABAQ0AAAEBDQAAAQENAAABAQ0AAAEBDQAAAQEN
-AAABAQ0AAAEBDQAAAQENAAABAQ0AAAEBDQAAAQENAAABAQ0AAAEBDQAAAQENAAABAQ0AAAEBDQAA
-AQENAAABAQ0AAAEBDQAAAQENAACByXEPAICqVqtVFy5cqNOnT9fU1FQ1TVO9Xq8Gg0H1+/3a2Nio
-7e3tcQ8TgKqaqKq34x4EJ0e73a6ZmZna2NioXq837uHA2HU6nfr3v/9dZ8+e/dv/dnNzs54+fVrP
-nj0bwcgA+L8IaEZmbm6uFhYWqqpqe3u7vv3223r71v9+nExN09S1a9feKZz363a79eDBAx9CAcbk
-X1X1n3EPguNvcXGxvvzyy93Xk5OT1e12q9/vj3FUMB6dTqdu3rxZp06dOtDPT09P1xdffFH9fl9E
-A4yBNdAcqVarVbdu3RqaZet2u9Xtdsc0Khif+fn5mp+fHzq+tbVV3W63MUoQSwAABuFJREFUer1e
-vX79urrdbs3MzNT09HQ1TVPtdrs+/vjjPT+zuLhY09PT9ejRo1ENH0bmxo0bNTs7O5JzbW9v1+PH
-j+vJkycjOR8fPgHNkWmapm7fvl2tVmvP8fX19Xrw4IHlG5w4nU5nKJ4Hg8HuH+7918TLly93/31i
-YqLm5uZqfn6+pqamdo/Pz89Xv9+3LppjpWmakcVz1e+TPXNzc7W2tuZvE+9EQHMkOp1OXb16dSie
-v//++78MBTjumqapxcXFPce2trZqZWWlNjc3//bn3759W0+ePKmXL1/W9evX98xGLy4uVq/Xs5yD
-Y2Mcy/u2trZGfk4+XG4i5NBdvXq1rly5sufYYDColZWV2tjYEM+cSHfu3KmmaXZfb21t1d27dw90
-PUxMTNTXX3+95/263W4tLy+7vjg22u12dTqdmp6ePvJz9Xq9Wltbq9evXx/5uTgeBDSHptVq1bVr
-1+rTTz/dczyZZYPjqNPp7Jl9HgwGtby8/F7XRNM0defOnT3HVlZWLOXg2JmYmDjyc/jgScqTCDkU
-TdPUrVu3huK52+3W0tKSeOZEm5ub2/P68ePH731N9Hq9evjw4dB5RhEbMEpv37498n8gJaB5b+12
-u27fvj2008bTp09reXnZ09M40Vqt1tDSjcO60//Jkyd71j03TbPnBkMAjoaA5r3Mzc395U4bq6ur
-dtqAqqGdBLrd7qFeF/u3gxzlzgUAJ5VdODiwxcXF6nQ6e44dxtpOOE723wB12Dtl7N+tYBQ3XAGc
-dAKaA2maZiiet7a2amlpyZIN+JP9SyoO+y5/W9dxXM3Oztbly5eHvuE8Cv1+v9bW1lxPvDMBzYH8
-1dfEDx48EM+wz5/XP1cNL7l4X39+2ErV7/ckPH782PIpPmitVqtu3Lgx0nM2TVP37t1z7fBOrIHm
-QNbW1mowGOw5duPGjaFZaTjp9j+cYWZm5lDfv91u73l92GusYRzGsRRpFDPdHB8CmgPZ3t6u+/fv
-74noqampWlxcrKtXr45xZPDPsv9bmcMOgz8/kbDKfrYcD71er9bX14cmao5Kv9/3zQ0RSzg4sI2N
-jVpaWhp6rPCVK1fq9OnTtbKyYkkHJ97+m/z2L+l4X/uD/M2bN4f6/jAu9+/fH+m+5uKZhBlo3kuv
-16ulpaW/3Err1q1bhx4L8KHZ2NjY83pmZuZQo2D/Eo7nz58f2nvDuI3iISoepsJB/Kuq/jPuQfBh
-29nZqfX19Wq1WnXu3Lnd46dOnaqLFy/Wq1evhmbh4KTY2dmp2dnZOnXqVFX9fl0MBoP65Zdf3vu9
-5+bm9tx3sLW1VWtra+/9vgD8/wQ0h+bFixfV7/f37NAxOTlZnU6ntre369WrV2McHYzPb7/9tue6
-OHfuXL148aJ+/fXXA79n0zRDuxT88MMP9mAHGAEBzaHq9Xq1sbFRly5dqsnJ/11if/78+Zqenh76
-OhtOgl6vV+12e3e98uTkZJ07d65++umnA7/nzZs3d2e1q37ffePhw4fvPVYA/t5EVVn4w6FrtVp1
-+/btoTXQm5ub9d1337m5kBOnaZq6c+fOnmObm5u1uroaPbyhaZq6du1anT17ds/xe/fumX3mWGm1
-WiO7j2Z7e9tDVIgIaI5Mq9WqhYWFunz58p7j29vbtby87JcVJ06n06nFxcU9x7a3t+vRo0fvtHZ5
-bm6uFhYWho6vrq7Wzz//fGjjhH+Cb775ZuhJnkdpfX297t+/P7Lz8WGzhIMjs7OzUxsbGzUYDOqT
-Tz7ZPT45OVmXLl2qH3/8sXZ2dsY4QhitPz40/nnnjMnJyTp//nxduHChzpw5U2fOnKmPPvqo+v1+
-tdvtmp2drYsXL9ZXX31Vn3322dB7Pn782I2DHDvtdrs+//zzkZ6z1WrV06dPR3pOPlz2gebIPXny
-pF6/fl3Xr1/fnU2Ympqq6elpSzk4cR49elT9fn9oJvrs2bNDyzL+zurqaj179swWXBw7L1++rMFg
-MNIZaE/xJGEJByPTNM3uQ1e2trbq7t27fllxYjVNUwsLCwd6tPcfNwxa88xxNjExcaDr4yAGg0H1
-ej1/k3hnApqR+uMXok/68Pv1cPny5bpy5crQI7n/yh/7PJt1BhgvAQ0wZhMTEzU1NVWzs7O7W921
-2+3dD5pv3ryp58+f12AwEM4A/wACGuAfaGJiQiwD/EMJaAAACPzPuAcAAAAfEgENAAABAQ0AAAEB
-DQAAAQENAAABAQ0AAAEBDQAAAQENAAABAQ0AAAEBDQAAAQENAAABAQ0AAAEBDQAAAQENAAABAQ0A
-AAEBDQAAAQENAAABAQ0AAAEBDQAAAQENAAABAQ0AAAEBDQAAAQENAACB/wKq9DKxdeosCQAAAABJ
-RU5ErkJggg==
-" width="800px"&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="PASS" start="2025-09-03T15:37:25.559965" elapsed="0.748349"/>
-</kw>
-<msg time="2025-09-03T15:37:26.308468" level="INFO">xpath criteria: //android.widget.ImageButton</msg>
-<msg time="2025-09-03T15:37:26.309015" level="FAIL">StaleElementReferenceException: Message: Cached elements 'By.xpath: //android.widget.ImageButton' do not exist in DOM anymore; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Stacktrace:
-io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: Cached elements 'By.xpath: //android.widget.ImageButton' do not exist in DOM anymore
-	at io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:78)
-	at io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)
-	at io.appium.uiautomator2.handler.GetElementAttribute.safeHandle(GetElementAttribute.java:23)
-	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
-	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)
-	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)
-	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
-	at java.lang.Thread.run(Thread.java:1012)
-</msg>
-<arg>${Back_Button1}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="FAIL" start="2025-09-03T15:37:23.931235" elapsed="2.384578">StaleElementReferenceException: Message: Cached elements 'By.xpath: //android.widget.ImageButton' do not exist in DOM anymore; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Stacktrace:
-io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: Cached elements 'By.xpath: //android.widget.ImageButton' do not exist in DOM anymore
-	at io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:78)
-	at io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)
-	at io.appium.uiautomator2.handler.GetElementAttribute.safeHandle(GetElementAttribute.java:23)
-	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
-	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)
-	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)
-	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)
-    [ Message content over the limit has been removed. ]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
-	at java.lang.Thread.run(Thread.java:1012)</status>
-</kw>
-<kw name="Element Should Be Visible" owner="AppiumLibrary">
-<arg>${Back_Button1}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="NOT RUN" start="2025-09-03T15:37:26.316146" elapsed="0.000048"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<arg>${Back_Button1}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2025-09-03T15:37:26.316355" elapsed="0.000039"/>
-</kw>
-<status status="FAIL" start="2025-09-03T15:37:23.930812" elapsed="2.385927">StaleElementReferenceException: Message: Cached elements 'By.xpath: //android.widget.ImageButton' do not exist in DOM anymore; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Stacktrace:
-io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: Cached elements 'By.xpath: //android.widget.ImageButton' do not exist in DOM anymore
-	at io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:78)
-	at io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)
-	at io.appium.uiautomator2.handler.GetElementAttribute.safeHandle(GetElementAttribute.java:23)
-	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
-	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)
-	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)
-	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)
-    [ Message content over the limit has been removed. ]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
-	at java.lang.Thread.run(Thread.java:1012)</status>
-</kw>
-<tag>report</tag>
-<status status="FAIL" start="2025-09-03T15:35:29.111982" elapsed="117.205715">StaleElementReferenceException: Message: Cached elements 'By.xpath: //android.widget.ImageButton' do not exist in DOM anymore; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Stacktrace:
-io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: Cached elements 'By.xpath: //android.widget.ImageButton' do not exist in DOM anymore
-	at io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:78)
-	at io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)
-	at io.appium.uiautomator2.handler.GetElementAttribute.safeHandle(GetElementAttribute.java:23)
-	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
-	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)
-	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)
-	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)
-    [ Message content over the limit has been removed. ]
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
-	at java.lang.Thread.run(Thread.java:1012)</status>
+<tag>logout</tag>
+<status status="PASS" start="2025-09-04T11:34:01.651524" elapsed="48.689830"/>
 </test>
 <doc>Menu Module Test Case for Kri-Shop App</doc>
-<status status="FAIL" start="2025-09-03T15:35:28.817233" elapsed="117.503132"/>
+<status status="PASS" start="2025-09-04T11:34:01.473103" elapsed="48.869694"/>
 </suite>
-<status status="FAIL" start="2025-09-03T15:35:28.784255" elapsed="117.538147"/>
+<status status="PASS" start="2025-09-04T11:34:01.447406" elapsed="48.897186"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">report</stat>
+<stat pass="1" fail="0" skip="0">logout</stat>
 </tag>
 <suite>
-<stat name="Test Suites" id="s1" pass="0" fail="1" skip="0">Test Suites</stat>
-<stat name="Menu Gherkin" id="s1-s1" pass="0" fail="1" skip="0">Test Suites.Menu Gherkin</stat>
+<stat name="Test Suites" id="s1" pass="1" fail="0" skip="0">Test Suites</stat>
+<stat name="Menu Gherkin" id="s1-s1" pass="1" fail="0" skip="0">Test Suites.Menu Gherkin</stat>
 </suite>
 </statistics>
 <errors>

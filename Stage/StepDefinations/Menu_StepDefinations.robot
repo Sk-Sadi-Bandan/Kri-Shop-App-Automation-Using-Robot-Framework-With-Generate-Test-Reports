@@ -309,7 +309,7 @@ Click on Finish Button
     Sleep                                       2s
 
 
-#################################  Test Case 5  #################################
+#################################  Test Case 6  #################################
 Click on Report
     Wait Until Element Is visible               ${Report}
     Element Should Be Visible                   ${Report}
@@ -346,3 +346,56 @@ Click on Total sell
     Wait Until Element Is visible               ${Total_Sell}
     Element Should Be Visible                   ${Total_Sell}
     Click Element                               ${Total_Sell}
+
+
+#################################  Test Case 7  #################################
+Click on Profile Delete
+    Wait Until Element Is visible               ${Profile_Delete}
+    Element Should Be Visible                   ${Profile_Delete}
+    Click Element                               ${Profile_Delete}
+Click on Dismiss button
+    Wait Until Element Is visible               ${Dismiss_Button}
+    Element Should Be Visible                   ${Dismiss_Button}
+    Click Element                               ${Dismiss_Button}
+Click on No
+    Wait Until Element Is visible               ${No}
+    Element Should Be Visible                   ${No}
+    Click Element                               ${No}
+Click on Yes
+    Wait Until Element Is visible               ${Yes}
+    Element Should Be Visible                   ${Yes}
+    Click Element                               ${Yes}
+Click on Okay
+    Wait Until Element Is visible               ${Okay}
+    Element Should Be Visible                   ${Okay}
+    Click Element                               ${Okay}
+    Sleep                                       2s
+
+
+#################################  Test Case 8  #################################
+Click on Free Call
+    Wait Until Element Is visible               ${Free_Call}
+    Element Should Be Visible                   ${Free_Call}
+    Click Element                               ${Free_Call}
+Click on Not Now
+    Wait Until Element Is visible               ${Not_Now}
+    Element Should Be Visible                   ${Not_Now}
+    Click Element                               ${Not_Now}
+Click on Call Now
+    Wait Until Element Is visible               ${Call_Now}
+    Element Should Be Visible                   ${Call_Now}
+    Click Element                               ${Call_Now}
+    Sleep                                       3s
+
+
+#################################  Test Case 9  #################################
+Click on Logout
+    Wait Until Element Is visible               ${Logout}
+    Element Should Be Visible                   ${Logout}
+    Click Element                               ${Logout}
+Click on Deny
+    Wait Until Element Is visible               ${Deny}
+    Element Should Be Visible                   ${Deny}
+    Click Element                               ${Deny}
+    Sleep                                       2s
+
