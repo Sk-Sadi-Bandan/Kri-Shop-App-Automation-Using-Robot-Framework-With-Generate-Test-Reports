@@ -78,7 +78,6 @@ Scenario: Verify that Product Checkout is Successfully
     [Tags]    productcheckout
     Open app
     Login To Krishop
-
     Click on Cart First Product
     # Click on Cash
     Click on Add to Cart
@@ -93,7 +92,6 @@ Scenario: Verify that Payment Confirm Process is Successfully
     [Tags]    payment
     Open app
     Login To Krishop
-
     Click on History
     Click on Cash Order
     Click on First Pending Order
@@ -106,7 +104,6 @@ Scenario: Verify that Payment Cancel Process is Successfully
     [Tags]    cancelorder
     Open app
     Login To Krishop
-
     Click on History
     Click on Cash Order
     Click on First Pending Order

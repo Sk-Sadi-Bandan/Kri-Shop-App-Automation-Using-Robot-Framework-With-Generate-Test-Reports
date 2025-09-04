@@ -26,7 +26,6 @@ Scenario: Verify that Product Search is Successfully
     [Tags]    search
     Open app
     Login To Krishop
-
     Click on Search Product
     Click on Search some product input section
     Close app
@@ -37,7 +36,6 @@ Scenario: Verify that Product Catagory is Successfully Displayed
     [Tags]    category
     Open app
     Login To Krishop
-
     Click on Product Category see all
     Click on first Product Category
     Click on second Product Category
@@ -55,7 +53,6 @@ Scenario: Verify that Filter Option is Successfully Working
     [Tags]    filter
     Open app
     Login To Krishop
-
     Click on Filter Credit Product
     Click on Reset Button
     Click on Filter Discount Product
@@ -74,7 +71,6 @@ Scenario: Verify that Product description is Successfully Working
     [Tags]    description
     Open app
     Login To Krishop
-    
     Click on first product description
     Click on back product description
     Click on second product description
@@ -89,7 +85,6 @@ Scenario: Verify that Regular Product Cart and Remove is Successfully Working
     [Tags]    regularcart
     Open app
     Login To Krishop
-    
     Click on first regular product Cart
     Click on Add to Cart
     Click on Add More Product
@@ -107,7 +102,6 @@ Scenario: Verify that Credit Product Cart and Remove is Successfully Working
     [Tags]    creditcart
     Open app
     Login To Krishop
-    
     Click on Filter Credit Product
     Click on first credit product Cart
     Click on Add to Cart
@@ -126,7 +120,6 @@ Scenario: Verify that Regular Product Quick Order is Successfully Working
     [Tags]    regularquick
     Open app
     Login To Krishop
-    
     Click on first regular product kinun
     Click on Add
     Click on Add
@@ -140,7 +133,6 @@ Scenario: Verify that Credit Product Quick Order is Successfully Working
     [Tags]    creditquick
     Open app
     Login To Krishop
-    
     Click on Filter Credit Product
     Click on first credit product kinun
     Click on Add
@@ -154,7 +146,6 @@ Scenario: Verify that Call function is Successfully Working
     [Tags]    homecall
     Open app
     Login To Krishop
-    
     Click on Call Icon
     Click on Not Now
     Click on Call Icon

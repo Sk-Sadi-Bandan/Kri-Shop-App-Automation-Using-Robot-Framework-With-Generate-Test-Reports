@@ -14,15 +14,6 @@ ${Input_Password}                                123456
 ${Input_Shop_Name}                               Test 1 Enterprise
 ${Input_Shop_Address}                            Test 1
 
-${Input_NID_No}                                  ৭৬১২২১৩৯৫৪৩৪০
-${Input_NID_Name}                                শেখ সাদী বন্ধন
-${Input_Father_Name}                             শেখ জয়নাল আবেদীন
-${Input_Mother_Name}                             শেখ মনোয়ারা আবেদীন
-
-${Input_Business_Shop_Name}                      শেখ এন্টারপ্রাইস
-${Input_Phone_No}                                ০১৫৬৭৮৩৯৬০০
-${Input_License_No}                              ১২৩৪৫৬৭৮
-
 ${DEVICE_HEIGHT}                                 1600
 ${DEVICE_WIDTH}                                  720
 
