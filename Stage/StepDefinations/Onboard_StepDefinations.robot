@@ -8,7 +8,10 @@ Resource           ../Locators/Onboard_Locators.robot
 
 *** Variables ***
 #################################  User Variable  #################################
-${Input_Mobile_Number_Reg}                       01567839617
+${DEVICE_HEIGHT}                                 1600
+${DEVICE_WIDTH}                                  720
+
+${Input_Mobile_Number_Reg}                       01567839657
 ${Input_OTP1}                                    1
 ${Input_OTP2}                                    2
 ${Input_OTP3}                                    3
@@ -95,8 +98,11 @@ Click on a specific Image
     FOR    ${index}    IN RANGE    10
         ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Specific_Image}
         Exit For Loop If    ${is_visible}
-        Swipe    500    1500    500    500
-        Sleep    2s
+        ${start_x}=    Evaluate    ${DEVICE_WIDTH} / 2
+        ${start_y}=    Evaluate    ${DEVICE_HEIGHT} * 0.80
+        ${end_y}=      Evaluate    ${DEVICE_HEIGHT} * 0.20
+        Swipe    ${start_x}    ${start_y}    ${start_x}    ${end_y}
+        Sleep    1s
     END
     Element Should Be Visible                   ${Specific_Image}
     Click Element                               ${Specific_Image}

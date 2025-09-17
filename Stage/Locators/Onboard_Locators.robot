@@ -25,7 +25,7 @@ ${Male_Gender}                      xpath=//android.widget.RadioButton[@resource
 ${Next}                             xpath=//android.widget.TextView[@resource-id="asia.ifarmer.retailer.dev:id/tvNext"]
 ${Image_Input_Box}                  xpath=//android.widget.ImageView[@resource-id="asia.ifarmer.retailer.dev:id/ivFarmer"]
 ${Galary_Section}                   xpath=//android.widget.LinearLayout[@resource-id="asia.ifarmer.retailer.dev:id/lytGalleryPick"]
-${Specific_Image}                   xpath=(//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[21]
+${Specific_Image}                   xpath=(//android.widget.ImageView[@resource-id="com.google.android.documentsui:id/icon_thumb"])[15]
 ${Image_Crop}                       xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/crop_image_menu_crop"]
 
 ${Krishop_Login}                    xpath=//android.widget.Button[@resource-id="asia.ifarmer.retailer.dev:id/btLogin"]

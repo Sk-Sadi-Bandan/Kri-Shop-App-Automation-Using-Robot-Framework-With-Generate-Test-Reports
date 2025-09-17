@@ -8,7 +8,10 @@ Resource           ../Locators/Cart_Locators.robot
 
 *** Variables ***
 #################################  User Variable  #################################
-${Input_Mobile_Number_Login}                     01567839602
+${DEVICE_HEIGHT}                                 1600
+${DEVICE_WIDTH}                                  720
+
+${Input_Mobile_Number_Login}                     01567839601
 ${Input_Password}                                123456
 
 ${Input_Cancel_Order}                            Test Cancel
@@ -52,7 +55,10 @@ Click on Cart First Product
     FOR    ${index}    IN RANGE    10
         ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Cart_First_Product}
         Exit For Loop If    ${is_visible}
-        Swipe    360    1200    360    400
+        ${start_x}=    Evaluate    ${DEVICE_WIDTH} / 2
+        ${start_y}=    Evaluate    ${DEVICE_HEIGHT} * 0.80
+        ${end_y}=      Evaluate    ${DEVICE_HEIGHT} * 0.20
+        Swipe    ${start_x}    ${start_y}    ${start_x}    ${end_y}
         Sleep    1s
     END
     Element Should Be Visible                   ${Cart_First_Product}
@@ -80,7 +86,10 @@ Click on Credit First Product
     FOR    ${index}    IN RANGE    10
         ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Credit_First_Product}
         Exit For Loop If    ${is_visible}
-        Swipe    360    1200    360    400
+        ${start_x}=    Evaluate    ${DEVICE_WIDTH} / 2
+        ${start_y}=    Evaluate    ${DEVICE_HEIGHT} * 0.80
+        ${end_y}=      Evaluate    ${DEVICE_HEIGHT} * 0.20
+        Swipe    ${start_x}    ${start_y}    ${start_x}    ${end_y}
         Sleep    1s
     END
     Element Should Be Visible                   ${Credit_First_Product}
@@ -97,7 +106,10 @@ Click on Credit Second Product
     FOR    ${index}    IN RANGE    10
         ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Credit_Second_Product}
         Exit For Loop If    ${is_visible}
-        Swipe    360    1200    360    400
+        ${start_x}=    Evaluate    ${DEVICE_WIDTH} / 2
+        ${start_y}=    Evaluate    ${DEVICE_HEIGHT} * 0.80
+        ${end_y}=      Evaluate    ${DEVICE_HEIGHT} * 0.20
+        Swipe    ${start_x}    ${start_y}    ${start_x}    ${end_y}
         Sleep    1s
     END
     Element Should Be Visible                   ${Credit_Second_Product}
@@ -160,8 +172,11 @@ Click on Cancel Order
     FOR    ${index}    IN RANGE    10
         ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${Cancel_Order}
         Exit For Loop If    ${is_visible}
-        Swipe    500    1500    500    500
-        Sleep    2s
+        ${start_x}=    Evaluate    ${DEVICE_WIDTH} / 2
+        ${start_y}=    Evaluate    ${DEVICE_HEIGHT} * 0.80
+        ${end_y}=      Evaluate    ${DEVICE_HEIGHT} * 0.20
+        Swipe    ${start_x}    ${start_y}    ${start_x}    ${end_y}
+        Sleep    1s
     END
     Element Should Be Visible                   ${Cancel_Order}
     Click Element                               ${Cancel_Order}
@@ -173,4 +188,5 @@ Click on Confirm Cancel Order
     Wait Until Element Is visible               ${Confirm_Cancel_Order}
     Element Should Be Visible                   ${Confirm_Cancel_Order}
     Click Element                               ${Confirm_Cancel_Order}
+    Sleep                                       1s
 
